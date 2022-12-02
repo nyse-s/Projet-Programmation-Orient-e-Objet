@@ -72,12 +72,12 @@ namespace POO {
 			this->write_Username = (gcnew Bunifu::Framework::UI::BunifuTextbox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
-			this->panel2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::Transparent;
+			this->panel1->Controls->Add(this->btn_login);
 			this->panel1->Controls->Add(this->panel2);
 			this->panel1->Controls->Add(this->btn_cancel);
 			this->panel1->Controls->Add(this->write_password);
@@ -93,7 +93,6 @@ namespace POO {
 			// 
 			this->panel2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel2.BackgroundImage")));
 			this->panel2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
-			this->panel2->Controls->Add(this->btn_login);
 			this->panel2->Location = System::Drawing::Point(44, 31);
 			this->panel2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panel2->Name = L"panel2";
@@ -150,7 +149,7 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_login->IdleForecolor = System::Drawing::Color::White;
 			this->btn_login->IdleLineColor = System::Drawing::Color::White;
-			this->btn_login->Location = System::Drawing::Point(-44, 348);
+			this->btn_login->Location = System::Drawing::Point(24, 991);
 			this->btn_login->Margin = System::Windows::Forms::Padding(11, 10, 11, 10);
 			this->btn_login->Name = L"btn_login";
 			this->btn_login->Size = System::Drawing::Size(363, 79);
@@ -219,7 +218,6 @@ namespace POO {
 			this->Text = L"login";
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
-			this->panel2->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}

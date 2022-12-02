@@ -118,6 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_login.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAWsAAABPCAYAAAAtDOTsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAN4SURBVHhe7doxaJxlHMfxjDfemPHGGztmzFQydEg7XZeS
+        gi5OToXSClKhKLUIrjpKiQiSpWBBCtJCwVIEXcQh9IY05t5c37vLNbEXuNf3uVxTJK9FNMn1j58vfCAJ
+        z122H8dz75wkSZIkSZIkSZIkSZL+LxVFURuPx60sy+9mWe+nfv9FVv5NknQMpU1N29rp9O6Xv66U6tP5
+        /eeVI72U58Pu2trDfqt1o1hcfL9oNFrF3NwiAMcgbWra1uXl68WdO9/vdLuDfDAYvjud4TeXln1r6/m3
+        Dx78nM/PX6j8BwAcv3r9XLG6er/X6eSPyi2en87y0dJQlx/H25cvfzKqeiMATt7S0pWi3d5ql5vcmM7z
+        X0ufqA01wOyl65F0nz2d59elO+p09VH1IgBO3+3bXw/zfOfD6UwfPPWRvkx0Rw3w9qjVzhbr65vdcqOb
+        r8Z6JX0TWXUYgNm5evWL/V5v+NlkrNMzfunRkaqDAMzOmTPvFN3uYH0y1nk+2Gg2L1UeBGB20lXIaLS/
+        Pxnrvb2Xu+n5vqqDAMxWajLWBz9UHwJgtow1QADGGiAAYw0QgLEGCMBYAwRgrAECMNYAARhrgACMNUAA
+        xhogAGMNEICxBgjAWAMEYKwBAjDWAAEYa4AAjDVAAMYaIABjDRCAsQYIwFgDBGCsAQIw1gABGGuAAIw1
+        QADGGiAAYw0QgLEGCMBYAwRgrAECMNYAARhrgACMNUAAxhogAGMNEICxBgjAWAMEYKwBAjDWAAEYa4AA
+        jDVAAMYaIABjDRCAsQYIwFgDBHA41qPR/n6tdvbIAQBm73Cs+/0XWaPROnIAgNk7HOtOJ3+0tHTlyAEA
+        ZqvZvFTk+WBjMta7u39cv3Vrda/qIACzs7LycdHt9r+ZjHX5CbuxsZHl7q0B3i737v3YKzd6eTLWqa2t
+        55/evPnVTtVhAE7fxYsfjTY3t7+bzvRB5XLXnj3b/mVh4b3KFwFweubnLxSdTt4pt7k+nenXlX9sPn36
+        e5YutKteDMDJS0P95Mlv3XKTF6fzfLTxeLzQ6fTa16596QtHgFN2/vwHo+kn6r8f6lelK5Es63/++PGv
+        efomMq181ZsC8N/V6+eKVutGsbb2sL+5uf1D5dXHm0rLnh4ZGQ53++XPkqQTaG/v5W6W5XfH43FrOr+S
+        JEmSJEmSJEmS9G+bm/sTRHmYbCq4u6YAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALoAAAC5CAYAAACfmiVfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -320,27 +341,6 @@
         mLHcvVMPd+xaLQuIzv7cBX89eb1h/gbaRBM4dykx7EQvORoTTr6338zIDHcniie2ME24krZee9MZBR7z
         rdQtt7u2eXAPDAt8+nooK/+wuM3f6Ztv1n+5Xn3azGhgVDyXtfa8uD1Me+B6PXadH4DnSnehCQxgcA4m
         bnM1e+M19oFUVUWH/Zu7QGA0IBaELtoktt6/nqqldh+fOnX+P/ZNej+bRAaUAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btn_login.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAWsAAABPCAYAAAAtDOTsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAN4SURBVHhe7doxaJxlHMfxjDfemPHGGztmzFQydEg7XZeS
-        gi5OToXSClKhKLUIrjpKiQiSpWBBCtJCwVIEXcQh9IY05t5c37vLNbEXuNf3uVxTJK9FNMn1j58vfCAJ
-        z122H8dz75wkSZIkSZIkSZIkSZL+LxVFURuPx60sy+9mWe+nfv9FVv5NknQMpU1N29rp9O6Xv66U6tP5
-        /eeVI72U58Pu2trDfqt1o1hcfL9oNFrF3NwiAMcgbWra1uXl68WdO9/vdLuDfDAYvjud4TeXln1r6/m3
-        Dx78nM/PX6j8BwAcv3r9XLG6er/X6eSPyi2en87y0dJQlx/H25cvfzKqeiMATt7S0pWi3d5ql5vcmM7z
-        X0ufqA01wOyl65F0nz2d59elO+p09VH1IgBO3+3bXw/zfOfD6UwfPPWRvkx0Rw3w9qjVzhbr65vdcqOb
-        r8Z6JX0TWXUYgNm5evWL/V5v+NlkrNMzfunRkaqDAMzOmTPvFN3uYH0y1nk+2Gg2L1UeBGB20lXIaLS/
-        Pxnrvb2Xu+n5vqqDAMxWajLWBz9UHwJgtow1QADGGiAAYw0QgLEGCMBYAwRgrAECMNYAARhrgACMNUAA
-        xhogAGMNEICxBgjAWAMEYKwBAjDWAAEYa4AAjDVAAMYaIABjDRCAsQYIwFgDBGCsAQIw1gABGGuAAIw1
-        QADGGiAAYw0QgLEGCMBYAwRgrAECMNYAARhrgACMNUAAxhogAGMNEICxBgjAWAMEYKwBAjDWAAEYa4AA
-        jDVAAMYaIABjDRCAsQYIwFgDBHA41qPR/n6tdvbIAQBm73Cs+/0XWaPROnIAgNk7HOtOJ3+0tHTlyAEA
-        ZqvZvFTk+WBjMta7u39cv3Vrda/qIACzs7LycdHt9r+ZjHX5CbuxsZHl7q0B3i737v3YKzd6eTLWqa2t
-        55/evPnVTtVhAE7fxYsfjTY3t7+bzvRB5XLXnj3b/mVh4b3KFwFweubnLxSdTt4pt7k+nenXlX9sPn36
-        e5YutKteDMDJS0P95Mlv3XKTF6fzfLTxeLzQ6fTa16596QtHgFN2/vwHo+kn6r8f6lelK5Es63/++PGv
-        efomMq181ZsC8N/V6+eKVutGsbb2sL+5uf1D5dXHm0rLnh4ZGQ53++XPkqQTaG/v5W6W5XfH43FrOr+S
-        JEmSJEmSJEmS9G+bm/sTRHmYbCq4u6YAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btn_cancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
