@@ -1,4 +1,5 @@
 #pragma once
+#include "Svc_gestionClient.h"
 
 namespace POO {
 
@@ -453,8 +454,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 
 
 
-
-
+	private: NS_Svc::Svc_gestionClient^ processusClient;
+	private: Data::DataSet^ ds;
+	private: int index;
+	private: String^ mode;
 	private:
 		/// <summary>
 		/// Variable nécessaire au concepteur.
@@ -867,7 +870,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->btn_enregistrer_Personnel->Size = System::Drawing::Size(200, 125);
 			this->btn_enregistrer_Personnel->TabIndex = 22;
 			this->btn_enregistrer_Personnel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->btn_enregistrer_Personnel->Click += gcnew System::EventHandler(this, &Dashboard::button_enregistrer_Click);
 			// 
 			// dataGridView1
 			// 
@@ -959,7 +961,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_payspersonnel->Size = System::Drawing::Size(150, 42);
 			this->label_payspersonnel->TabIndex = 20;
 			this->label_payspersonnel->Text = L"département";
-			this->label_payspersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label_departement_Click);
 			// 
 			// choice_superieur
 			// 
@@ -972,7 +973,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->choice_superieur->Name = L"choice_superieur";
 			this->choice_superieur->Size = System::Drawing::Size(180, 28);
 			this->choice_superieur->TabIndex = 18;
-			this->choice_superieur->SelectedIndexChanged += gcnew System::EventHandler(this, &Dashboard::choice_superieur_SelectedIndexChanged);
 			// 
 			// label_code_postalpersonnel
 			// 
@@ -993,7 +993,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->textBox_code_postal->Name = L"textBox_code_postal";
 			this->textBox_code_postal->Size = System::Drawing::Size(397, 26);
 			this->textBox_code_postal->TabIndex = 16;
-			this->textBox_code_postal->TextChanged += gcnew System::EventHandler(this, &Dashboard::textBox_code_postal_TextChanged);
 			// 
 			// label_villepersonnel
 			// 
@@ -1018,7 +1017,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_adressepersonnel->Size = System::Drawing::Size(150, 42);
 			this->label_adressepersonnel->TabIndex = 13;
 			this->label_adressepersonnel->Text = L"adresse";
-			this->label_adressepersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label3_Click);
 			// 
 			// text_adresse
 			// 
@@ -1027,7 +1025,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->text_adresse->Name = L"text_adresse";
 			this->text_adresse->Size = System::Drawing::Size(397, 26);
 			this->text_adresse->TabIndex = 12;
-			this->text_adresse->TextChanged += gcnew System::EventHandler(this, &Dashboard::text_adresse_TextChanged);
 			// 
 			// label_Superieur
 			// 
@@ -1040,7 +1037,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_Superieur->Size = System::Drawing::Size(150, 42);
 			this->label_Superieur->TabIndex = 11;
 			this->label_Superieur->Text = L"Superieur";
-			this->label_Superieur->Click += gcnew System::EventHandler(this, &Dashboard::label_Superieur_Click);
 			// 
 			// select_date_embauche
 			// 
@@ -1049,7 +1045,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->select_date_embauche->Name = L"select_date_embauche";
 			this->select_date_embauche->Size = System::Drawing::Size(253, 26);
 			this->select_date_embauche->TabIndex = 9;
-			this->select_date_embauche->ValueChanged += gcnew System::EventHandler(this, &Dashboard::select_date_embauche_ValueChanged);
 			// 
 			// label_date_embauche
 			// 
@@ -1062,7 +1057,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_date_embauche->Size = System::Drawing::Size(207, 42);
 			this->label_date_embauche->TabIndex = 8;
 			this->label_date_embauche->Text = L"date d\'embauche";
-			this->label_date_embauche->Click += gcnew System::EventHandler(this, &Dashboard::label_date_embauche_Click);
 			// 
 			// label_prenompersonnel
 			// 
@@ -1075,7 +1069,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_prenompersonnel->Size = System::Drawing::Size(150, 42);
 			this->label_prenompersonnel->TabIndex = 6;
 			this->label_prenompersonnel->Text = L"prenom";
-			this->label_prenompersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label_pernom_Click);
 			// 
 			// text_pernom
 			// 
@@ -1084,7 +1077,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->text_pernom->Name = L"text_pernom";
 			this->text_pernom->Size = System::Drawing::Size(199, 26);
 			this->text_pernom->TabIndex = 5;
-			this->text_pernom->TextChanged += gcnew System::EventHandler(this, &Dashboard::text_pernom_TextChanged);
 			// 
 			// label_nompersonnel
 			// 
@@ -1097,7 +1089,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_nompersonnel->Size = System::Drawing::Size(150, 42);
 			this->label_nompersonnel->TabIndex = 4;
 			this->label_nompersonnel->Text = L"nom";
-			this->label_nompersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label_nom_Click);
 			// 
 			// text_nom
 			// 
@@ -1106,7 +1097,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->text_nom->Name = L"text_nom";
 			this->text_nom->Size = System::Drawing::Size(199, 26);
 			this->text_nom->TabIndex = 3;
-			this->text_nom->TextChanged += gcnew System::EventHandler(this, &Dashboard::text_nom_TextChanged);
 			// 
 			// Label_Id_perso
 			// 
@@ -1119,7 +1109,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Label_Id_perso->Size = System::Drawing::Size(150, 42);
 			this->Label_Id_perso->TabIndex = 2;
 			this->Label_Id_perso->Text = L"Id Personnel";
-			this->Label_Id_perso->Click += gcnew System::EventHandler(this, &Dashboard::Label_Id_perso_Click);
 			// 
 			// text_personnel
 			// 
@@ -1128,7 +1117,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->text_personnel->Name = L"text_personnel";
 			this->text_personnel->Size = System::Drawing::Size(199, 26);
 			this->text_personnel->TabIndex = 1;
-			this->text_personnel->TextChanged += gcnew System::EventHandler(this, &Dashboard::text_personnel_TextChanged);
 			// 
 			// Title_Gestion_Personel
 			// 
@@ -1272,7 +1260,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Dashboard->Name = L"Panel_Dashboard";
 			this->Panel_Dashboard->Size = System::Drawing::Size(532, 1188);
 			this->Panel_Dashboard->TabIndex = 1;
-			this->Panel_Dashboard->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Dashboard_Paint);
 			// 
 			// Title_Dashboard
 			// 
@@ -1334,6 +1321,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Gestion_Client->Size = System::Drawing::Size(1803, 1254);
 			this->Panel_Gestion_Client->TabIndex = 3;
 			this->Panel_Gestion_Client->Visible = false;
+			this->Panel_Gestion_Client->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Client_Paint);
 			// 
 			// button1_nouveau
 			// 
@@ -1361,6 +1349,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->button1_nouveau->Size = System::Drawing::Size(273, 72);
 			this->button1_nouveau->TabIndex = 122;
 			this->button1_nouveau->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button1_nouveau->Click += gcnew System::EventHandler(this, &Dashboard::button1_nouveau_Click);
 			// 
 			// button1_supprimer
 			// 
@@ -1388,6 +1377,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->button1_supprimer->Size = System::Drawing::Size(273, 72);
 			this->button1_supprimer->TabIndex = 53;
 			this->button1_supprimer->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button1_supprimer->Click += gcnew System::EventHandler(this, &Dashboard::button1_supprimer_Click);
 			// 
 			// button1_modiffier
 			// 
@@ -1415,6 +1405,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->button1_modiffier->Size = System::Drawing::Size(275, 72);
 			this->button1_modiffier->TabIndex = 52;
 			this->button1_modiffier->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button1_modiffier->Click += gcnew System::EventHandler(this, &Dashboard::button1_modiffier_Click);
 			// 
 			// button1_ajouter
 			// 
@@ -1442,6 +1433,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->button1_ajouter->Size = System::Drawing::Size(274, 72);
 			this->button1_ajouter->TabIndex = 51;
 			this->button1_ajouter->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button1_ajouter->Click += gcnew System::EventHandler(this, &Dashboard::button1_ajouter_Click);
 			// 
 			// button1_afficher
 			// 
@@ -1469,6 +1461,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->button1_afficher->Size = System::Drawing::Size(271, 72);
 			this->button1_afficher->TabIndex = 50;
 			this->button1_afficher->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button1_afficher->Click += gcnew System::EventHandler(this, &Dashboard::button1_afficher_Click);
 			// 
 			// labelpaysfacturation
 			// 
@@ -1698,7 +1691,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->labelidadresselivraison->Size = System::Drawing::Size(104, 28);
 			this->labelidadresselivraison->TabIndex = 20;
 			this->labelidadresselivraison->Text = L"ID Adresse";
-			this->labelidadresselivraison->Click += gcnew System::EventHandler(this, &Dashboard::label11_Click);
 			// 
 			// text_adressepostalelivraison
 			// 
@@ -1907,10 +1899,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_refcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView_gestcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->Title_Gestion_Commandes);
-			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(426, 57);
+			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(2072, 54);
 			this->Panel_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Commandes->Name = L"Panel_Gestion_Commandes";
-			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(1824, 1292);
+			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(178, 1295);
 			this->Panel_Gestion_Commandes->TabIndex = 4;
 			this->Panel_Gestion_Commandes->Visible = false;
 			// 
@@ -2612,10 +2604,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->panel_Gestion_Stock->Controls->Add(this->text_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->label_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(415, 50);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(1980, 46);
 			this->panel_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(1858, 1312);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(293, 1316);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
@@ -2953,10 +2945,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Gestion_Stat->Controls->Add(this->dataGridView2);
 			this->Panel_Gestion_Stat->Controls->Add(this->Title_Gestion_Stat);
 			this->Panel_Gestion_Stat->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Panel_Gestion_Stat->Location = System::Drawing::Point(403, 37);
+			this->Panel_Gestion_Stat->Location = System::Drawing::Point(2036, 32);
 			this->Panel_Gestion_Stat->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Stat->Name = L"Panel_Gestion_Stat";
-			this->Panel_Gestion_Stat->Size = System::Drawing::Size(1894, 1341);
+			this->Panel_Gestion_Stat->Size = System::Drawing::Size(261, 1346);
 			this->Panel_Gestion_Stat->TabIndex = 5;
 			this->Panel_Gestion_Stat->Visible = false;
 			this->Panel_Gestion_Stat->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Stat_Paint);
@@ -3433,59 +3425,45 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 				choice_departement->TabIndex = 0;
 				this->textBox_code_postal->Clear();
 			}
-private: System::Void Panel_Dashboard_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
-private: System::Void panel_Gestion_Personnel_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
+				
+			private: System::Void panel_Gestion_Personnel_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+			}
+	
+			private: System::Void Panel_Gestion_Stat_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+			}
+			private: System::Void Panel_Gestion_Client_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+				
+				this->ds = gcnew Data::DataSet();
+				this->processusClient = gcnew NS_Svc::Svc_gestionClient;
+				this->text1_message->Text = "Data chargées";
+			}
+			private: System::Void button1_nouveau_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->text_idclient->Clear();
+				this->text_nomclient->Clear();
+				this->text_prenomclient->Clear();
+				this->text_datenaissance->Clear();
+				this->text_idadresselivraison->Clear();
+				this->text_adressepostalelivraison->Clear();
+				this->text_codepostalelivraison->Clear();
+				this->text_villelivraison->Clear();
+				this->text_payslivraison->Clear();
+				this->text_idadressefacturation->Clear();
+				this->text_adressepostalefacturation->Clear();
+				this->text_codepostalefacturation->Clear();
+				this->text_villefacturation->Clear();
+				this->text_paysfacturation->Clear();
+				this->text1_message->Text = "Veuillez saisir les information du client et appuyer sur le mode que vous voulez";
+			}
+			private: System::Void button1_modiffier_Click(System::Object^ sender, System::EventArgs^ e) {
+			}
+			private: System::Void button1_ajouter_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->processusClient->ajouter(this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, this->text_adressepostalefacturation->Text,  this->text_villefacturation->Text, this->text_paysfacturation->Text, Convert::ToInt32(this->text_codepostalefacturation->Text));
+				this->text1_message->Text = "Ajouté avec succès";
+			}
+			private: System::Void button1_afficher_Click(System::Object^ sender, System::EventArgs^ e) {
+			}
+			private: System::Void button1_supprimer_Click(System::Object^ sender, System::EventArgs^ e) {
+			}
 
-
-private: System::Void label11_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void text_ville_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void Label_Id_perso_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void text_personnel_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void text_nom_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label_nom_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label_pernom_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void text_pernom_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label_Superieur_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void choice_superieur_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void text_departement_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label_departement_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void textBox_code_postal_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void text_adresse_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void select_date_embauche_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label_date_embauche_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void button_enregistrer_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-
-
-
-
-
-
-private: System::Void Panel_Gestion_Stat_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
 };
 }

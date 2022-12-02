@@ -125,16 +125,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CL_CAD.cpp" />
     <ClCompile Include="Dashboard.cpp" />
     <ClCompile Include="login.cpp" />
+    <ClCompile Include="Map_Adresse.cpp" />
+    <ClCompile Include="Map_Client.cpp" />
+    <ClCompile Include="Map_Personne.cpp" />
+    <ClCompile Include="Svc_gestionClient.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CL_CAD.h" />
     <ClInclude Include="Dashboard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Map_Adresse.h" />
+    <ClInclude Include="Map_Client.h" />
+    <ClInclude Include="Map_Personne.h" />
+    <ClInclude Include="Svc_gestionClient.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">
