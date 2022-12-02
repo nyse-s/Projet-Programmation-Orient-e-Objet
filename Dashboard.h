@@ -339,6 +339,37 @@ private: System::Windows::Forms::TextBox^ text_idadlivcommande;
 
 
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton29;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton28;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton27;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton26;
+
+
+
+
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton21;
+
+
+
+
+
+
+private: System::Windows::Forms::Label^ label12;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton22;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton23;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton24;
+private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
+private: System::Windows::Forms::TextBox^ textBox11;
+private: System::Windows::Forms::Label^ label18;
+private: System::Windows::Forms::Label^ label19;
+private: System::Windows::Forms::Label^ label20;
+private: System::Windows::Forms::Label^ label21;
+private: System::Windows::Forms::TextBox^ textBox16;
+private: System::Windows::Forms::TextBox^ textBox17;
+private: System::Windows::Forms::TextBox^ textBox18;
+
+private: System::Windows::Forms::DataGridView^ dataGridView2;
+private: System::Windows::Forms::ComboBox^ comboBox_TVAStat;
 
 
 
@@ -530,6 +561,26 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			this->title_Gestion_Stock = (gcnew System::Windows::Forms::Label());
 			this->Panel_Gestion_Stat = (gcnew System::Windows::Forms::Panel());
 			this->Title_Gestion_Stat = (gcnew System::Windows::Forms::Label());
+			this->bunifuThinButton21 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->bunifuThinButton22 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->bunifuThinButton23 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->bunifuThinButton24 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->bunifuThinButton25 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->label19 = (gcnew System::Windows::Forms::Label());
+			this->label20 = (gcnew System::Windows::Forms::Label());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->textBox16 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox17 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox18 = (gcnew System::Windows::Forms::TextBox());
+			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
+			this->bunifuThinButton26 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->bunifuThinButton27 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->bunifuThinButton28 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->bunifuThinButton29 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->comboBox_TVAStat = (gcnew System::Windows::Forms::ComboBox());
 			this->panel_Gestion_Personnel->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->panel_gestion->SuspendLayout();
@@ -540,6 +591,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView_gestcommande))->BeginInit();
 			this->panel_Gestion_Stock->SuspendLayout();
 			this->Panel_Gestion_Stat->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label_gestpersonnel
@@ -593,10 +645,10 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			this->panel_Gestion_Personnel->Controls->Add(this->Label_Id_perso);
 			this->panel_Gestion_Personnel->Controls->Add(this->text_personnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->Title_Gestion_Personel);
-			this->panel_Gestion_Personnel->Location = System::Drawing::Point(1631, 896);
+			this->panel_Gestion_Personnel->Location = System::Drawing::Point(387, 1143);
 			this->panel_Gestion_Personnel->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_Gestion_Personnel->Name = L"panel_Gestion_Personnel";
-			this->panel_Gestion_Personnel->Size = System::Drawing::Size(533, 319);
+			this->panel_Gestion_Personnel->Size = System::Drawing::Size(797, 245);
 			this->panel_Gestion_Personnel->TabIndex = 2;
 			this->panel_Gestion_Personnel->Visible = false;
 			this->panel_Gestion_Personnel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::panel_Gestion_Personnel_Paint);
@@ -1007,9 +1059,9 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			this->Title_Gestion_Personel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_Gestion_Personel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_Gestion_Personel->Location = System::Drawing::Point(550, 54);
+			this->Title_Gestion_Personel->Location = System::Drawing::Point(131, 21);
 			this->Title_Gestion_Personel->Name = L"Title_Gestion_Personel";
-			this->Title_Gestion_Personel->Size = System::Drawing::Size(537, 97);
+			this->Title_Gestion_Personel->Size = System::Drawing::Size(956, 130);
 			this->Title_Gestion_Personel->TabIndex = 0;
 			this->Title_Gestion_Personel->Text = L"Gestion Personnel";
 			this->Title_Gestion_Personel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -2460,10 +2512,10 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			// panel_Gestion_Stock
 			// 
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(1651, 910);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(2259, 1049);
 			this->panel_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(521, 338);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(179, 357);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
@@ -2482,12 +2534,32 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			// Panel_Gestion_Stat
 			// 
 			this->Panel_Gestion_Stat->AccessibleRole = System::Windows::Forms::AccessibleRole::Pane;
+			this->Panel_Gestion_Stat->Controls->Add(this->comboBox_TVAStat);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton29);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton28);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton27);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton26);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton21);
+			this->Panel_Gestion_Stat->Controls->Add(this->label12);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton22);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton23);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton24);
+			this->Panel_Gestion_Stat->Controls->Add(this->bunifuThinButton25);
+			this->Panel_Gestion_Stat->Controls->Add(this->textBox11);
+			this->Panel_Gestion_Stat->Controls->Add(this->label18);
+			this->Panel_Gestion_Stat->Controls->Add(this->label19);
+			this->Panel_Gestion_Stat->Controls->Add(this->label20);
+			this->Panel_Gestion_Stat->Controls->Add(this->label21);
+			this->Panel_Gestion_Stat->Controls->Add(this->textBox16);
+			this->Panel_Gestion_Stat->Controls->Add(this->textBox17);
+			this->Panel_Gestion_Stat->Controls->Add(this->textBox18);
+			this->Panel_Gestion_Stat->Controls->Add(this->dataGridView2);
 			this->Panel_Gestion_Stat->Controls->Add(this->Title_Gestion_Stat);
 			this->Panel_Gestion_Stat->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Panel_Gestion_Stat->Location = System::Drawing::Point(1661, 920);
+			this->Panel_Gestion_Stat->Location = System::Drawing::Point(378, 19);
 			this->Panel_Gestion_Stat->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Stat->Name = L"Panel_Gestion_Stat";
-			this->Panel_Gestion_Stat->Size = System::Drawing::Size(503, 323);
+			this->Panel_Gestion_Stat->Size = System::Drawing::Size(1847, 1289);
 			this->Panel_Gestion_Stat->TabIndex = 5;
 			this->Panel_Gestion_Stat->Visible = false;
 			// 
@@ -2496,7 +2568,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			this->Title_Gestion_Stat->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 26.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_Gestion_Stat->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_Gestion_Stat->Location = System::Drawing::Point(308, 40);
+			this->Title_Gestion_Stat->Location = System::Drawing::Point(665, 57);
 			this->Title_Gestion_Stat->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->Title_Gestion_Stat->Name = L"Title_Gestion_Stat";
 			this->Title_Gestion_Stat->Size = System::Drawing::Size(561, 120);
@@ -2504,16 +2576,383 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			this->Title_Gestion_Stat->Text = L"Gestion Statistiques";
 			this->Title_Gestion_Stat->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// bunifuThinButton21
+			// 
+			this->bunifuThinButton21->ActiveBorderThickness = 1;
+			this->bunifuThinButton21->ActiveCornerRadius = 20;
+			this->bunifuThinButton21->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton21->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton21->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton21->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton21->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton21.BackgroundImage")));
+			this->bunifuThinButton21->ButtonText = L"Montant total d\'achat d\'un client";
+			this->bunifuThinButton21->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton21->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton21->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton21->IdleBorderThickness = 1;
+			this->bunifuThinButton21->IdleCornerRadius = 20;
+			this->bunifuThinButton21->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton21->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton21->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton21->Location = System::Drawing::Point(1154, 604);
+			this->bunifuThinButton21->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton21->Name = L"bunifuThinButton21";
+			this->bunifuThinButton21->Size = System::Drawing::Size(592, 72);
+			this->bunifuThinButton21->TabIndex = 167;
+			this->bunifuThinButton21->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->BackColor = System::Drawing::Color::Transparent;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
+			this->label12->ForeColor = System::Drawing::Color::White;
+			this->label12->Location = System::Drawing::Point(113, 232);
+			this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(645, 32);
+			this->label12->TabIndex = 149;
+			this->label12->Text = L"Calcul de la valeur commercial du stock avec variations";
+			// 
+			// bunifuThinButton22
+			// 
+			this->bunifuThinButton22->ActiveBorderThickness = 1;
+			this->bunifuThinButton22->ActiveCornerRadius = 20;
+			this->bunifuThinButton22->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton22->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton22->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton22->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton22->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton22.BackgroundImage")));
+			this->bunifuThinButton22->ButtonText = L"Chiffre d\'affaire ";
+			this->bunifuThinButton22->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton22->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton22->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton22->IdleBorderThickness = 1;
+			this->bunifuThinButton22->IdleCornerRadius = 20;
+			this->bunifuThinButton22->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton22->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton22->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton22->Location = System::Drawing::Point(1472, 243);
+			this->bunifuThinButton22->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton22->Name = L"bunifuThinButton22";
+			this->bunifuThinButton22->Size = System::Drawing::Size(273, 72);
+			this->bunifuThinButton22->TabIndex = 148;
+			this->bunifuThinButton22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// bunifuThinButton23
+			// 
+			this->bunifuThinButton23->ActiveBorderThickness = 1;
+			this->bunifuThinButton23->ActiveCornerRadius = 20;
+			this->bunifuThinButton23->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton23->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton23->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton23->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton23->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton23.BackgroundImage")));
+			this->bunifuThinButton23->ButtonText = L"Produits sous seuil réapprivisionnement";
+			this->bunifuThinButton23->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton23->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton23->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton23->IdleBorderThickness = 1;
+			this->bunifuThinButton23->IdleCornerRadius = 20;
+			this->bunifuThinButton23->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton23->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton23->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton23->Location = System::Drawing::Point(1153, 370);
+			this->bunifuThinButton23->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton23->Name = L"bunifuThinButton23";
+			this->bunifuThinButton23->Size = System::Drawing::Size(592, 72);
+			this->bunifuThinButton23->TabIndex = 147;
+			this->bunifuThinButton23->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// bunifuThinButton24
+			// 
+			this->bunifuThinButton24->ActiveBorderThickness = 1;
+			this->bunifuThinButton24->ActiveCornerRadius = 20;
+			this->bunifuThinButton24->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton24->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton24->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton24->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton24->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton24.BackgroundImage")));
+			this->bunifuThinButton24->ButtonText = L"Les 10 articles les plus vendus";
+			this->bunifuThinButton24->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton24->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton24->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton24->IdleBorderThickness = 1;
+			this->bunifuThinButton24->IdleCornerRadius = 20;
+			this->bunifuThinButton24->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton24->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton24->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton24->Location = System::Drawing::Point(1472, 496);
+			this->bunifuThinButton24->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton24->Name = L"bunifuThinButton24";
+			this->bunifuThinButton24->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton24->TabIndex = 146;
+			this->bunifuThinButton24->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// bunifuThinButton25
+			// 
+			this->bunifuThinButton25->ActiveBorderThickness = 1;
+			this->bunifuThinButton25->ActiveCornerRadius = 20;
+			this->bunifuThinButton25->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton25->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton25->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton25->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton25->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton25.BackgroundImage")));
+			this->bunifuThinButton25->ButtonText = L"Panier Moyen";
+			this->bunifuThinButton25->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton25->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton25->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton25->IdleBorderThickness = 1;
+			this->bunifuThinButton25->IdleCornerRadius = 20;
+			this->bunifuThinButton25->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton25->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton25->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton25->Location = System::Drawing::Point(1153, 243);
+			this->bunifuThinButton25->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton25->Name = L"bunifuThinButton25";
+			this->bunifuThinButton25->Size = System::Drawing::Size(271, 72);
+			this->bunifuThinButton25->TabIndex = 145;
+			this->bunifuThinButton25->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBox11
+			// 
+			this->textBox11->Location = System::Drawing::Point(59, 895);
+			this->textBox11->Margin = System::Windows::Forms::Padding(2);
+			this->textBox11->Multiline = true;
+			this->textBox11->Name = L"textBox11";
+			this->textBox11->ReadOnly = true;
+			this->textBox11->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox11->Size = System::Drawing::Size(1728, 58);
+			this->textBox11->TabIndex = 143;
+			// 
+			// label18
+			// 
+			this->label18->AutoSize = true;
+			this->label18->BackColor = System::Drawing::Color::Transparent;
+			this->label18->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label18->ForeColor = System::Drawing::Color::White;
+			this->label18->Location = System::Drawing::Point(144, 637);
+			this->label18->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(178, 28);
+			this->label18->TabIndex = 134;
+			this->label18->Text = L"Démarque inconnu";
+			// 
+			// label19
+			// 
+			this->label19->AutoSize = true;
+			this->label19->BackColor = System::Drawing::Color::Transparent;
+			this->label19->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label19->ForeColor = System::Drawing::Color::White;
+			this->label19->Location = System::Drawing::Point(144, 523);
+			this->label19->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label19->Name = L"label19";
+			this->label19->Size = System::Drawing::Size(179, 28);
+			this->label19->TabIndex = 133;
+			this->label19->Text = L"Remise commercial";
+			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->BackColor = System::Drawing::Color::Transparent;
+			this->label20->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label20->ForeColor = System::Drawing::Color::White;
+			this->label20->Location = System::Drawing::Point(144, 410);
+			this->label20->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(175, 28);
+			this->label20->TabIndex = 132;
+			this->label20->Text = L"Marge commercial";
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->BackColor = System::Drawing::Color::Transparent;
+			this->label21->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label21->ForeColor = System::Drawing::Color::White;
+			this->label21->Location = System::Drawing::Point(144, 298);
+			this->label21->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(46, 28);
+			this->label21->TabIndex = 131;
+			this->label21->Text = L"TVA";
+			// 
+			// textBox16
+			// 
+			this->textBox16->Location = System::Drawing::Point(149, 440);
+			this->textBox16->Margin = System::Windows::Forms::Padding(2);
+			this->textBox16->Name = L"textBox16";
+			this->textBox16->Size = System::Drawing::Size(593, 26);
+			this->textBox16->TabIndex = 130;
+			// 
+			// textBox17
+			// 
+			this->textBox17->Location = System::Drawing::Point(149, 668);
+			this->textBox17->Margin = System::Windows::Forms::Padding(2);
+			this->textBox17->Name = L"textBox17";
+			this->textBox17->Size = System::Drawing::Size(593, 26);
+			this->textBox17->TabIndex = 129;
+			// 
+			// textBox18
+			// 
+			this->textBox18->Location = System::Drawing::Point(149, 553);
+			this->textBox18->Margin = System::Windows::Forms::Padding(2);
+			this->textBox18->Name = L"textBox18";
+			this->textBox18->Size = System::Drawing::Size(593, 26);
+			this->textBox18->TabIndex = 128;
+			// 
+			// dataGridView2
+			// 
+			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView2->Location = System::Drawing::Point(57, 967);
+			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView2->Name = L"dataGridView2";
+			this->dataGridView2->RowHeadersWidth = 62;
+			this->dataGridView2->RowTemplate->Height = 28;
+			this->dataGridView2->Size = System::Drawing::Size(1730, 272);
+			this->dataGridView2->TabIndex = 126;
+			// 
+			// bunifuThinButton26
+			// 
+			this->bunifuThinButton26->ActiveBorderThickness = 1;
+			this->bunifuThinButton26->ActiveCornerRadius = 20;
+			this->bunifuThinButton26->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton26->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton26->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton26->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton26->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton26.BackgroundImage")));
+			this->bunifuThinButton26->ButtonText = L"Les 10 articles les moins vendus";
+			this->bunifuThinButton26->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton26->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton26->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton26->IdleBorderThickness = 1;
+			this->bunifuThinButton26->IdleCornerRadius = 20;
+			this->bunifuThinButton26->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton26->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton26->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton26->Location = System::Drawing::Point(1154, 496);
+			this->bunifuThinButton26->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton26->Name = L"bunifuThinButton26";
+			this->bunifuThinButton26->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton26->TabIndex = 172;
+			this->bunifuThinButton26->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// bunifuThinButton27
+			// 
+			this->bunifuThinButton27->ActiveBorderThickness = 1;
+			this->bunifuThinButton27->ActiveCornerRadius = 20;
+			this->bunifuThinButton27->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton27->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton27->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton27->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton27->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton27.BackgroundImage")));
+			this->bunifuThinButton27->ButtonText = L"Valeur Commercial du Stock";
+			this->bunifuThinButton27->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton27->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton27->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton27->IdleBorderThickness = 1;
+			this->bunifuThinButton27->IdleCornerRadius = 20;
+			this->bunifuThinButton27->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton27->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton27->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton27->Location = System::Drawing::Point(1472, 716);
+			this->bunifuThinButton27->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton27->Name = L"bunifuThinButton27";
+			this->bunifuThinButton27->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton27->TabIndex = 173;
+			this->bunifuThinButton27->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// bunifuThinButton28
+			// 
+			this->bunifuThinButton28->ActiveBorderThickness = 1;
+			this->bunifuThinButton28->ActiveCornerRadius = 20;
+			this->bunifuThinButton28->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton28->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton28->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton28->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton28->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton28.BackgroundImage")));
+			this->bunifuThinButton28->ButtonText = L"Valeur d\'Achat du Stock";
+			this->bunifuThinButton28->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton28->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton28->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton28->IdleBorderThickness = 1;
+			this->bunifuThinButton28->IdleCornerRadius = 20;
+			this->bunifuThinButton28->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton28->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton28->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton28->Location = System::Drawing::Point(1154, 716);
+			this->bunifuThinButton28->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton28->Name = L"bunifuThinButton28";
+			this->bunifuThinButton28->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton28->TabIndex = 174;
+			this->bunifuThinButton28->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// bunifuThinButton29
+			// 
+			this->bunifuThinButton29->ActiveBorderThickness = 1;
+			this->bunifuThinButton29->ActiveCornerRadius = 20;
+			this->bunifuThinButton29->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton29->ActiveForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton29->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->bunifuThinButton29->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->bunifuThinButton29->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton29.BackgroundImage")));
+			this->bunifuThinButton29->ButtonText = L"Valeur Commercial (Variations)";
+			this->bunifuThinButton29->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->bunifuThinButton29->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->bunifuThinButton29->ForeColor = System::Drawing::Color::White;
+			this->bunifuThinButton29->IdleBorderThickness = 1;
+			this->bunifuThinButton29->IdleCornerRadius = 20;
+			this->bunifuThinButton29->IdleFillColor = System::Drawing::Color::Transparent;
+			this->bunifuThinButton29->IdleForecolor = System::Drawing::Color::White;
+			this->bunifuThinButton29->IdleLineColor = System::Drawing::Color::White;
+			this->bunifuThinButton29->Location = System::Drawing::Point(149, 759);
+			this->bunifuThinButton29->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton29->Name = L"bunifuThinButton29";
+			this->bunifuThinButton29->Size = System::Drawing::Size(592, 72);
+			this->bunifuThinButton29->TabIndex = 175;
+			this->bunifuThinButton29->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// comboBox_TVAStat
+			// 
+			this->comboBox_TVAStat->FormattingEnabled = true;
+			this->comboBox_TVAStat->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"1", L"2", L"3" });
+			this->comboBox_TVAStat->Location = System::Drawing::Point(149, 329);
+			this->comboBox_TVAStat->Name = L"comboBox_TVAStat";
+			this->comboBox_TVAStat->Size = System::Drawing::Size(593, 28);
+			this->comboBox_TVAStat->TabIndex = 176;
+			// 
 			// Dashboard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
 				static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->ClientSize = System::Drawing::Size(2308, 1437);
+			this->ClientSize = System::Drawing::Size(2451, 1437);
 			this->Controls->Add(this->panel_Gestion_Personnel);
-			this->Controls->Add(this->Panel_Gestion_Stat);
 			this->Controls->Add(this->panel_Gestion_Stock);
+			this->Controls->Add(this->Panel_Gestion_Stat);
 			this->Controls->Add(this->Panel_Gestion_Commandes);
 			this->Controls->Add(this->Panel_Gestion_Client);
 			this->Controls->Add(this->panel_gestion);
@@ -2535,6 +2974,8 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView_gestcommande))->EndInit();
 			this->panel_Gestion_Stock->ResumeLayout(false);
 			this->Panel_Gestion_Stat->ResumeLayout(false);
+			this->Panel_Gestion_Stat->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -2638,6 +3079,8 @@ private: System::Void label_date_embauche_Click(System::Object^ sender, System::
 }
 private: System::Void button_enregistrer_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+
+
 
 
 
