@@ -7,6 +7,7 @@ Map_Adresse::Map_Adresse(void)
 	this->code_postal = -1;
 	this->ville = "RIEN";
 	this->pays = "RIEN";
+	
 }
 
 String^ Map_Adresse::SELECT(void)

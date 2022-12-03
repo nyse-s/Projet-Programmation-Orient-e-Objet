@@ -101,12 +101,13 @@ namespace POO {
 
 	private: System::Windows::Forms::TextBox^ textBox_code_postal;
 	private: System::Windows::Forms::Label^ label_villepersonnel;
+	private: System::Windows::Forms::Label^ labelpaysadresse;
 
 
 
 
 
-	private: System::Windows::Forms::Label^ labelpayslivraison;
+
 	private: System::Windows::Forms::Label^ label_adressepersonnel;
 
 
@@ -145,28 +146,39 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ btn_nouveau_Personnel;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ ville;
 private: System::Windows::Forms::DataGridViewComboBoxColumn^ pays;
 private: System::Windows::Forms::DataGridViewComboBoxColumn^ code_postal;
+private: System::Windows::Forms::Label^ labelvilleadresse;
+private: System::Windows::Forms::Label^ labelcodepostaleadresse;
 
 
 
 
-	private: System::Windows::Forms::Label^ labelvillelivraison;
-
-	private: System::Windows::Forms::Label^ labelcodepostalelivraison;
-
-	private: System::Windows::Forms::Label^ labeladressepostlivraison;
-
-	private: System::Windows::Forms::Label^ labelidadresselivraison;
-	private: System::Windows::Forms::TextBox^ text_adressepostalelivraison;
-	private: System::Windows::Forms::TextBox^ text_payslivraison;
 
 
 
-	private: System::Windows::Forms::TextBox^ text_villelivraison;
-private: System::Windows::Forms::TextBox^ text_codepostalelivraison;
+
+
+private: System::Windows::Forms::Label^ labeladressepost;
+
+
+private: System::Windows::Forms::Label^ labelidadresse;
+private: System::Windows::Forms::TextBox^ text_adressepostale;
+private: System::Windows::Forms::TextBox^ text_paysadresse;
 
 
 
-	private: System::Windows::Forms::TextBox^ text_idadresselivraison;
+
+private: System::Windows::Forms::TextBox^ text_villeadresse;
+
+
+
+
+private: System::Windows::Forms::TextBox^ text_codepostaleadresse;
+
+private: System::Windows::Forms::TextBox^ text_idadresse;
+
+
+
+
 
 
 
@@ -462,6 +474,7 @@ private: System::Windows::Forms::ComboBox^ choice_typeadresse;
 private: System::Windows::Forms::Label^ label_typeadresse;
 
 
+
 	private:
 		/// <summary>
 		/// Variable nécessaire au concepteur.
@@ -532,16 +545,16 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelchampclient = (gcnew System::Windows::Forms::Label());
 			this->label_adresselivraison = (gcnew System::Windows::Forms::Label());
 			this->text1_message = (gcnew System::Windows::Forms::TextBox());
-			this->labelpayslivraison = (gcnew System::Windows::Forms::Label());
-			this->labelvillelivraison = (gcnew System::Windows::Forms::Label());
-			this->labelcodepostalelivraison = (gcnew System::Windows::Forms::Label());
-			this->labeladressepostlivraison = (gcnew System::Windows::Forms::Label());
-			this->labelidadresselivraison = (gcnew System::Windows::Forms::Label());
-			this->text_adressepostalelivraison = (gcnew System::Windows::Forms::TextBox());
-			this->text_payslivraison = (gcnew System::Windows::Forms::TextBox());
-			this->text_villelivraison = (gcnew System::Windows::Forms::TextBox());
-			this->text_codepostalelivraison = (gcnew System::Windows::Forms::TextBox());
-			this->text_idadresselivraison = (gcnew System::Windows::Forms::TextBox());
+			this->labelpaysadresse = (gcnew System::Windows::Forms::Label());
+			this->labelvilleadresse = (gcnew System::Windows::Forms::Label());
+			this->labelcodepostaleadresse = (gcnew System::Windows::Forms::Label());
+			this->labeladressepost = (gcnew System::Windows::Forms::Label());
+			this->labelidadresse = (gcnew System::Windows::Forms::Label());
+			this->text_adressepostale = (gcnew System::Windows::Forms::TextBox());
+			this->text_paysadresse = (gcnew System::Windows::Forms::TextBox());
+			this->text_villeadresse = (gcnew System::Windows::Forms::TextBox());
+			this->text_codepostaleadresse = (gcnew System::Windows::Forms::TextBox());
+			this->text_idadresse = (gcnew System::Windows::Forms::TextBox());
 			this->labeldatenaissance = (gcnew System::Windows::Forms::Label());
 			this->labelprenomclient = (gcnew System::Windows::Forms::Label());
 			this->labelnomclient = (gcnew System::Windows::Forms::Label());
@@ -1281,16 +1294,16 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Panel_Gestion_Client->Controls->Add(this->labelchampclient);
 			this->Panel_Gestion_Client->Controls->Add(this->label_adresselivraison);
 			this->Panel_Gestion_Client->Controls->Add(this->text1_message);
-			this->Panel_Gestion_Client->Controls->Add(this->labelpayslivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->labelvillelivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->labelcodepostalelivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->labeladressepostlivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->labelidadresselivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->text_adressepostalelivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->text_payslivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->text_villelivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->text_codepostalelivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->text_idadresselivraison);
+			this->Panel_Gestion_Client->Controls->Add(this->labelpaysadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->labelvilleadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->labelcodepostaleadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->labeladressepost);
+			this->Panel_Gestion_Client->Controls->Add(this->labelidadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->text_adressepostale);
+			this->Panel_Gestion_Client->Controls->Add(this->text_paysadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->text_villeadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->text_codepostaleadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->text_idadresse);
 			this->Panel_Gestion_Client->Controls->Add(this->labeldatenaissance);
 			this->Panel_Gestion_Client->Controls->Add(this->labelprenomclient);
 			this->Panel_Gestion_Client->Controls->Add(this->labelnomclient);
@@ -1312,7 +1325,8 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// choice_typeadresse
 			// 
 			this->choice_typeadresse->FormattingEnabled = true;
-			this->choice_typeadresse->Location = System::Drawing::Point(1083, 345);
+			this->choice_typeadresse->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Facturation", L"Livraison" });
+			this->choice_typeadresse->Location = System::Drawing::Point(1083, 348);
 			this->choice_typeadresse->Name = L"choice_typeadresse";
 			this->choice_typeadresse->Size = System::Drawing::Size(172, 28);
 			this->choice_typeadresse->TabIndex = 125;
@@ -1507,115 +1521,115 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->text1_message->Size = System::Drawing::Size(1736, 58);
 			this->text1_message->TabIndex = 36;
 			// 
-			// labelpayslivraison
+			// labelpaysadresse
 			// 
-			this->labelpayslivraison->AutoSize = true;
-			this->labelpayslivraison->BackColor = System::Drawing::Color::Transparent;
-			this->labelpayslivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->labelpaysadresse->AutoSize = true;
+			this->labelpaysadresse->BackColor = System::Drawing::Color::Transparent;
+			this->labelpaysadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelpayslivraison->ForeColor = System::Drawing::Color::White;
-			this->labelpayslivraison->Location = System::Drawing::Point(798, 646);
-			this->labelpayslivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelpayslivraison->Name = L"labelpayslivraison";
-			this->labelpayslivraison->Size = System::Drawing::Size(50, 28);
-			this->labelpayslivraison->TabIndex = 24;
-			this->labelpayslivraison->Text = L"Pays";
+			this->labelpaysadresse->ForeColor = System::Drawing::Color::White;
+			this->labelpaysadresse->Location = System::Drawing::Point(798, 646);
+			this->labelpaysadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelpaysadresse->Name = L"labelpaysadresse";
+			this->labelpaysadresse->Size = System::Drawing::Size(50, 28);
+			this->labelpaysadresse->TabIndex = 24;
+			this->labelpaysadresse->Text = L"Pays";
 			// 
-			// labelvillelivraison
+			// labelvilleadresse
 			// 
-			this->labelvillelivraison->AutoSize = true;
-			this->labelvillelivraison->BackColor = System::Drawing::Color::Transparent;
-			this->labelvillelivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->labelvilleadresse->AutoSize = true;
+			this->labelvilleadresse->BackColor = System::Drawing::Color::Transparent;
+			this->labelvilleadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelvillelivraison->ForeColor = System::Drawing::Color::White;
-			this->labelvillelivraison->Location = System::Drawing::Point(798, 572);
-			this->labelvillelivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelvillelivraison->Name = L"labelvillelivraison";
-			this->labelvillelivraison->Size = System::Drawing::Size(49, 28);
-			this->labelvillelivraison->TabIndex = 23;
-			this->labelvillelivraison->Text = L"Ville";
+			this->labelvilleadresse->ForeColor = System::Drawing::Color::White;
+			this->labelvilleadresse->Location = System::Drawing::Point(798, 572);
+			this->labelvilleadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelvilleadresse->Name = L"labelvilleadresse";
+			this->labelvilleadresse->Size = System::Drawing::Size(49, 28);
+			this->labelvilleadresse->TabIndex = 23;
+			this->labelvilleadresse->Text = L"Ville";
 			// 
-			// labelcodepostalelivraison
+			// labelcodepostaleadresse
 			// 
-			this->labelcodepostalelivraison->AutoSize = true;
-			this->labelcodepostalelivraison->BackColor = System::Drawing::Color::Transparent;
-			this->labelcodepostalelivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->labelcodepostaleadresse->AutoSize = true;
+			this->labelcodepostaleadresse->BackColor = System::Drawing::Color::Transparent;
+			this->labelcodepostaleadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelcodepostalelivraison->ForeColor = System::Drawing::Color::White;
-			this->labelcodepostalelivraison->Location = System::Drawing::Point(798, 486);
-			this->labelcodepostalelivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelcodepostalelivraison->Name = L"labelcodepostalelivraison";
-			this->labelcodepostalelivraison->Size = System::Drawing::Size(125, 28);
-			this->labelcodepostalelivraison->TabIndex = 22;
-			this->labelcodepostalelivraison->Text = L"Code Postale";
+			this->labelcodepostaleadresse->ForeColor = System::Drawing::Color::White;
+			this->labelcodepostaleadresse->Location = System::Drawing::Point(798, 486);
+			this->labelcodepostaleadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelcodepostaleadresse->Name = L"labelcodepostaleadresse";
+			this->labelcodepostaleadresse->Size = System::Drawing::Size(125, 28);
+			this->labelcodepostaleadresse->TabIndex = 22;
+			this->labelcodepostaleadresse->Text = L"Code Postale";
 			// 
-			// labeladressepostlivraison
+			// labeladressepost
 			// 
-			this->labeladressepostlivraison->AutoSize = true;
-			this->labeladressepostlivraison->BackColor = System::Drawing::Color::Transparent;
-			this->labeladressepostlivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->labeladressepost->AutoSize = true;
+			this->labeladressepost->BackColor = System::Drawing::Color::Transparent;
+			this->labeladressepost->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labeladressepostlivraison->ForeColor = System::Drawing::Color::White;
-			this->labeladressepostlivraison->Location = System::Drawing::Point(798, 404);
-			this->labeladressepostlivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labeladressepostlivraison->Name = L"labeladressepostlivraison";
-			this->labeladressepostlivraison->Size = System::Drawing::Size(147, 28);
-			this->labeladressepostlivraison->TabIndex = 21;
-			this->labeladressepostlivraison->Text = L"Adresse Postale";
+			this->labeladressepost->ForeColor = System::Drawing::Color::White;
+			this->labeladressepost->Location = System::Drawing::Point(798, 404);
+			this->labeladressepost->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labeladressepost->Name = L"labeladressepost";
+			this->labeladressepost->Size = System::Drawing::Size(147, 28);
+			this->labeladressepost->TabIndex = 21;
+			this->labeladressepost->Text = L"Adresse Postale";
 			// 
-			// labelidadresselivraison
+			// labelidadresse
 			// 
-			this->labelidadresselivraison->AutoSize = true;
-			this->labelidadresselivraison->BackColor = System::Drawing::Color::Transparent;
-			this->labelidadresselivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->labelidadresse->AutoSize = true;
+			this->labelidadresse->BackColor = System::Drawing::Color::Transparent;
+			this->labelidadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelidadresselivraison->ForeColor = System::Drawing::Color::White;
-			this->labelidadresselivraison->Location = System::Drawing::Point(798, 317);
-			this->labelidadresselivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelidadresselivraison->Name = L"labelidadresselivraison";
-			this->labelidadresselivraison->Size = System::Drawing::Size(104, 28);
-			this->labelidadresselivraison->TabIndex = 20;
-			this->labelidadresselivraison->Text = L"ID Adresse";
+			this->labelidadresse->ForeColor = System::Drawing::Color::White;
+			this->labelidadresse->Location = System::Drawing::Point(798, 317);
+			this->labelidadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelidadresse->Name = L"labelidadresse";
+			this->labelidadresse->Size = System::Drawing::Size(104, 28);
+			this->labelidadresse->TabIndex = 20;
+			this->labelidadresse->Text = L"ID Adresse";
 			// 
-			// text_adressepostalelivraison
+			// text_adressepostale
 			// 
-			this->text_adressepostalelivraison->Location = System::Drawing::Point(795, 434);
-			this->text_adressepostalelivraison->Margin = System::Windows::Forms::Padding(2);
-			this->text_adressepostalelivraison->Name = L"text_adressepostalelivraison";
-			this->text_adressepostalelivraison->Size = System::Drawing::Size(224, 26);
-			this->text_adressepostalelivraison->TabIndex = 19;
+			this->text_adressepostale->Location = System::Drawing::Point(795, 434);
+			this->text_adressepostale->Margin = System::Windows::Forms::Padding(2);
+			this->text_adressepostale->Name = L"text_adressepostale";
+			this->text_adressepostale->Size = System::Drawing::Size(224, 26);
+			this->text_adressepostale->TabIndex = 19;
 			// 
-			// text_payslivraison
+			// text_paysadresse
 			// 
-			this->text_payslivraison->Location = System::Drawing::Point(795, 676);
-			this->text_payslivraison->Margin = System::Windows::Forms::Padding(2);
-			this->text_payslivraison->Name = L"text_payslivraison";
-			this->text_payslivraison->Size = System::Drawing::Size(224, 26);
-			this->text_payslivraison->TabIndex = 18;
+			this->text_paysadresse->Location = System::Drawing::Point(795, 676);
+			this->text_paysadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_paysadresse->Name = L"text_paysadresse";
+			this->text_paysadresse->Size = System::Drawing::Size(224, 26);
+			this->text_paysadresse->TabIndex = 18;
 			// 
-			// text_villelivraison
+			// text_villeadresse
 			// 
-			this->text_villelivraison->Location = System::Drawing::Point(795, 602);
-			this->text_villelivraison->Margin = System::Windows::Forms::Padding(2);
-			this->text_villelivraison->Name = L"text_villelivraison";
-			this->text_villelivraison->Size = System::Drawing::Size(224, 26);
-			this->text_villelivraison->TabIndex = 17;
+			this->text_villeadresse->Location = System::Drawing::Point(795, 602);
+			this->text_villeadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_villeadresse->Name = L"text_villeadresse";
+			this->text_villeadresse->Size = System::Drawing::Size(224, 26);
+			this->text_villeadresse->TabIndex = 17;
 			// 
-			// text_codepostalelivraison
+			// text_codepostaleadresse
 			// 
-			this->text_codepostalelivraison->Location = System::Drawing::Point(795, 516);
-			this->text_codepostalelivraison->Margin = System::Windows::Forms::Padding(2);
-			this->text_codepostalelivraison->Name = L"text_codepostalelivraison";
-			this->text_codepostalelivraison->Size = System::Drawing::Size(224, 26);
-			this->text_codepostalelivraison->TabIndex = 16;
+			this->text_codepostaleadresse->Location = System::Drawing::Point(795, 516);
+			this->text_codepostaleadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_codepostaleadresse->Name = L"text_codepostaleadresse";
+			this->text_codepostaleadresse->Size = System::Drawing::Size(224, 26);
+			this->text_codepostaleadresse->TabIndex = 16;
 			// 
-			// text_idadresselivraison
+			// text_idadresse
 			// 
-			this->text_idadresselivraison->Location = System::Drawing::Point(795, 348);
-			this->text_idadresselivraison->Margin = System::Windows::Forms::Padding(2);
-			this->text_idadresselivraison->Name = L"text_idadresselivraison";
-			this->text_idadresselivraison->Size = System::Drawing::Size(224, 26);
-			this->text_idadresselivraison->TabIndex = 15;
+			this->text_idadresse->Location = System::Drawing::Point(795, 348);
+			this->text_idadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_idadresse->Name = L"text_idadresse";
+			this->text_idadresse->Size = System::Drawing::Size(224, 26);
+			this->text_idadresse->TabIndex = 15;
 			// 
 			// labeldatenaissance
 			// 
@@ -3327,17 +3341,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				this->text_nomclient->Clear();
 				this->text_prenomclient->Clear();
 				this->text_datenaissance->Clear();
-				this->text_idadresselivraison->Clear();
-				this->text_adressepostalelivraison->Clear();
-				this->text_codepostalelivraison->Clear();
-				this->text_villelivraison->Clear();
-				this->text_payslivraison->Clear();
+				this->text_idadresse->Clear();
+				this->text_adressepostale->Clear();
+				this->text_codepostaleadresse->Clear();
+				this->text_villeadresse->Clear();
+				this->text_paysadresse->Clear();
+				this->choice_typeadresse->TabIndex = 0;
+				
 				this->text1_message->Text = "Veuillez saisir les information du client et appuyer sur le mode que vous voulez";
 			}
 			private: System::Void button1_modiffier_Click(System::Object^ sender, System::EventArgs^ e) {
 			}
 			private: System::Void button1_ajouter_Click(System::Object^ sender, System::EventArgs^ e) {
-				this->processusClient->ajouter(, this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, this->text_adressepostalefacturation->Text,  this->text_villefacturation->Text, this->text_paysfacturation->Text, Convert::ToInt32(this->text_codepostalefacturation->Text), this->text_adressepostalelivraison->Text, this->text_villelivraison->Text, this->text_payslivraison->Text, Convert::ToInt32(this->text_codepostalelivraison->Text));
+				this->processusClient->ajouter(Convert::ToInt32(this->text_idclient->Text), this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, Convert::ToInt32(this->text_idadresse->Text), this->text_adressepostale->Text, this->text_villeadresse->Text, this->text_paysadresse->Text, Convert::ToInt32(this->text_codepostaleadresse->Text), this->choice_typeadresse->Text);
 				this->text1_message->Text = "Ajouté avec succès";
 			}
 			private: System::Void button1_afficher_Click(System::Object^ sender, System::EventArgs^ e) {

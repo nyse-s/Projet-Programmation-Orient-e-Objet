@@ -9,6 +9,7 @@ private:
 	String^ ville;
 	int code_postal;
 	String^ pays;
+	
 public:
 	Map_Adresse(void);
 	String^ SELECT(void);
@@ -20,10 +21,12 @@ public:
 	String^ getVille(void);
 	int getCodePostal(void);
 	String^ getPays(void);
+	
 	void setID_Adresse(int);
 	void setAdressePostale(String^);
 	void setVille(String^);
 	void setCodePostal(int);
 	void setPays(String^);
+	
 };
 

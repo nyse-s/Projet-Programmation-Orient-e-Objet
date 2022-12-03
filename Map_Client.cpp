@@ -3,19 +3,17 @@
 NS_Composants::Map_Client::Map_Client(void)
 {
     this->num_client = -1 ;
-	this->adresse_livraison = gcnew Map_Adresse;
-    this->adresse_facturation = gcnew Map_Adresse;
     this->date_naissance = "RIEN";
 }
 
 String^ NS_Composants::Map_Client::SELECT(void)
 {
-	return "SELECT client.id_client, prenom, nom, date_naissance, adressePostale, ville, pays, codePostale FROM ([POO].[dbo].[Client] AS client JOIN [POO].[dbo].[Adresse_facturation] AS adfact ON adfact.id_client = client.id_client) JOIN [POO].[dbo].[Adresse] AS adresse ON adresse.id_adresse = adfact.id_adresse; ";
+	return "SELECT client.id_client, prenom, nom, date_naissance, adressePostale, ville, pays, codePostale, libelle FROM ([POO].[dbo].[Client] AS client JOIN [POO].[dbo].[TypeAdresse] AS ad ON ad.id_client = client.id_client) JOIN [POO].[dbo].[Adresse] AS adresse ON adresse.id_adresse = ad.id_adresse; ";
 }
 
 String^ NS_Composants::Map_Client::INSERT(void)
 {
-	return "INSERT INTO [POO].[dbo].[Client](prenom, nom, date_naissance) VALUES (" + this->getNumClient() + ",'" + this->getPrenom() + "','" + this->getNom() + "','" + this->getDateNaissance() + "');SELECT @@IDENTITY; INSERT INTO [POO].[dbo].[Adresse_facturation](id_adresse, id_client) SELECT [Adresse].id_adresse, [Client].id_client FROM [POO].[dbo].[Adresse], [POO].[dbo].[Client] WHERE [Adresse].id_adresse = "+ this->adresse_facturation->getID_Adresse() + " AND [Client].id_client = " + this->getNumClient() +"; INSERT INTO [POO].[dbo].[Adresse_facturation](id_adresse, id_client) SELECT [Adresse].id_adresse, [Client].id_client FROM [POO].[dbo].[Adresse], [POO].[dbo].[Client] WHERE [Adresse].id_adresse = " + this->adresse_livraison->getID_Adresse() + " AND [Client].id_client = " + this->getNumClient() + "";
+	return "INSERT INTO [POO].[dbo].[Client](id_client, prenom, nom, date_naissance) VALUES (" + this->getNumClient() + ",'" + this->getPrenom() + "','" + this->getNom() + "','" + this->getDateNaissance() + "');SELECT @@IDENTITY; INSERT INTO [POO].[dbo].[TypeAdresse](id_adresse, id_client, libelle) SELECT [Adresse].id_adresse, [Client].id_client, [Typess].libelle FROM [POO].[dbo].[Adresse], [POO].[dbo].[Client], [POO].[dbo].[Typess]  WHERE [Typess].libelle = '"+ this->getTypeAdresse() + "';";
 }
 
 String^ NS_Composants::Map_Client::UPDATE(void)
@@ -43,6 +41,11 @@ String^ NS_Composants::Map_Client::getNom(void)
 String^ NS_Composants::Map_Client::getPrenom(void)
 {
 	return this->prenom;
+}
+
+String^ NS_Composants::Map_Client::getTypeAdresse(void)
+{
+	return this->TypeAdresse;
 }
 
 //Map_Adresse^ NS_Composants::Map_Client::getAdresseLivraison(void)
@@ -104,4 +107,12 @@ void NS_Composants::Map_Client::setPrenom(String^ prenom)
 void NS_Composants::Map_Client::setDateNaissance(String^ date_naissance)
 {
 	this->date_naissance = date_naissance;
+}
+
+void NS_Composants::Map_Client::setTypeAdresse(String^ type)
+{
+	if (type != "")
+	{
+		this->TypeAdresse = type;
+	}
 }

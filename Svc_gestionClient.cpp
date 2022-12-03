@@ -17,29 +17,23 @@ DataSet^ NS_Svc::Svc_gestionClient::listeClient(String^ dataTableName)
 }
 
 
-void NS_Svc::Svc_gestionClient::ajouter(int id_client, String^ prenom, String^ nom, String^ date_naissance, int id_adressefact, String^ adressepostalefacturation, String^ villefacturation, String^ paysfacturation, int codepostalfacturation, int id_adresseliv, String^ adressepostalelivraison, String^ villelivraison, String^ payslivraison, int codepostallivraison)
+void NS_Svc::Svc_gestionClient::ajouter(int id_client, String^ prenom, String^ nom, String^ date_naissance, int id_adresse, String^ adressepostale, String^ ville, String^ pays, int codepostal, String^ type)
 {
     String^ sql;
     String^ sql2;
-    String^ sql3;
+    //String^ sql3;
 	this->client->setNumClient(id_client);
     this->client->setNom(nom);
     this->client->setPrenom(prenom);
 	this->client->setDateNaissance(date_naissance);
-	this->adresse->setID_Adresse(id_adressefact);
-	this->adresse->setAdressePostale(adressepostalefacturation);
-	this->adresse->setVille(villefacturation);
-	this->adresse->setPays(paysfacturation);
-	this->adresse->setCodePostal(codepostalfacturation);
+	this->adresse->setID_Adresse(id_adresse);
+	this->adresse->setAdressePostale(adressepostale);
+	this->adresse->setVille(ville);
+	this->adresse->setPays(pays);
+	this->adresse->setCodePostal(codepostal);
+    this->client->setTypeAdresse(type);
     sql2 = this->adresse->INSERT();
     this->cad->actionRows(sql2);
-	this->adresse->setID_Adresse(id_adresseliv);
-    this->adresse->setAdressePostale(adressepostalelivraison);
-    this->adresse->setVille(villelivraison);
-    this->adresse->setPays(payslivraison);
-    this->adresse->setCodePostal(codepostallivraison);
-	sql3 = this->adresse->INSERT();
-	this->cad->actionRows(sql3);
     sql = this->client->INSERT();
     this->cad->actionRows(sql);
 }

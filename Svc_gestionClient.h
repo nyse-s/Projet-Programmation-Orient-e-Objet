@@ -16,7 +16,7 @@ namespace NS_Svc
 		Svc_gestionClient(void);
 		DataSet^ listeClient(String^);
 		//void rechercher(int, String^, String^, int, int);
-		void ajouter(int, String^, String^, String^,int, String^, String^, String^, int, int, String^, String^, String^, int);
+		void ajouter(int, String^, String^, String^,int, String^, String^, String^, int, String^);
 		void modifier(int, String^, String^, int, int);
 		void supprimer(int);
 	};
