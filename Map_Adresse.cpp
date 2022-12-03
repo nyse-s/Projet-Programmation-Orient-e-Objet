@@ -23,14 +23,12 @@ String^ Map_Adresse::INSERT(void)
 
 String^ Map_Adresse::UPDATE(void)
 {
-	throw gcnew System::NotImplementedException();
-	// TODO: insérer une instruction return ici
+	return "UPDATE [POO].[dbo].[Adresse] SET adressePostale = '" + this->getAdressePostale() + "', ville = '" + this->getVille() + "', pays = '" + this->getPays() + "', codePostale = " + this->getCodePostal() + " WHERE id_adresse = " + this->getID_Adresse() + ";";
 }
 
 String^ Map_Adresse::DELETE(void)
 {
-	throw gcnew System::NotImplementedException();
-	// TODO: insérer une instruction return ici
+	return "DELETE FROM [POO].[dbo].[Adresse] WHERE id_adresse = " + this->getID_Adresse() + ";";
 }
 
 int Map_Adresse::getID_Adresse(void)

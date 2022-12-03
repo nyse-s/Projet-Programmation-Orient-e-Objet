@@ -17,7 +17,8 @@ namespace NS_Composants
 		Map_Client(void);
 		String^ SELECT(void) ;
 		String^ INSERT(void) ;
-		String^ UPDATE(void) ;
+		String^ UPDATE(void);
+		String^ UPDATE2(void) ;
 		String^ DELETE(void) ;
 		int getNumClient(void);
 		String^ getNom(void);

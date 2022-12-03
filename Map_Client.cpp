@@ -18,14 +18,18 @@ String^ NS_Composants::Map_Client::INSERT(void)
 
 String^ NS_Composants::Map_Client::UPDATE(void)
 {
-    throw gcnew System::NotImplementedException();
-    // TODO: insérer une instruction return ici
+	return "UPDATE [POO].[dbo].[Client] SET  prenom = '" + this->getPrenom() + "', nom = '" + this->getNom() + "', date_naissance = '" + this->getDateNaissance() + "' WHERE id_client = " + this->getNumClient() + ";";
+}
+
+String^ NS_Composants::Map_Client::UPDATE2(void)
+{
+	return "UPDATE [POO].[dbo].[TypeAdresse] SET libelle = '"+ this->getTypeAdresse() + "' WHERE id_client = " + this->getNumClient() + ";";
 }
 
 String^ NS_Composants::Map_Client::DELETE(void)
 {
-    throw gcnew System::NotImplementedException();
-    // TODO: insérer une instruction return ici
+	return "DELETE FROM [POO].[dbo].[TypeAdresse] WHERE id_client = " + this->getNumClient() + "; DELETE FROM [POO].[dbo].[Client] WHERE id_client = " + this->getNumClient() + ";";
+	//DELETE FROM([POO].[dbo].[Client] AS c JOIN[POO].[dbo].[TypeAdresse] AS t ON c.id_client = t.id_client) JOIN[POO].[dbo].[Adresse] AS a ON a.id_adresse = t.id_adresse  WHERE t.id_client = " + this->getNumClient() + " AND t.id_adresse = "+  + " AND t.libelle = '" + this->getTypeAdresse() + "' AND c.id_client = " + this->getNumClient() + "
 }
 
 int NS_Composants::Map_Client::getNumClient(void)

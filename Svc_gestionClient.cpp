@@ -38,12 +38,37 @@ void NS_Svc::Svc_gestionClient::ajouter(int id_client, String^ prenom, String^ n
     this->cad->actionRows(sql);
 }
 
-void NS_Svc::Svc_gestionClient::modifier(int, String^, String^, int, int)
+void NS_Svc::Svc_gestionClient::modifier(int id_client, String^ prenom, String^ nom, String^ date_naissance, int id_adresse, String^ adressepostale, String^ ville, String^ pays, int codepostal, String^ type)
 {
-    throw gcnew System::NotImplementedException();
+    String^ sql;
+    String^ sql2;
+    String^ sql3;
+    this->client->setNumClient(id_client);
+    this->client->setNom(nom);
+    this->client->setPrenom(prenom);
+    this->client->setDateNaissance(date_naissance);
+    this->adresse->setID_Adresse(id_adresse);
+    this->adresse->setAdressePostale(adressepostale);
+    this->adresse->setVille(ville);
+    this->adresse->setPays(pays);
+    this->adresse->setCodePostal(codepostal);
+    this->client->setTypeAdresse(type);
+    sql2 = this->adresse->UPDATE();
+    this->cad->actionRows(sql2);
+    sql = this->client->UPDATE();
+    this->cad->actionRows(sql);
+    sql3 = this->client->UPDATE2();
+    this->cad->actionRows(sql3);
 }
 
-void NS_Svc::Svc_gestionClient::supprimer(int)
+void NS_Svc::Svc_gestionClient::supprimer(int id_client, int id_adresse)
 {
-    throw gcnew System::NotImplementedException();
+    String^ sql;
+	String^ sql2;
+	this->client->setNumClient(id_client);
+	this->adresse->setID_Adresse(id_adresse);
+	sql = this->client->DELETE();
+	this->cad->actionRows(sql);
+    sql2 = this->adresse->DELETE();
+	this->cad->actionRows(sql2);
 }

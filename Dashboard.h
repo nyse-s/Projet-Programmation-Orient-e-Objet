@@ -3350,11 +3350,14 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				
 				this->text1_message->Text = "Veuillez saisir les information du client et appuyer sur le mode que vous voulez";
 			}
-			private: System::Void button1_modiffier_Click(System::Object^ sender, System::EventArgs^ e) {
-			}
+			
 			private: System::Void button1_ajouter_Click(System::Object^ sender, System::EventArgs^ e) {
 				this->processusClient->ajouter(Convert::ToInt32(this->text_idclient->Text), this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, Convert::ToInt32(this->text_idadresse->Text), this->text_adressepostale->Text, this->text_villeadresse->Text, this->text_paysadresse->Text, Convert::ToInt32(this->text_codepostaleadresse->Text), this->choice_typeadresse->Text);
 				this->text1_message->Text = "Ajouté avec succès";
+			}
+			private: System::Void button1_modiffier_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->processusClient->modifier(Convert::ToInt32(this->text_idclient->Text), this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, Convert::ToInt32(this->text_idadresse->Text), this->text_adressepostale->Text, this->text_villeadresse->Text, this->text_paysadresse->Text, Convert::ToInt32(this->text_codepostaleadresse->Text), this->choice_typeadresse->Text);
+				this->text1_message->Text = "Mis à jour avec succès";
 			}
 			private: System::Void button1_afficher_Click(System::Object^ sender, System::EventArgs^ e) {
 				this->dataGridView_gestclient->Refresh();
@@ -3363,6 +3366,8 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				this->dataGridView_gestclient->DataMember = "Client";
 			}
 			private: System::Void button1_supprimer_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->processusClient->supprimer(Convert::ToInt32(this->text_idclient->Text), Convert::ToInt32(this->text_idadresse->Text));
+				this->text1_message->Text = "Supprimé avec succès";
 			}
 
 };
