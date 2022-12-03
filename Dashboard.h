@@ -80,7 +80,7 @@ namespace POO {
 	private: System::Windows::Forms::Label^ title_Gestion_Stock;
 	private: System::Windows::Forms::Panel^ Panel_Gestion_Stat;
 	private: System::Windows::Forms::Label^ Title_Gestion_Stat;
-	private: System::Windows::Forms::Label^ label_adressefacturation;
+
 
 	private: System::Windows::Forms::Label^ label_adresselivraison;
 
@@ -196,25 +196,25 @@ private: System::Windows::Forms::DataGridView^ dataGridView_gestclient;
 
 
 private: System::Windows::Forms::Label^ labelchampclient;
-private: System::Windows::Forms::Label^ labelpaysfacturation;
-
-private: System::Windows::Forms::Label^ labelvillefacturation;
-
-private: System::Windows::Forms::Label^ labelcodepostalefacturation;
-
-private: System::Windows::Forms::Label^ labeladressepostalefacturation;
-
-private: System::Windows::Forms::Label^ labelidadressefacturation;
-private: System::Windows::Forms::TextBox^ text_adressepostalefacturation;
-private: System::Windows::Forms::TextBox^ text_paysfacturation;
 
 
 
-private: System::Windows::Forms::TextBox^ text_villefacturation;
 
-private: System::Windows::Forms::TextBox^ text_codepostalefacturation;
 
-private: System::Windows::Forms::TextBox^ text_idadressefacturation;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_supprimer;
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_modiffier;
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_ajouter;
@@ -458,6 +458,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 	private: Data::DataSet^ ds;
 	private: int index;
 	private: String^ mode;
+private: System::Windows::Forms::ComboBox^ choice_typeadresse;
+private: System::Windows::Forms::Label^ label_typeadresse;
+
+
 	private:
 		/// <summary>
 		/// Variable nécessaire au concepteur.
@@ -518,23 +522,14 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Dashboard = (gcnew System::Windows::Forms::Panel());
 			this->Title_Dashboard = (gcnew System::Windows::Forms::Label());
 			this->Panel_Gestion_Client = (gcnew System::Windows::Forms::Panel());
+			this->choice_typeadresse = (gcnew System::Windows::Forms::ComboBox());
+			this->label_typeadresse = (gcnew System::Windows::Forms::Label());
 			this->button1_nouveau = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->button1_supprimer = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->button1_modiffier = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->button1_ajouter = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->button1_afficher = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
-			this->labelpaysfacturation = (gcnew System::Windows::Forms::Label());
-			this->labelvillefacturation = (gcnew System::Windows::Forms::Label());
-			this->labelcodepostalefacturation = (gcnew System::Windows::Forms::Label());
-			this->labeladressepostalefacturation = (gcnew System::Windows::Forms::Label());
-			this->labelidadressefacturation = (gcnew System::Windows::Forms::Label());
-			this->text_adressepostalefacturation = (gcnew System::Windows::Forms::TextBox());
-			this->text_paysfacturation = (gcnew System::Windows::Forms::TextBox());
-			this->text_villefacturation = (gcnew System::Windows::Forms::TextBox());
-			this->text_codepostalefacturation = (gcnew System::Windows::Forms::TextBox());
-			this->text_idadressefacturation = (gcnew System::Windows::Forms::TextBox());
 			this->labelchampclient = (gcnew System::Windows::Forms::Label());
-			this->label_adressefacturation = (gcnew System::Windows::Forms::Label());
 			this->label_adresselivraison = (gcnew System::Windows::Forms::Label());
 			this->text1_message = (gcnew System::Windows::Forms::TextBox());
 			this->labelpayslivraison = (gcnew System::Windows::Forms::Label());
@@ -1276,23 +1271,14 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			// 
 			// Panel_Gestion_Client
 			// 
+			this->Panel_Gestion_Client->Controls->Add(this->choice_typeadresse);
+			this->Panel_Gestion_Client->Controls->Add(this->label_typeadresse);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_nouveau);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_supprimer);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_modiffier);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_ajouter);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_afficher);
-			this->Panel_Gestion_Client->Controls->Add(this->labelpaysfacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->labelvillefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->labelcodepostalefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->labeladressepostalefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->labelidadressefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->text_adressepostalefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->text_paysfacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->text_villefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->text_codepostalefacturation);
-			this->Panel_Gestion_Client->Controls->Add(this->text_idadressefacturation);
 			this->Panel_Gestion_Client->Controls->Add(this->labelchampclient);
-			this->Panel_Gestion_Client->Controls->Add(this->label_adressefacturation);
 			this->Panel_Gestion_Client->Controls->Add(this->label_adresselivraison);
 			this->Panel_Gestion_Client->Controls->Add(this->text1_message);
 			this->Panel_Gestion_Client->Controls->Add(this->labelpayslivraison);
@@ -1322,6 +1308,28 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Gestion_Client->TabIndex = 3;
 			this->Panel_Gestion_Client->Visible = false;
 			this->Panel_Gestion_Client->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Client_Paint);
+			// 
+			// choice_typeadresse
+			// 
+			this->choice_typeadresse->FormattingEnabled = true;
+			this->choice_typeadresse->Location = System::Drawing::Point(1083, 345);
+			this->choice_typeadresse->Name = L"choice_typeadresse";
+			this->choice_typeadresse->Size = System::Drawing::Size(172, 28);
+			this->choice_typeadresse->TabIndex = 125;
+			// 
+			// label_typeadresse
+			// 
+			this->label_typeadresse->AutoSize = true;
+			this->label_typeadresse->BackColor = System::Drawing::Color::Transparent;
+			this->label_typeadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label_typeadresse->ForeColor = System::Drawing::Color::White;
+			this->label_typeadresse->Location = System::Drawing::Point(1078, 316);
+			this->label_typeadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_typeadresse->Name = L"label_typeadresse";
+			this->label_typeadresse->Size = System::Drawing::Size(143, 28);
+			this->label_typeadresse->TabIndex = 124;
+			this->label_typeadresse->Text = L"Type d\'Adresse";
 			// 
 			// button1_nouveau
 			// 
@@ -1463,116 +1471,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->button1_afficher->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->button1_afficher->Click += gcnew System::EventHandler(this, &Dashboard::button1_afficher_Click);
 			// 
-			// labelpaysfacturation
-			// 
-			this->labelpaysfacturation->AutoSize = true;
-			this->labelpaysfacturation->BackColor = System::Drawing::Color::Transparent;
-			this->labelpaysfacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->labelpaysfacturation->ForeColor = System::Drawing::Color::White;
-			this->labelpaysfacturation->Location = System::Drawing::Point(1347, 646);
-			this->labelpaysfacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelpaysfacturation->Name = L"labelpaysfacturation";
-			this->labelpaysfacturation->Size = System::Drawing::Size(50, 28);
-			this->labelpaysfacturation->TabIndex = 49;
-			this->labelpaysfacturation->Text = L"Pays";
-			// 
-			// labelvillefacturation
-			// 
-			this->labelvillefacturation->AutoSize = true;
-			this->labelvillefacturation->BackColor = System::Drawing::Color::Transparent;
-			this->labelvillefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->labelvillefacturation->ForeColor = System::Drawing::Color::White;
-			this->labelvillefacturation->Location = System::Drawing::Point(1348, 572);
-			this->labelvillefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelvillefacturation->Name = L"labelvillefacturation";
-			this->labelvillefacturation->Size = System::Drawing::Size(49, 28);
-			this->labelvillefacturation->TabIndex = 48;
-			this->labelvillefacturation->Text = L"Ville";
-			// 
-			// labelcodepostalefacturation
-			// 
-			this->labelcodepostalefacturation->AutoSize = true;
-			this->labelcodepostalefacturation->BackColor = System::Drawing::Color::Transparent;
-			this->labelcodepostalefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->labelcodepostalefacturation->ForeColor = System::Drawing::Color::White;
-			this->labelcodepostalefacturation->Location = System::Drawing::Point(1347, 486);
-			this->labelcodepostalefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelcodepostalefacturation->Name = L"labelcodepostalefacturation";
-			this->labelcodepostalefacturation->Size = System::Drawing::Size(125, 28);
-			this->labelcodepostalefacturation->TabIndex = 47;
-			this->labelcodepostalefacturation->Text = L"Code Postale";
-			// 
-			// labeladressepostalefacturation
-			// 
-			this->labeladressepostalefacturation->AutoSize = true;
-			this->labeladressepostalefacturation->BackColor = System::Drawing::Color::Transparent;
-			this->labeladressepostalefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->labeladressepostalefacturation->ForeColor = System::Drawing::Color::White;
-			this->labeladressepostalefacturation->Location = System::Drawing::Point(1348, 404);
-			this->labeladressepostalefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labeladressepostalefacturation->Name = L"labeladressepostalefacturation";
-			this->labeladressepostalefacturation->Size = System::Drawing::Size(147, 28);
-			this->labeladressepostalefacturation->TabIndex = 46;
-			this->labeladressepostalefacturation->Text = L"Adresse Postale";
-			// 
-			// labelidadressefacturation
-			// 
-			this->labelidadressefacturation->AutoSize = true;
-			this->labelidadressefacturation->BackColor = System::Drawing::Color::Transparent;
-			this->labelidadressefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->labelidadressefacturation->ForeColor = System::Drawing::Color::White;
-			this->labelidadressefacturation->Location = System::Drawing::Point(1348, 318);
-			this->labelidadressefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelidadressefacturation->Name = L"labelidadressefacturation";
-			this->labelidadressefacturation->Size = System::Drawing::Size(104, 28);
-			this->labelidadressefacturation->TabIndex = 45;
-			this->labelidadressefacturation->Text = L"ID Adresse";
-			// 
-			// text_adressepostalefacturation
-			// 
-			this->text_adressepostalefacturation->Location = System::Drawing::Point(1345, 434);
-			this->text_adressepostalefacturation->Margin = System::Windows::Forms::Padding(2);
-			this->text_adressepostalefacturation->Name = L"text_adressepostalefacturation";
-			this->text_adressepostalefacturation->Size = System::Drawing::Size(224, 26);
-			this->text_adressepostalefacturation->TabIndex = 44;
-			// 
-			// text_paysfacturation
-			// 
-			this->text_paysfacturation->Location = System::Drawing::Point(1345, 676);
-			this->text_paysfacturation->Margin = System::Windows::Forms::Padding(2);
-			this->text_paysfacturation->Name = L"text_paysfacturation";
-			this->text_paysfacturation->Size = System::Drawing::Size(224, 26);
-			this->text_paysfacturation->TabIndex = 43;
-			// 
-			// text_villefacturation
-			// 
-			this->text_villefacturation->Location = System::Drawing::Point(1345, 602);
-			this->text_villefacturation->Margin = System::Windows::Forms::Padding(2);
-			this->text_villefacturation->Name = L"text_villefacturation";
-			this->text_villefacturation->Size = System::Drawing::Size(224, 26);
-			this->text_villefacturation->TabIndex = 42;
-			// 
-			// text_codepostalefacturation
-			// 
-			this->text_codepostalefacturation->Location = System::Drawing::Point(1345, 516);
-			this->text_codepostalefacturation->Margin = System::Windows::Forms::Padding(2);
-			this->text_codepostalefacturation->Name = L"text_codepostalefacturation";
-			this->text_codepostalefacturation->Size = System::Drawing::Size(224, 26);
-			this->text_codepostalefacturation->TabIndex = 41;
-			// 
-			// text_idadressefacturation
-			// 
-			this->text_idadressefacturation->Location = System::Drawing::Point(1345, 348);
-			this->text_idadressefacturation->Margin = System::Windows::Forms::Padding(2);
-			this->text_idadressefacturation->Name = L"text_idadressefacturation";
-			this->text_idadressefacturation->Size = System::Drawing::Size(224, 26);
-			this->text_idadressefacturation->TabIndex = 40;
-			// 
 			// labelchampclient
 			// 
 			this->labelchampclient->AutoSize = true;
@@ -1586,19 +1484,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->labelchampclient->TabIndex = 39;
 			this->labelchampclient->Text = L"Informations générales";
 			// 
-			// label_adressefacturation
-			// 
-			this->label_adressefacturation->AutoSize = true;
-			this->label_adressefacturation->BackColor = System::Drawing::Color::Transparent;
-			this->label_adressefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
-			this->label_adressefacturation->ForeColor = System::Drawing::Color::White;
-			this->label_adressefacturation->Location = System::Drawing::Point(1339, 236);
-			this->label_adressefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label_adressefacturation->Name = L"label_adressefacturation";
-			this->label_adressefacturation->Size = System::Drawing::Size(273, 32);
-			this->label_adressefacturation->TabIndex = 38;
-			this->label_adressefacturation->Text = L"Adresse de facturation";
-			// 
 			// label_adresselivraison
 			// 
 			this->label_adresselivraison->AutoSize = true;
@@ -1608,9 +1493,9 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->label_adresselivraison->Location = System::Drawing::Point(789, 236);
 			this->label_adresselivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_adresselivraison->Name = L"label_adresselivraison";
-			this->label_adresselivraison->Size = System::Drawing::Size(244, 32);
+			this->label_adresselivraison->Size = System::Drawing::Size(111, 32);
 			this->label_adresselivraison->TabIndex = 37;
-			this->label_adresselivraison->Text = L"Adresse de livraison";
+			this->label_adresselivraison->Text = L"Adresse ";
 			// 
 			// text1_message
 			// 
@@ -1899,10 +1784,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_refcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView_gestcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->Title_Gestion_Commandes);
-			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(2072, 54);
+			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(2087, 54);
 			this->Panel_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Commandes->Name = L"Panel_Gestion_Commandes";
-			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(178, 1295);
+			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(163, 1295);
 			this->Panel_Gestion_Commandes->TabIndex = 4;
 			this->Panel_Gestion_Commandes->Visible = false;
 			// 
@@ -2604,10 +2489,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->panel_Gestion_Stock->Controls->Add(this->text_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->label_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(1980, 46);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(2188, 46);
 			this->panel_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(293, 1316);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(85, 1316);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
@@ -2945,10 +2830,10 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 			this->Panel_Gestion_Stat->Controls->Add(this->dataGridView2);
 			this->Panel_Gestion_Stat->Controls->Add(this->Title_Gestion_Stat);
 			this->Panel_Gestion_Stat->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Panel_Gestion_Stat->Location = System::Drawing::Point(2036, 32);
+			this->Panel_Gestion_Stat->Location = System::Drawing::Point(2222, 32);
 			this->Panel_Gestion_Stat->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Stat->Name = L"Panel_Gestion_Stat";
-			this->Panel_Gestion_Stat->Size = System::Drawing::Size(261, 1346);
+			this->Panel_Gestion_Stat->Size = System::Drawing::Size(75, 1346);
 			this->Panel_Gestion_Stat->TabIndex = 5;
 			this->Panel_Gestion_Stat->Visible = false;
 			this->Panel_Gestion_Stat->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Stat_Paint);
@@ -3447,20 +3332,19 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 				this->text_codepostalelivraison->Clear();
 				this->text_villelivraison->Clear();
 				this->text_payslivraison->Clear();
-				this->text_idadressefacturation->Clear();
-				this->text_adressepostalefacturation->Clear();
-				this->text_codepostalefacturation->Clear();
-				this->text_villefacturation->Clear();
-				this->text_paysfacturation->Clear();
 				this->text1_message->Text = "Veuillez saisir les information du client et appuyer sur le mode que vous voulez";
 			}
 			private: System::Void button1_modiffier_Click(System::Object^ sender, System::EventArgs^ e) {
 			}
 			private: System::Void button1_ajouter_Click(System::Object^ sender, System::EventArgs^ e) {
-				this->processusClient->ajouter(this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, this->text_adressepostalefacturation->Text,  this->text_villefacturation->Text, this->text_paysfacturation->Text, Convert::ToInt32(this->text_codepostalefacturation->Text));
+				this->processusClient->ajouter(, this->text_prenomclient->Text, this->text_nomclient->Text, this->text_datenaissance->Text, this->text_adressepostalefacturation->Text,  this->text_villefacturation->Text, this->text_paysfacturation->Text, Convert::ToInt32(this->text_codepostalefacturation->Text), this->text_adressepostalelivraison->Text, this->text_villelivraison->Text, this->text_payslivraison->Text, Convert::ToInt32(this->text_codepostalelivraison->Text));
 				this->text1_message->Text = "Ajouté avec succès";
 			}
 			private: System::Void button1_afficher_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->dataGridView_gestclient->Refresh();
+				this->ds = this->processusClient->listeClient("Client");
+				this->dataGridView_gestclient->DataSource = this->ds;
+				this->dataGridView_gestclient->DataMember = "Client";
 			}
 			private: System::Void button1_supprimer_Click(System::Object^ sender, System::EventArgs^ e) {
 			}

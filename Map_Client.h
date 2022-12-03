@@ -11,8 +11,8 @@ namespace NS_Composants
 		int num_client;
 		String^ nom;
 		String^ prenom;
-		/*Map_Adresse^ adresse_livraison;
-		Map_Adresse^ adresse_facturation;*/
+		Map_Adresse^ adresse_livraison;
+		Map_Adresse^ adresse_facturation;
 		String^ date_naissance;
 	public:
 		Map_Client(void);
@@ -23,14 +23,14 @@ namespace NS_Composants
 		int getNumClient(void);
 		String^ getNom(void);
 		String^ getPrenom(void);
-		/*Map_Adresse^ getAdresseLivraison(void);
-		Map_Adresse^ getAdresseFacturation(void);*/
+		//Map_Adresse^ getAdresseLivraison(void);
+		//Map_Adresse^ getAdresseFacturation(void);
 		String^ getDateNaissance(void);
 		void setNumClient(int);
 		void setNom(String^);
 		void setPrenom(String^);
-		/*void setAdresseLivraison(int);
-		void setAdresseFacturation(int);*/
+		//void setAdresseLivraison(int);
+		//void setAdresseFacturation(int);
 		void setDateNaissance(String^);
 	};
 }

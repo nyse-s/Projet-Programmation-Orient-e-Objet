@@ -17,7 +17,7 @@ String^ Map_Adresse::SELECT(void)
 
 String^ Map_Adresse::INSERT(void)
 {
-	return "INSERT INTO [POO].[dbo].[Adresse](adressePostale, ville, pays, codePostale) VALUES ('" + this->getAdressePostale() + "','" + this->getVille() + "','" +this->getPays() +"'," + this->getCodePostal() + ");SELECT @@IDENTITY;";
+	return "INSERT INTO [POO].[dbo].[Adresse](id_adresse, adressePostale, ville, pays, codePostale) VALUES ("+ this->getID_Adresse() + ",'" + this->getAdressePostale() + "','" + this->getVille() + "','" + this->getPays() + "'," + this->getCodePostal() + ");SELECT @@IDENTITY;";
 }
 
 String^ Map_Adresse::UPDATE(void)
