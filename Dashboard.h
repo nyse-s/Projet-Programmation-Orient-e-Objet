@@ -1325,7 +1325,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// choice_typeadresse
 			// 
 			this->choice_typeadresse->FormattingEnabled = true;
-			this->choice_typeadresse->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Facturation", L"Livraison" });
+			this->choice_typeadresse->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"", L"Facturation", L"Livraison" });
 			this->choice_typeadresse->Location = System::Drawing::Point(1083, 348);
 			this->choice_typeadresse->Name = L"choice_typeadresse";
 			this->choice_typeadresse->Size = System::Drawing::Size(172, 28);
@@ -3346,7 +3346,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				this->text_codepostaleadresse->Clear();
 				this->text_villeadresse->Clear();
 				this->text_paysadresse->Clear();
-				this->choice_typeadresse->TabIndex = 0;
+				this->choice_typeadresse->SelectedIndex = -1;
 				
 				this->text1_message->Text = "Veuillez saisir les information du client et appuyer sur le mode que vous voulez";
 			}
