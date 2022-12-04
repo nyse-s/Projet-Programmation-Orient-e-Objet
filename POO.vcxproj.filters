@@ -36,6 +36,9 @@
     <ClCompile Include="Map_Personne.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Map_article.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
     <ClCompile Include="Map_Commande.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>

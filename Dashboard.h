@@ -1780,10 +1780,10 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_refcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView_gestcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->Title_Gestion_Commandes);
-			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(433, 54);
+			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(2087, 54);
 			this->Panel_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Commandes->Name = L"Panel_Gestion_Commandes";
-			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(1817, 1295);
+			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(109, 842);
 			this->Panel_Gestion_Commandes->TabIndex = 4;
 			this->Panel_Gestion_Commandes->Visible = false;
 			this->Panel_Gestion_Commandes->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Commandes_Paint);
@@ -2008,8 +2008,8 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			this->label_datepaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_datepaiement->ForeColor = System::Drawing::Color::White;
-			this->label_datepaiement->Location = System::Drawing::Point(846, 419);
-			this->label_datepaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_datepaiement->Location = System::Drawing::Point(564, 345);
+			this->label_datepaiement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_datepaiement->Name = L"label_datepaiement";
 			this->label_datepaiement->Size = System::Drawing::Size(211, 19);
 			this->label_datepaiement->TabIndex = 112;
@@ -2017,8 +2017,8 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			// 
 			// text_datepaiement
 			// 
-			this->text_datepaiement->Location = System::Drawing::Point(851, 450);
-			this->text_datepaiement->Margin = System::Windows::Forms::Padding(2);
+			this->text_datepaiement->Location = System::Drawing::Point(567, 365);
+			this->text_datepaiement->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_datepaiement->Name = L"text_datepaiement";
 			this->text_datepaiement->Size = System::Drawing::Size(193, 20);
 			this->text_datepaiement->TabIndex = 111;
@@ -2043,8 +2043,8 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			this->label_mypaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_mypaiement->ForeColor = System::Drawing::Color::White;
-			this->label_mypaiement->Location = System::Drawing::Point(846, 305);
-			this->label_mypaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_mypaiement->Location = System::Drawing::Point(564, 271);
+			this->label_mypaiement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_mypaiement->Name = L"label_mypaiement";
 			this->label_mypaiement->Size = System::Drawing::Size(132, 19);
 			this->label_mypaiement->TabIndex = 106;
@@ -2268,8 +2268,8 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			this->label_soldereglement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_soldereglement->ForeColor = System::Drawing::Color::White;
-			this->label_soldereglement->Location = System::Drawing::Point(846, 530);
-			this->label_soldereglement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_soldereglement->Location = System::Drawing::Point(564, 417);
+			this->label_soldereglement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_soldereglement->Name = L"label_soldereglement";
 			this->label_soldereglement->Size = System::Drawing::Size(127, 19);
 			this->label_soldereglement->TabIndex = 74;
@@ -2341,8 +2341,8 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			// 
 			// text_soldereglement
 			// 
-			this->text_soldereglement->Location = System::Drawing::Point(851, 560);
-			this->text_soldereglement->Margin = System::Windows::Forms::Padding(2);
+			this->text_soldereglement->Location = System::Drawing::Point(567, 437);
+			this->text_soldereglement->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_soldereglement->Name = L"text_soldereglement";
 			this->text_soldereglement->Size = System::Drawing::Size(191, 20);
 			this->text_soldereglement->TabIndex = 68;
@@ -2456,7 +2456,7 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			this->text_refcommande->Location = System::Drawing::Point(71, 217);
 			this->text_refcommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_refcommande->Name = L"text_refcommande";
-			this->text_refcommande->Size = System::Drawing::Size(368, 26);
+			this->text_refcommande->Size = System::Drawing::Size(397, 20);
 			this->text_refcommande->TabIndex = 55;
 			// 
 			// dataGridView_gestcommande
@@ -2509,10 +2509,9 @@ private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 			this->panel_Gestion_Stock->Controls->Add(this->text_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->label_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(2173, 46);
-			this->panel_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(1459, 30);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(100, 1316);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(57, 855);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
