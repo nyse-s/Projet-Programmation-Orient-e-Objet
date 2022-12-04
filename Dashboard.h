@@ -701,9 +701,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Pannel_Titre->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->Pannel_Titre->Dock = System::Windows::Forms::DockStyle::Top;
 			this->Pannel_Titre->Location = System::Drawing::Point(0, 0);
-			this->Pannel_Titre->Margin = System::Windows::Forms::Padding(2);
+			this->Pannel_Titre->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Pannel_Titre->Name = L"Pannel_Titre";
-			this->Pannel_Titre->Size = System::Drawing::Size(366, 400);
+			this->Pannel_Titre->Size = System::Drawing::Size(244, 260);
 			this->Pannel_Titre->TabIndex = 0;
 			// 
 			// panel_Gestion_Personnel
@@ -732,20 +732,18 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->panel_Gestion_Personnel->Controls->Add(this->Label_Id_perso);
 			this->panel_Gestion_Personnel->Controls->Add(this->text_personnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->Title_Gestion_Personel);
-			this->panel_Gestion_Personnel->Location = System::Drawing::Point(455, 75);
-			this->panel_Gestion_Personnel->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->panel_Gestion_Personnel->Location = System::Drawing::Point(303, 49);
 			this->panel_Gestion_Personnel->Name = L"panel_Gestion_Personnel";
-			this->panel_Gestion_Personnel->Size = System::Drawing::Size(1768, 1234);
+			this->panel_Gestion_Personnel->Size = System::Drawing::Size(1179, 802);
 			this->panel_Gestion_Personnel->TabIndex = 2;
 			this->panel_Gestion_Personnel->Visible = false;
 			this->panel_Gestion_Personnel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::panel_Gestion_Personnel_Paint);
 			// 
 			// text_ville
 			// 
-			this->text_ville->Location = System::Drawing::Point(674, 499);
-			this->text_ville->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->text_ville->Location = System::Drawing::Point(449, 324);
 			this->text_ville->Name = L"text_ville";
-			this->text_ville->Size = System::Drawing::Size(180, 26);
+			this->text_ville->Size = System::Drawing::Size(121, 20);
 			this->text_ville->TabIndex = 27;
 			// 
 			// choice_departement
@@ -764,10 +762,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 					L"Somme", L"Tarn", L"Tarn-et-Garonne", L"Var", L"Vaucluse", L"Vendée", L"Vienne", L"Haute-Vienne", L"Vosges", L"Yonne", L"Territoire-de-Belfort",
 					L"Essonne", L"Hauts-de-Seine", L"Seine-Saint-Denis", L"Val-de-Marne", L"Val-d\'Oise"
 			});
-			this->choice_departement->Location = System::Drawing::Point(891, 499);
-			this->choice_departement->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->choice_departement->Location = System::Drawing::Point(594, 324);
 			this->choice_departement->Name = L"choice_departement";
-			this->choice_departement->Size = System::Drawing::Size(180, 28);
+			this->choice_departement->Size = System::Drawing::Size(121, 21);
 			this->choice_departement->TabIndex = 26;
 			// 
 			// Btn_Supprimer_Personnel
@@ -790,10 +787,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Btn_Supprimer_Personnel->IdleFillColor = System::Drawing::Color::Transparent;
 			this->Btn_Supprimer_Personnel->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->Btn_Supprimer_Personnel->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->Btn_Supprimer_Personnel->Location = System::Drawing::Point(992, 670);
-			this->Btn_Supprimer_Personnel->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
+			this->Btn_Supprimer_Personnel->Location = System::Drawing::Point(661, 435);
+			this->Btn_Supprimer_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->Btn_Supprimer_Personnel->Name = L"Btn_Supprimer_Personnel";
-			this->Btn_Supprimer_Personnel->Size = System::Drawing::Size(200, 125);
+			this->Btn_Supprimer_Personnel->Size = System::Drawing::Size(133, 81);
 			this->Btn_Supprimer_Personnel->TabIndex = 25;
 			this->Btn_Supprimer_Personnel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -817,10 +814,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_modifier_Personnel->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_modifier_Personnel->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_modifier_Personnel->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_modifier_Personnel->Location = System::Drawing::Point(753, 670);
-			this->btn_modifier_Personnel->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
+			this->btn_modifier_Personnel->Location = System::Drawing::Point(502, 435);
+			this->btn_modifier_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->btn_modifier_Personnel->Name = L"btn_modifier_Personnel";
-			this->btn_modifier_Personnel->Size = System::Drawing::Size(200, 125);
+			this->btn_modifier_Personnel->Size = System::Drawing::Size(133, 81);
 			this->btn_modifier_Personnel->TabIndex = 24;
 			this->btn_modifier_Personnel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -844,10 +841,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_nouveau_Personnel->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_nouveau_Personnel->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_nouveau_Personnel->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_nouveau_Personnel->Location = System::Drawing::Point(507, 670);
-			this->btn_nouveau_Personnel->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
+			this->btn_nouveau_Personnel->Location = System::Drawing::Point(338, 435);
+			this->btn_nouveau_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->btn_nouveau_Personnel->Name = L"btn_nouveau_Personnel";
-			this->btn_nouveau_Personnel->Size = System::Drawing::Size(200, 125);
+			this->btn_nouveau_Personnel->Size = System::Drawing::Size(133, 81);
 			this->btn_nouveau_Personnel->TabIndex = 23;
 			this->btn_nouveau_Personnel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->btn_nouveau_Personnel->Click += gcnew System::EventHandler(this, &Dashboard::btn_nouveau_Click);
@@ -872,10 +869,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_enregistrer_Personnel->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_enregistrer_Personnel->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_enregistrer_Personnel->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_enregistrer_Personnel->Location = System::Drawing::Point(260, 670);
-			this->btn_enregistrer_Personnel->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
+			this->btn_enregistrer_Personnel->Location = System::Drawing::Point(173, 435);
+			this->btn_enregistrer_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->btn_enregistrer_Personnel->Name = L"btn_enregistrer_Personnel";
-			this->btn_enregistrer_Personnel->Size = System::Drawing::Size(200, 125);
+			this->btn_enregistrer_Personnel->Size = System::Drawing::Size(133, 81);
 			this->btn_enregistrer_Personnel->TabIndex = 22;
 			this->btn_enregistrer_Personnel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -886,11 +883,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				this->Id_Personnel,
 					this->nom, this->prenom, this->date_embauche, this->Superieur, this->adresse, this->ville, this->pays, this->code_postal
 			});
-			this->dataGridView1->Location = System::Drawing::Point(232, 825);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->dataGridView1->Location = System::Drawing::Point(155, 536);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 82;
-			this->dataGridView1->Size = System::Drawing::Size(1086, 166);
+			this->dataGridView1->Size = System::Drawing::Size(724, 108);
 			this->dataGridView1->TabIndex = 21;
 			// 
 			// Id_Personnel
@@ -963,10 +959,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_payspersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_payspersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_payspersonnel->Location = System::Drawing::Point(885, 452);
-			this->label_payspersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_payspersonnel->Location = System::Drawing::Point(590, 294);
 			this->label_payspersonnel->Name = L"label_payspersonnel";
-			this->label_payspersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_payspersonnel->Size = System::Drawing::Size(100, 27);
 			this->label_payspersonnel->TabIndex = 20;
 			this->label_payspersonnel->Text = L"département";
 			// 
@@ -976,10 +971,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->choice_superieur->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->choice_superieur->FormattingEnabled = true;
 			this->choice_superieur->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"oui", L"non" });
-			this->choice_superieur->Location = System::Drawing::Point(278, 610);
-			this->choice_superieur->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->choice_superieur->Location = System::Drawing::Point(185, 396);
 			this->choice_superieur->Name = L"choice_superieur";
-			this->choice_superieur->Size = System::Drawing::Size(180, 28);
+			this->choice_superieur->Size = System::Drawing::Size(121, 21);
 			this->choice_superieur->TabIndex = 18;
 			// 
 			// label_code_postalpersonnel
@@ -987,19 +981,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_code_postalpersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_code_postalpersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_code_postalpersonnel->Location = System::Drawing::Point(678, 564);
-			this->label_code_postalpersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_code_postalpersonnel->Location = System::Drawing::Point(452, 367);
 			this->label_code_postalpersonnel->Name = L"label_code_postalpersonnel";
-			this->label_code_postalpersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_code_postalpersonnel->Size = System::Drawing::Size(100, 27);
 			this->label_code_postalpersonnel->TabIndex = 17;
 			this->label_code_postalpersonnel->Text = L"code postal";
 			// 
 			// textBox_code_postal
 			// 
-			this->textBox_code_postal->Location = System::Drawing::Point(674, 612);
-			this->textBox_code_postal->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBox_code_postal->Location = System::Drawing::Point(449, 398);
 			this->textBox_code_postal->Name = L"textBox_code_postal";
-			this->textBox_code_postal->Size = System::Drawing::Size(397, 26);
+			this->textBox_code_postal->Size = System::Drawing::Size(266, 20);
 			this->textBox_code_postal->TabIndex = 16;
 			// 
 			// label_villepersonnel
@@ -1007,10 +999,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_villepersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_villepersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_villepersonnel->Location = System::Drawing::Point(668, 452);
-			this->label_villepersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_villepersonnel->Location = System::Drawing::Point(445, 294);
 			this->label_villepersonnel->Name = L"label_villepersonnel";
-			this->label_villepersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_villepersonnel->Size = System::Drawing::Size(100, 27);
 			this->label_villepersonnel->TabIndex = 15;
 			this->label_villepersonnel->Text = L"ville";
 			// 
@@ -1019,19 +1010,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_adressepersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_adressepersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_adressepersonnel->Location = System::Drawing::Point(668, 364);
-			this->label_adressepersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_adressepersonnel->Location = System::Drawing::Point(445, 237);
 			this->label_adressepersonnel->Name = L"label_adressepersonnel";
-			this->label_adressepersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_adressepersonnel->Size = System::Drawing::Size(100, 27);
 			this->label_adressepersonnel->TabIndex = 13;
 			this->label_adressepersonnel->Text = L"adresse";
 			// 
 			// text_adresse
 			// 
-			this->text_adresse->Location = System::Drawing::Point(674, 410);
-			this->text_adresse->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->text_adresse->Location = System::Drawing::Point(449, 266);
 			this->text_adresse->Name = L"text_adresse";
-			this->text_adresse->Size = System::Drawing::Size(397, 26);
+			this->text_adresse->Size = System::Drawing::Size(266, 20);
 			this->text_adresse->TabIndex = 12;
 			// 
 			// label_Superieur
@@ -1039,19 +1028,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_Superieur->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_Superieur->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_Superieur->Location = System::Drawing::Point(272, 564);
-			this->label_Superieur->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_Superieur->Location = System::Drawing::Point(181, 367);
 			this->label_Superieur->Name = L"label_Superieur";
-			this->label_Superieur->Size = System::Drawing::Size(150, 42);
+			this->label_Superieur->Size = System::Drawing::Size(100, 27);
 			this->label_Superieur->TabIndex = 11;
 			this->label_Superieur->Text = L"Superieur";
 			// 
 			// select_date_embauche
 			// 
-			this->select_date_embauche->Location = System::Drawing::Point(674, 310);
-			this->select_date_embauche->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->select_date_embauche->Location = System::Drawing::Point(449, 201);
 			this->select_date_embauche->Name = L"select_date_embauche";
-			this->select_date_embauche->Size = System::Drawing::Size(253, 26);
+			this->select_date_embauche->Size = System::Drawing::Size(170, 20);
 			this->select_date_embauche->TabIndex = 9;
 			// 
 			// label_date_embauche
@@ -1059,10 +1046,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_date_embauche->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_date_embauche->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_date_embauche->Location = System::Drawing::Point(668, 260);
-			this->label_date_embauche->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_date_embauche->Location = System::Drawing::Point(445, 169);
 			this->label_date_embauche->Name = L"label_date_embauche";
-			this->label_date_embauche->Size = System::Drawing::Size(207, 42);
+			this->label_date_embauche->Size = System::Drawing::Size(138, 27);
 			this->label_date_embauche->TabIndex = 8;
 			this->label_date_embauche->Text = L"date d\'embauche";
 			// 
@@ -1071,19 +1057,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_prenompersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_prenompersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_prenompersonnel->Location = System::Drawing::Point(272, 462);
-			this->label_prenompersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_prenompersonnel->Location = System::Drawing::Point(181, 300);
 			this->label_prenompersonnel->Name = L"label_prenompersonnel";
-			this->label_prenompersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_prenompersonnel->Size = System::Drawing::Size(100, 27);
 			this->label_prenompersonnel->TabIndex = 6;
 			this->label_prenompersonnel->Text = L"prenom";
 			// 
 			// text_pernom
 			// 
-			this->text_pernom->Location = System::Drawing::Point(278, 508);
-			this->text_pernom->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->text_pernom->Location = System::Drawing::Point(185, 330);
 			this->text_pernom->Name = L"text_pernom";
-			this->text_pernom->Size = System::Drawing::Size(199, 26);
+			this->text_pernom->Size = System::Drawing::Size(134, 20);
 			this->text_pernom->TabIndex = 5;
 			// 
 			// label_nompersonnel
@@ -1091,19 +1075,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_nompersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_nompersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_nompersonnel->Location = System::Drawing::Point(272, 364);
-			this->label_nompersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_nompersonnel->Location = System::Drawing::Point(181, 237);
 			this->label_nompersonnel->Name = L"label_nompersonnel";
-			this->label_nompersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_nompersonnel->Size = System::Drawing::Size(100, 27);
 			this->label_nompersonnel->TabIndex = 4;
 			this->label_nompersonnel->Text = L"nom";
 			// 
 			// text_nom
 			// 
-			this->text_nom->Location = System::Drawing::Point(278, 410);
-			this->text_nom->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->text_nom->Location = System::Drawing::Point(185, 266);
 			this->text_nom->Name = L"text_nom";
-			this->text_nom->Size = System::Drawing::Size(199, 26);
+			this->text_nom->Size = System::Drawing::Size(134, 20);
 			this->text_nom->TabIndex = 3;
 			// 
 			// Label_Id_perso
@@ -1111,19 +1093,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Label_Id_perso->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Label_Id_perso->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Label_Id_perso->Location = System::Drawing::Point(272, 264);
-			this->Label_Id_perso->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Label_Id_perso->Location = System::Drawing::Point(181, 172);
 			this->Label_Id_perso->Name = L"Label_Id_perso";
-			this->Label_Id_perso->Size = System::Drawing::Size(150, 42);
+			this->Label_Id_perso->Size = System::Drawing::Size(100, 27);
 			this->Label_Id_perso->TabIndex = 2;
 			this->Label_Id_perso->Text = L"Id Personnel";
 			// 
 			// text_personnel
 			// 
-			this->text_personnel->Location = System::Drawing::Point(278, 310);
-			this->text_personnel->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->text_personnel->Location = System::Drawing::Point(185, 201);
 			this->text_personnel->Name = L"text_personnel";
-			this->text_personnel->Size = System::Drawing::Size(199, 26);
+			this->text_personnel->Size = System::Drawing::Size(134, 20);
 			this->text_personnel->TabIndex = 1;
 			// 
 			// Title_Gestion_Personel
@@ -1131,9 +1111,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Title_Gestion_Personel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_Gestion_Personel->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_Gestion_Personel->Location = System::Drawing::Point(371, 63);
+			this->Title_Gestion_Personel->Location = System::Drawing::Point(247, 41);
+			this->Title_Gestion_Personel->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Title_Gestion_Personel->Name = L"Title_Gestion_Personel";
-			this->Title_Gestion_Personel->Size = System::Drawing::Size(956, 130);
+			this->Title_Gestion_Personel->Size = System::Drawing::Size(637, 84);
 			this->Title_Gestion_Personel->TabIndex = 0;
 			this->Title_Gestion_Personel->Text = L"Gestion Personnel";
 			this->Title_Gestion_Personel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -1147,10 +1128,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				static_cast<System::Byte>(0)));
 			this->Btn_Gestion_Personnel->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_Personnel->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_Personnel->Location = System::Drawing::Point(0, 400);
-			this->Btn_Gestion_Personnel->Margin = System::Windows::Forms::Padding(2);
+			this->Btn_Gestion_Personnel->Location = System::Drawing::Point(0, 260);
+			this->Btn_Gestion_Personnel->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Btn_Gestion_Personnel->Name = L"Btn_Gestion_Personnel";
-			this->Btn_Gestion_Personnel->Size = System::Drawing::Size(366, 105);
+			this->Btn_Gestion_Personnel->Size = System::Drawing::Size(244, 68);
 			this->Btn_Gestion_Personnel->TabIndex = 1;
 			this->Btn_Gestion_Personnel->Text = L"Gestion personnel";
 			this->Btn_Gestion_Personnel->UseVisualStyleBackColor = true;
@@ -1164,10 +1145,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Btn_Gestion_clients->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_clients->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_clients->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_clients->Location = System::Drawing::Point(0, 505);
-			this->Btn_Gestion_clients->Margin = System::Windows::Forms::Padding(2);
+			this->Btn_Gestion_clients->Location = System::Drawing::Point(0, 328);
+			this->Btn_Gestion_clients->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Btn_Gestion_clients->Name = L"Btn_Gestion_clients";
-			this->Btn_Gestion_clients->Size = System::Drawing::Size(366, 105);
+			this->Btn_Gestion_clients->Size = System::Drawing::Size(244, 68);
 			this->Btn_Gestion_clients->TabIndex = 2;
 			this->Btn_Gestion_clients->Text = L"Gestion clients";
 			this->Btn_Gestion_clients->UseVisualStyleBackColor = true;
@@ -1181,10 +1162,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_Gestion_commandes->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->btn_Gestion_commandes->ForeColor = System::Drawing::Color::Gainsboro;
 			this->btn_Gestion_commandes->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btn_Gestion_commandes->Location = System::Drawing::Point(0, 610);
-			this->btn_Gestion_commandes->Margin = System::Windows::Forms::Padding(2);
+			this->btn_Gestion_commandes->Location = System::Drawing::Point(0, 396);
+			this->btn_Gestion_commandes->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->btn_Gestion_commandes->Name = L"btn_Gestion_commandes";
-			this->btn_Gestion_commandes->Size = System::Drawing::Size(366, 105);
+			this->btn_Gestion_commandes->Size = System::Drawing::Size(244, 68);
 			this->btn_Gestion_commandes->TabIndex = 3;
 			this->btn_Gestion_commandes->Text = L"Gestion commandes";
 			this->btn_Gestion_commandes->UseVisualStyleBackColor = true;
@@ -1198,10 +1179,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Btn_Gestion_stock->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_stock->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_stock->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_stock->Location = System::Drawing::Point(0, 715);
-			this->Btn_Gestion_stock->Margin = System::Windows::Forms::Padding(2);
+			this->Btn_Gestion_stock->Location = System::Drawing::Point(0, 464);
+			this->Btn_Gestion_stock->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Btn_Gestion_stock->Name = L"Btn_Gestion_stock";
-			this->Btn_Gestion_stock->Size = System::Drawing::Size(366, 105);
+			this->Btn_Gestion_stock->Size = System::Drawing::Size(244, 68);
 			this->Btn_Gestion_stock->TabIndex = 4;
 			this->Btn_Gestion_stock->Text = L"Gestion stock";
 			this->Btn_Gestion_stock->UseVisualStyleBackColor = true;
@@ -1215,10 +1196,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Btn_Gestion_stat->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_stat->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_stat->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_stat->Location = System::Drawing::Point(0, 820);
-			this->Btn_Gestion_stat->Margin = System::Windows::Forms::Padding(2);
+			this->Btn_Gestion_stat->Location = System::Drawing::Point(0, 532);
+			this->Btn_Gestion_stat->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Btn_Gestion_stat->Name = L"Btn_Gestion_stat";
-			this->Btn_Gestion_stat->Size = System::Drawing::Size(366, 105);
+			this->Btn_Gestion_stat->Size = System::Drawing::Size(244, 68);
 			this->Btn_Gestion_stat->TabIndex = 5;
 			this->Btn_Gestion_stat->Text = L"Gestion statistiques";
 			this->Btn_Gestion_stat->UseVisualStyleBackColor = true;
@@ -1232,10 +1213,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Btn_Exit_DB->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Exit_DB->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Exit_DB->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Exit_DB->Location = System::Drawing::Point(0, 925);
-			this->Btn_Exit_DB->Margin = System::Windows::Forms::Padding(2);
+			this->Btn_Exit_DB->Location = System::Drawing::Point(0, 600);
+			this->Btn_Exit_DB->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Btn_Exit_DB->Name = L"Btn_Exit_DB";
-			this->Btn_Exit_DB->Size = System::Drawing::Size(366, 105);
+			this->Btn_Exit_DB->Size = System::Drawing::Size(244, 68);
 			this->Btn_Exit_DB->TabIndex = 6;
 			this->Btn_Exit_DB->Text = L"Exit";
 			this->Btn_Exit_DB->UseVisualStyleBackColor = true;
@@ -1254,19 +1235,17 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->panel_gestion->Controls->Add(this->Pannel_Titre);
 			this->panel_gestion->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel_gestion->Location = System::Drawing::Point(0, 0);
-			this->panel_gestion->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_gestion->Name = L"panel_gestion";
-			this->panel_gestion->Size = System::Drawing::Size(366, 1396);
+			this->panel_gestion->Size = System::Drawing::Size(244, 690);
 			this->panel_gestion->TabIndex = 0;
 			// 
 			// Panel_Dashboard
 			// 
 			this->Panel_Dashboard->Controls->Add(this->Title_Dashboard);
 			this->Panel_Dashboard->Enabled = false;
-			this->Panel_Dashboard->Location = System::Drawing::Point(1025, 27);
-			this->Panel_Dashboard->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->Panel_Dashboard->Location = System::Drawing::Point(683, 18);
 			this->Panel_Dashboard->Name = L"Panel_Dashboard";
-			this->Panel_Dashboard->Size = System::Drawing::Size(532, 1188);
+			this->Panel_Dashboard->Size = System::Drawing::Size(355, 772);
 			this->Panel_Dashboard->TabIndex = 1;
 			// 
 			// Title_Dashboard
@@ -1274,10 +1253,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Title_Dashboard->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_Dashboard->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_Dashboard->Location = System::Drawing::Point(-13, 37);
-			this->Title_Dashboard->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Title_Dashboard->Location = System::Drawing::Point(-9, 24);
 			this->Title_Dashboard->Name = L"Title_Dashboard";
-			this->Title_Dashboard->Size = System::Drawing::Size(567, 170);
+			this->Title_Dashboard->Size = System::Drawing::Size(378, 110);
 			this->Title_Dashboard->TabIndex = 0;
 			this->Title_Dashboard->Text = L"Dashboard";
 			this->Title_Dashboard->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -1314,10 +1292,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Panel_Gestion_Client->Controls->Add(this->text_idclient);
 			this->Panel_Gestion_Client->Controls->Add(this->dataGridView_gestclient);
 			this->Panel_Gestion_Client->Controls->Add(this->Title_gestion_clients);
-			this->Panel_Gestion_Client->Location = System::Drawing::Point(439, 67);
-			this->Panel_Gestion_Client->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->Panel_Gestion_Client->Location = System::Drawing::Point(293, 44);
 			this->Panel_Gestion_Client->Name = L"Panel_Gestion_Client";
-			this->Panel_Gestion_Client->Size = System::Drawing::Size(1803, 1254);
+			this->Panel_Gestion_Client->Size = System::Drawing::Size(1202, 815);
 			this->Panel_Gestion_Client->TabIndex = 3;
 			this->Panel_Gestion_Client->Visible = false;
 			this->Panel_Gestion_Client->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Client_Paint);
@@ -1326,9 +1303,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// 
 			this->choice_typeadresse->FormattingEnabled = true;
 			this->choice_typeadresse->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"", L"Facturation", L"Livraison" });
-			this->choice_typeadresse->Location = System::Drawing::Point(1083, 348);
+			this->choice_typeadresse->Location = System::Drawing::Point(722, 226);
+			this->choice_typeadresse->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->choice_typeadresse->Name = L"choice_typeadresse";
-			this->choice_typeadresse->Size = System::Drawing::Size(172, 28);
+			this->choice_typeadresse->Size = System::Drawing::Size(116, 21);
 			this->choice_typeadresse->TabIndex = 125;
 			// 
 			// label_typeadresse
@@ -1338,10 +1316,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_typeadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_typeadresse->ForeColor = System::Drawing::Color::White;
-			this->label_typeadresse->Location = System::Drawing::Point(1078, 316);
-			this->label_typeadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_typeadresse->Location = System::Drawing::Point(719, 205);
+			this->label_typeadresse->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_typeadresse->Name = L"label_typeadresse";
-			this->label_typeadresse->Size = System::Drawing::Size(143, 28);
+			this->label_typeadresse->Size = System::Drawing::Size(100, 19);
 			this->label_typeadresse->TabIndex = 124;
 			this->label_typeadresse->Text = L"Type d\'Adresse";
 			// 
@@ -1365,10 +1343,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button1_nouveau->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_nouveau->IdleForecolor = System::Drawing::Color::White;
 			this->button1_nouveau->IdleLineColor = System::Drawing::Color::White;
-			this->button1_nouveau->Location = System::Drawing::Point(1436, 782);
-			this->button1_nouveau->Margin = System::Windows::Forms::Padding(5);
+			this->button1_nouveau->Location = System::Drawing::Point(957, 508);
 			this->button1_nouveau->Name = L"button1_nouveau";
-			this->button1_nouveau->Size = System::Drawing::Size(273, 72);
+			this->button1_nouveau->Size = System::Drawing::Size(182, 47);
 			this->button1_nouveau->TabIndex = 122;
 			this->button1_nouveau->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->button1_nouveau->Click += gcnew System::EventHandler(this, &Dashboard::button1_nouveau_Click);
@@ -1393,10 +1370,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button1_supprimer->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_supprimer->IdleForecolor = System::Drawing::Color::White;
 			this->button1_supprimer->IdleLineColor = System::Drawing::Color::White;
-			this->button1_supprimer->Location = System::Drawing::Point(1096, 782);
-			this->button1_supprimer->Margin = System::Windows::Forms::Padding(5);
+			this->button1_supprimer->Location = System::Drawing::Point(731, 508);
 			this->button1_supprimer->Name = L"button1_supprimer";
-			this->button1_supprimer->Size = System::Drawing::Size(273, 72);
+			this->button1_supprimer->Size = System::Drawing::Size(182, 47);
 			this->button1_supprimer->TabIndex = 53;
 			this->button1_supprimer->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->button1_supprimer->Click += gcnew System::EventHandler(this, &Dashboard::button1_supprimer_Click);
@@ -1421,10 +1397,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button1_modiffier->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_modiffier->IdleForecolor = System::Drawing::Color::White;
 			this->button1_modiffier->IdleLineColor = System::Drawing::Color::White;
-			this->button1_modiffier->Location = System::Drawing::Point(754, 782);
-			this->button1_modiffier->Margin = System::Windows::Forms::Padding(5);
+			this->button1_modiffier->Location = System::Drawing::Point(503, 508);
 			this->button1_modiffier->Name = L"button1_modiffier";
-			this->button1_modiffier->Size = System::Drawing::Size(275, 72);
+			this->button1_modiffier->Size = System::Drawing::Size(183, 47);
 			this->button1_modiffier->TabIndex = 52;
 			this->button1_modiffier->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->button1_modiffier->Click += gcnew System::EventHandler(this, &Dashboard::button1_modiffier_Click);
@@ -1449,10 +1424,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button1_ajouter->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_ajouter->IdleForecolor = System::Drawing::Color::White;
 			this->button1_ajouter->IdleLineColor = System::Drawing::Color::White;
-			this->button1_ajouter->Location = System::Drawing::Point(415, 782);
-			this->button1_ajouter->Margin = System::Windows::Forms::Padding(5);
+			this->button1_ajouter->Location = System::Drawing::Point(277, 508);
 			this->button1_ajouter->Name = L"button1_ajouter";
-			this->button1_ajouter->Size = System::Drawing::Size(274, 72);
+			this->button1_ajouter->Size = System::Drawing::Size(183, 47);
 			this->button1_ajouter->TabIndex = 51;
 			this->button1_ajouter->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->button1_ajouter->Click += gcnew System::EventHandler(this, &Dashboard::button1_ajouter_Click);
@@ -1477,10 +1451,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button1_afficher->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_afficher->IdleForecolor = System::Drawing::Color::White;
 			this->button1_afficher->IdleLineColor = System::Drawing::Color::White;
-			this->button1_afficher->Location = System::Drawing::Point(74, 782);
-			this->button1_afficher->Margin = System::Windows::Forms::Padding(5);
+			this->button1_afficher->Location = System::Drawing::Point(49, 508);
 			this->button1_afficher->Name = L"button1_afficher";
-			this->button1_afficher->Size = System::Drawing::Size(271, 72);
+			this->button1_afficher->Size = System::Drawing::Size(181, 47);
 			this->button1_afficher->TabIndex = 50;
 			this->button1_afficher->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->button1_afficher->Click += gcnew System::EventHandler(this, &Dashboard::button1_afficher_Click);
@@ -1491,10 +1464,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelchampclient->BackColor = System::Drawing::Color::Transparent;
 			this->labelchampclient->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->labelchampclient->ForeColor = System::Drawing::Color::White;
-			this->labelchampclient->Location = System::Drawing::Point(160, 236);
-			this->labelchampclient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelchampclient->Location = System::Drawing::Point(107, 153);
+			this->labelchampclient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelchampclient->Name = L"labelchampclient";
-			this->labelchampclient->Size = System::Drawing::Size(280, 32);
+			this->labelchampclient->Size = System::Drawing::Size(187, 21);
 			this->labelchampclient->TabIndex = 39;
 			this->labelchampclient->Text = L"Informations générales";
 			// 
@@ -1504,21 +1477,21 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_adresselivraison->BackColor = System::Drawing::Color::Transparent;
 			this->label_adresselivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label_adresselivraison->ForeColor = System::Drawing::Color::White;
-			this->label_adresselivraison->Location = System::Drawing::Point(789, 236);
-			this->label_adresselivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_adresselivraison->Location = System::Drawing::Point(526, 153);
+			this->label_adresselivraison->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_adresselivraison->Name = L"label_adresselivraison";
-			this->label_adresselivraison->Size = System::Drawing::Size(111, 32);
+			this->label_adresselivraison->Size = System::Drawing::Size(73, 21);
 			this->label_adresselivraison->TabIndex = 37;
 			this->label_adresselivraison->Text = L"Adresse ";
 			// 
 			// text1_message
 			// 
-			this->text1_message->Location = System::Drawing::Point(13, 870);
-			this->text1_message->Margin = System::Windows::Forms::Padding(2);
+			this->text1_message->Location = System::Drawing::Point(9, 565);
+			this->text1_message->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text1_message->Multiline = true;
 			this->text1_message->Name = L"text1_message";
 			this->text1_message->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->text1_message->Size = System::Drawing::Size(1736, 58);
+			this->text1_message->Size = System::Drawing::Size(1159, 39);
 			this->text1_message->TabIndex = 36;
 			// 
 			// labelpaysadresse
@@ -1528,10 +1501,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelpaysadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelpaysadresse->ForeColor = System::Drawing::Color::White;
-			this->labelpaysadresse->Location = System::Drawing::Point(798, 646);
-			this->labelpaysadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelpaysadresse->Location = System::Drawing::Point(532, 420);
+			this->labelpaysadresse->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelpaysadresse->Name = L"labelpaysadresse";
-			this->labelpaysadresse->Size = System::Drawing::Size(50, 28);
+			this->labelpaysadresse->Size = System::Drawing::Size(37, 19);
 			this->labelpaysadresse->TabIndex = 24;
 			this->labelpaysadresse->Text = L"Pays";
 			// 
@@ -1542,10 +1515,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelvilleadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelvilleadresse->ForeColor = System::Drawing::Color::White;
-			this->labelvilleadresse->Location = System::Drawing::Point(798, 572);
-			this->labelvilleadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelvilleadresse->Location = System::Drawing::Point(532, 372);
+			this->labelvilleadresse->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelvilleadresse->Name = L"labelvilleadresse";
-			this->labelvilleadresse->Size = System::Drawing::Size(49, 28);
+			this->labelvilleadresse->Size = System::Drawing::Size(34, 19);
 			this->labelvilleadresse->TabIndex = 23;
 			this->labelvilleadresse->Text = L"Ville";
 			// 
@@ -1556,10 +1529,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelcodepostaleadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelcodepostaleadresse->ForeColor = System::Drawing::Color::White;
-			this->labelcodepostaleadresse->Location = System::Drawing::Point(798, 486);
-			this->labelcodepostaleadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelcodepostaleadresse->Location = System::Drawing::Point(532, 316);
+			this->labelcodepostaleadresse->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelcodepostaleadresse->Name = L"labelcodepostaleadresse";
-			this->labelcodepostaleadresse->Size = System::Drawing::Size(125, 28);
+			this->labelcodepostaleadresse->Size = System::Drawing::Size(88, 19);
 			this->labelcodepostaleadresse->TabIndex = 22;
 			this->labelcodepostaleadresse->Text = L"Code Postale";
 			// 
@@ -1570,10 +1543,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labeladressepost->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labeladressepost->ForeColor = System::Drawing::Color::White;
-			this->labeladressepost->Location = System::Drawing::Point(798, 404);
-			this->labeladressepost->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labeladressepost->Location = System::Drawing::Point(532, 263);
+			this->labeladressepost->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labeladressepost->Name = L"labeladressepost";
-			this->labeladressepost->Size = System::Drawing::Size(147, 28);
+			this->labeladressepost->Size = System::Drawing::Size(104, 19);
 			this->labeladressepost->TabIndex = 21;
 			this->labeladressepost->Text = L"Adresse Postale";
 			// 
@@ -1584,51 +1557,51 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelidadresse->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelidadresse->ForeColor = System::Drawing::Color::White;
-			this->labelidadresse->Location = System::Drawing::Point(798, 317);
-			this->labelidadresse->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelidadresse->Location = System::Drawing::Point(532, 206);
+			this->labelidadresse->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelidadresse->Name = L"labelidadresse";
-			this->labelidadresse->Size = System::Drawing::Size(104, 28);
+			this->labelidadresse->Size = System::Drawing::Size(75, 19);
 			this->labelidadresse->TabIndex = 20;
 			this->labelidadresse->Text = L"ID Adresse";
 			// 
 			// text_adressepostale
 			// 
-			this->text_adressepostale->Location = System::Drawing::Point(795, 434);
-			this->text_adressepostale->Margin = System::Windows::Forms::Padding(2);
+			this->text_adressepostale->Location = System::Drawing::Point(530, 282);
+			this->text_adressepostale->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_adressepostale->Name = L"text_adressepostale";
-			this->text_adressepostale->Size = System::Drawing::Size(224, 26);
+			this->text_adressepostale->Size = System::Drawing::Size(151, 20);
 			this->text_adressepostale->TabIndex = 19;
 			// 
 			// text_paysadresse
 			// 
-			this->text_paysadresse->Location = System::Drawing::Point(795, 676);
-			this->text_paysadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_paysadresse->Location = System::Drawing::Point(530, 439);
+			this->text_paysadresse->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_paysadresse->Name = L"text_paysadresse";
-			this->text_paysadresse->Size = System::Drawing::Size(224, 26);
+			this->text_paysadresse->Size = System::Drawing::Size(151, 20);
 			this->text_paysadresse->TabIndex = 18;
 			// 
 			// text_villeadresse
 			// 
-			this->text_villeadresse->Location = System::Drawing::Point(795, 602);
-			this->text_villeadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_villeadresse->Location = System::Drawing::Point(530, 391);
+			this->text_villeadresse->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_villeadresse->Name = L"text_villeadresse";
-			this->text_villeadresse->Size = System::Drawing::Size(224, 26);
+			this->text_villeadresse->Size = System::Drawing::Size(151, 20);
 			this->text_villeadresse->TabIndex = 17;
 			// 
 			// text_codepostaleadresse
 			// 
-			this->text_codepostaleadresse->Location = System::Drawing::Point(795, 516);
-			this->text_codepostaleadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_codepostaleadresse->Location = System::Drawing::Point(530, 335);
+			this->text_codepostaleadresse->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_codepostaleadresse->Name = L"text_codepostaleadresse";
-			this->text_codepostaleadresse->Size = System::Drawing::Size(224, 26);
+			this->text_codepostaleadresse->Size = System::Drawing::Size(151, 20);
 			this->text_codepostaleadresse->TabIndex = 16;
 			// 
 			// text_idadresse
 			// 
-			this->text_idadresse->Location = System::Drawing::Point(795, 348);
-			this->text_idadresse->Margin = System::Windows::Forms::Padding(2);
+			this->text_idadresse->Location = System::Drawing::Point(530, 226);
+			this->text_idadresse->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idadresse->Name = L"text_idadresse";
-			this->text_idadresse->Size = System::Drawing::Size(224, 26);
+			this->text_idadresse->Size = System::Drawing::Size(151, 20);
 			this->text_idadresse->TabIndex = 15;
 			// 
 			// labeldatenaissance
@@ -1638,10 +1611,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labeldatenaissance->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labeldatenaissance->ForeColor = System::Drawing::Color::White;
-			this->labeldatenaissance->Location = System::Drawing::Point(168, 568);
-			this->labeldatenaissance->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labeldatenaissance->Location = System::Drawing::Point(112, 369);
+			this->labeldatenaissance->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labeldatenaissance->Name = L"labeldatenaissance";
-			this->labeldatenaissance->Size = System::Drawing::Size(301, 28);
+			this->labeldatenaissance->Size = System::Drawing::Size(212, 19);
 			this->labeldatenaissance->TabIndex = 13;
 			this->labeldatenaissance->Text = L"Date de naissance (JJ/MM/AAAA)\r\n";
 			// 
@@ -1652,10 +1625,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelprenomclient->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelprenomclient->ForeColor = System::Drawing::Color::White;
-			this->labelprenomclient->Location = System::Drawing::Point(168, 486);
-			this->labelprenomclient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelprenomclient->Location = System::Drawing::Point(112, 316);
+			this->labelprenomclient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelprenomclient->Name = L"labelprenomclient";
-			this->labelprenomclient->Size = System::Drawing::Size(80, 28);
+			this->labelprenomclient->Size = System::Drawing::Size(57, 19);
 			this->labelprenomclient->TabIndex = 12;
 			this->labelprenomclient->Text = L"Prénom";
 			// 
@@ -1666,10 +1639,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelnomclient->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelnomclient->ForeColor = System::Drawing::Color::White;
-			this->labelnomclient->Location = System::Drawing::Point(168, 404);
-			this->labelnomclient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelnomclient->Location = System::Drawing::Point(112, 263);
+			this->labelnomclient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelnomclient->Name = L"labelnomclient";
-			this->labelnomclient->Size = System::Drawing::Size(56, 28);
+			this->labelnomclient->Size = System::Drawing::Size(39, 19);
 			this->labelnomclient->TabIndex = 11;
 			this->labelnomclient->Text = L"Nom";
 			// 
@@ -1680,55 +1653,55 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelidclient->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelidclient->ForeColor = System::Drawing::Color::White;
-			this->labelidclient->Location = System::Drawing::Point(168, 317);
-			this->labelidclient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelidclient->Location = System::Drawing::Point(112, 206);
+			this->labelidclient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelidclient->Name = L"labelidclient";
-			this->labelidclient->Size = System::Drawing::Size(86, 28);
+			this->labelidclient->Size = System::Drawing::Size(62, 19);
 			this->labelidclient->TabIndex = 10;
 			this->labelidclient->Text = L"ID Client";
 			// 
 			// text_nomclient
 			// 
-			this->text_nomclient->Location = System::Drawing::Point(166, 434);
-			this->text_nomclient->Margin = System::Windows::Forms::Padding(2);
+			this->text_nomclient->Location = System::Drawing::Point(111, 282);
+			this->text_nomclient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_nomclient->Name = L"text_nomclient";
-			this->text_nomclient->Size = System::Drawing::Size(224, 26);
+			this->text_nomclient->Size = System::Drawing::Size(151, 20);
 			this->text_nomclient->TabIndex = 9;
 			// 
 			// text_datenaissance
 			// 
-			this->text_datenaissance->Location = System::Drawing::Point(166, 602);
-			this->text_datenaissance->Margin = System::Windows::Forms::Padding(2);
+			this->text_datenaissance->Location = System::Drawing::Point(111, 391);
+			this->text_datenaissance->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_datenaissance->Name = L"text_datenaissance";
-			this->text_datenaissance->Size = System::Drawing::Size(224, 26);
+			this->text_datenaissance->Size = System::Drawing::Size(151, 20);
 			this->text_datenaissance->TabIndex = 7;
 			// 
 			// text_prenomclient
 			// 
-			this->text_prenomclient->Location = System::Drawing::Point(166, 516);
-			this->text_prenomclient->Margin = System::Windows::Forms::Padding(2);
+			this->text_prenomclient->Location = System::Drawing::Point(111, 335);
+			this->text_prenomclient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_prenomclient->Name = L"text_prenomclient";
-			this->text_prenomclient->Size = System::Drawing::Size(224, 26);
+			this->text_prenomclient->Size = System::Drawing::Size(151, 20);
 			this->text_prenomclient->TabIndex = 6;
 			// 
 			// text_idclient
 			// 
-			this->text_idclient->Location = System::Drawing::Point(166, 348);
-			this->text_idclient->Margin = System::Windows::Forms::Padding(2);
+			this->text_idclient->Location = System::Drawing::Point(111, 226);
+			this->text_idclient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idclient->Name = L"text_idclient";
-			this->text_idclient->Size = System::Drawing::Size(224, 26);
+			this->text_idclient->Size = System::Drawing::Size(151, 20);
 			this->text_idclient->TabIndex = 5;
 			// 
 			// dataGridView_gestclient
 			// 
 			this->dataGridView_gestclient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView_gestclient->Location = System::Drawing::Point(13, 960);
-			this->dataGridView_gestclient->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView_gestclient->Location = System::Drawing::Point(9, 624);
+			this->dataGridView_gestclient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->dataGridView_gestclient->Name = L"dataGridView_gestclient";
 			this->dataGridView_gestclient->ReadOnly = true;
 			this->dataGridView_gestclient->RowHeadersWidth = 62;
 			this->dataGridView_gestclient->RowTemplate->Height = 28;
-			this->dataGridView_gestclient->Size = System::Drawing::Size(1730, 280);
+			this->dataGridView_gestclient->Size = System::Drawing::Size(1153, 182);
 			this->dataGridView_gestclient->TabIndex = 1;
 			// 
 			// Title_gestion_clients
@@ -1736,10 +1709,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Title_gestion_clients->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_gestion_clients->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_gestion_clients->Location = System::Drawing::Point(663, 50);
-			this->Title_gestion_clients->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Title_gestion_clients->Location = System::Drawing::Point(442, 32);
 			this->Title_gestion_clients->Name = L"Title_gestion_clients";
-			this->Title_gestion_clients->Size = System::Drawing::Size(489, 132);
+			this->Title_gestion_clients->Size = System::Drawing::Size(326, 86);
 			this->Title_gestion_clients->TabIndex = 0;
 			this->Title_gestion_clients->Text = L"Gestion Clients";
 			// 
@@ -1798,10 +1770,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_refcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView_gestcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->Title_Gestion_Commandes);
-			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(2087, 54);
-			this->Panel_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(1391, 35);
 			this->Panel_Gestion_Commandes->Name = L"Panel_Gestion_Commandes";
-			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(163, 1295);
+			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(109, 842);
 			this->Panel_Gestion_Commandes->TabIndex = 4;
 			this->Panel_Gestion_Commandes->Visible = false;
 			// 
@@ -1812,19 +1783,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_idadfactcommande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_idadfactcommande->ForeColor = System::Drawing::Color::White;
-			this->label_idadfactcommande->Location = System::Drawing::Point(499, 415);
-			this->label_idadfactcommande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idadfactcommande->Location = System::Drawing::Point(333, 270);
+			this->label_idadfactcommande->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_idadfactcommande->Name = L"label_idadfactcommande";
-			this->label_idadfactcommande->Size = System::Drawing::Size(204, 28);
+			this->label_idadfactcommande->Size = System::Drawing::Size(145, 19);
 			this->label_idadfactcommande->TabIndex = 125;
 			this->label_idadfactcommande->Text = L"ID Adresse facturation";
 			// 
 			// text_idadfactcommande
 			// 
-			this->text_idadfactcommande->Location = System::Drawing::Point(504, 445);
-			this->text_idadfactcommande->Margin = System::Windows::Forms::Padding(2);
+			this->text_idadfactcommande->Location = System::Drawing::Point(336, 289);
+			this->text_idadfactcommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idadfactcommande->Name = L"text_idadfactcommande";
-			this->text_idadfactcommande->Size = System::Drawing::Size(196, 26);
+			this->text_idadfactcommande->Size = System::Drawing::Size(132, 20);
 			this->text_idadfactcommande->TabIndex = 124;
 			// 
 			// label_idadlivcommande
@@ -1834,19 +1805,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_idadlivcommande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_idadlivcommande->ForeColor = System::Drawing::Color::White;
-			this->label_idadlivcommande->Location = System::Drawing::Point(288, 415);
-			this->label_idadlivcommande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idadlivcommande->Location = System::Drawing::Point(192, 270);
+			this->label_idadlivcommande->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_idadlivcommande->Name = L"label_idadlivcommande";
-			this->label_idadlivcommande->Size = System::Drawing::Size(182, 28);
+			this->label_idadlivcommande->Size = System::Drawing::Size(129, 19);
 			this->label_idadlivcommande->TabIndex = 123;
 			this->label_idadlivcommande->Text = L"ID Adresse livraison";
 			// 
 			// text_idadlivcommande
 			// 
-			this->text_idadlivcommande->Location = System::Drawing::Point(293, 445);
-			this->text_idadlivcommande->Margin = System::Windows::Forms::Padding(2);
+			this->text_idadlivcommande->Location = System::Drawing::Point(195, 289);
+			this->text_idadlivcommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idadlivcommande->Name = L"text_idadlivcommande";
-			this->text_idadlivcommande->Size = System::Drawing::Size(177, 26);
+			this->text_idadlivcommande->Size = System::Drawing::Size(119, 20);
 			this->text_idadlivcommande->TabIndex = 122;
 			// 
 			// button2_nouveau
@@ -1869,10 +1840,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_nouveau->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button2_nouveau->IdleForecolor = System::Drawing::Color::White;
 			this->button2_nouveau->IdleLineColor = System::Drawing::Color::White;
-			this->button2_nouveau->Location = System::Drawing::Point(1447, 764);
-			this->button2_nouveau->Margin = System::Windows::Forms::Padding(5);
+			this->button2_nouveau->Location = System::Drawing::Point(965, 497);
 			this->button2_nouveau->Name = L"button2_nouveau";
-			this->button2_nouveau->Size = System::Drawing::Size(273, 72);
+			this->button2_nouveau->Size = System::Drawing::Size(182, 47);
 			this->button2_nouveau->TabIndex = 121;
 			this->button2_nouveau->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -1883,10 +1853,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_payssociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_payssociete->ForeColor = System::Drawing::Color::White;
-			this->label_payssociete->Location = System::Drawing::Point(1515, 640);
-			this->label_payssociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_payssociete->Location = System::Drawing::Point(1010, 416);
+			this->label_payssociete->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_payssociete->Name = L"label_payssociete";
-			this->label_payssociete->Size = System::Drawing::Size(50, 28);
+			this->label_payssociete->Size = System::Drawing::Size(37, 19);
 			this->label_payssociete->TabIndex = 120;
 			this->label_payssociete->Text = L"Pays";
 			// 
@@ -1897,27 +1867,27 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_codepostsociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_codepostsociete->ForeColor = System::Drawing::Color::White;
-			this->label_codepostsociete->Location = System::Drawing::Point(1318, 642);
-			this->label_codepostsociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_codepostsociete->Location = System::Drawing::Point(879, 417);
+			this->label_codepostsociete->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_codepostsociete->Name = L"label_codepostsociete";
-			this->label_codepostsociete->Size = System::Drawing::Size(125, 28);
+			this->label_codepostsociete->Size = System::Drawing::Size(88, 19);
 			this->label_codepostsociete->TabIndex = 119;
 			this->label_codepostsociete->Text = L"Code Postale";
 			// 
 			// text_payssociete
 			// 
-			this->text_payssociete->Location = System::Drawing::Point(1520, 670);
-			this->text_payssociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_payssociete->Location = System::Drawing::Point(1013, 435);
+			this->text_payssociete->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_payssociete->Name = L"text_payssociete";
-			this->text_payssociete->Size = System::Drawing::Size(110, 26);
+			this->text_payssociete->Size = System::Drawing::Size(75, 20);
 			this->text_payssociete->TabIndex = 118;
 			// 
 			// text_codepostsociete
 			// 
-			this->text_codepostsociete->Location = System::Drawing::Point(1323, 672);
-			this->text_codepostsociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_codepostsociete->Location = System::Drawing::Point(882, 437);
+			this->text_codepostsociete->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_codepostsociete->Name = L"text_codepostsociete";
-			this->text_codepostsociete->Size = System::Drawing::Size(171, 26);
+			this->text_codepostsociete->Size = System::Drawing::Size(115, 20);
 			this->text_codepostsociete->TabIndex = 117;
 			// 
 			// label_villesociete
@@ -1927,10 +1897,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_villesociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_villesociete->ForeColor = System::Drawing::Color::White;
-			this->label_villesociete->Location = System::Drawing::Point(1515, 554);
-			this->label_villesociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_villesociete->Location = System::Drawing::Point(1010, 360);
+			this->label_villesociete->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_villesociete->Name = L"label_villesociete";
-			this->label_villesociete->Size = System::Drawing::Size(49, 28);
+			this->label_villesociete->Size = System::Drawing::Size(34, 19);
 			this->label_villesociete->TabIndex = 116;
 			this->label_villesociete->Text = L"Ville";
 			// 
@@ -1941,27 +1911,27 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_adressepostsociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_adressepostsociete->ForeColor = System::Drawing::Color::White;
-			this->label_adressepostsociete->Location = System::Drawing::Point(1318, 556);
-			this->label_adressepostsociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_adressepostsociete->Location = System::Drawing::Point(879, 361);
+			this->label_adressepostsociete->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_adressepostsociete->Name = L"label_adressepostsociete";
-			this->label_adressepostsociete->Size = System::Drawing::Size(147, 28);
+			this->label_adressepostsociete->Size = System::Drawing::Size(104, 19);
 			this->label_adressepostsociete->TabIndex = 115;
 			this->label_adressepostsociete->Text = L"Adresse Postale";
 			// 
 			// text_villesociete
 			// 
-			this->text_villesociete->Location = System::Drawing::Point(1520, 584);
-			this->text_villesociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_villesociete->Location = System::Drawing::Point(1013, 380);
+			this->text_villesociete->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_villesociete->Name = L"text_villesociete";
-			this->text_villesociete->Size = System::Drawing::Size(110, 26);
+			this->text_villesociete->Size = System::Drawing::Size(75, 20);
 			this->text_villesociete->TabIndex = 114;
 			// 
 			// text_adressepostsociete
 			// 
-			this->text_adressepostsociete->Location = System::Drawing::Point(1323, 586);
-			this->text_adressepostsociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_adressepostsociete->Location = System::Drawing::Point(882, 381);
+			this->text_adressepostsociete->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_adressepostsociete->Name = L"text_adressepostsociete";
-			this->text_adressepostsociete->Size = System::Drawing::Size(171, 26);
+			this->text_adressepostsociete->Size = System::Drawing::Size(115, 20);
 			this->text_adressepostsociete->TabIndex = 113;
 			// 
 			// label_datepaiement
@@ -1971,19 +1941,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_datepaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_datepaiement->ForeColor = System::Drawing::Color::White;
-			this->label_datepaiement->Location = System::Drawing::Point(846, 531);
-			this->label_datepaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_datepaiement->Location = System::Drawing::Point(564, 345);
+			this->label_datepaiement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_datepaiement->Name = L"label_datepaiement";
-			this->label_datepaiement->Size = System::Drawing::Size(301, 28);
+			this->label_datepaiement->Size = System::Drawing::Size(211, 19);
 			this->label_datepaiement->TabIndex = 112;
 			this->label_datepaiement->Text = L"Date de paiement (JJ/MM/AAAA)\r\n";
 			// 
 			// text_datepaiement
 			// 
-			this->text_datepaiement->Location = System::Drawing::Point(851, 562);
-			this->text_datepaiement->Margin = System::Windows::Forms::Padding(2);
+			this->text_datepaiement->Location = System::Drawing::Point(567, 365);
+			this->text_datepaiement->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_datepaiement->Name = L"text_datepaiement";
-			this->text_datepaiement->Size = System::Drawing::Size(287, 26);
+			this->text_datepaiement->Size = System::Drawing::Size(193, 20);
 			this->text_datepaiement->TabIndex = 111;
 			// 
 			// label2_paiementcommande
@@ -1992,10 +1962,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label2_paiementcommande->BackColor = System::Drawing::Color::Transparent;
 			this->label2_paiementcommande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label2_paiementcommande->ForeColor = System::Drawing::Color::White;
-			this->label2_paiementcommande->Location = System::Drawing::Point(845, 223);
-			this->label2_paiementcommande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2_paiementcommande->Location = System::Drawing::Point(563, 145);
+			this->label2_paiementcommande->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label2_paiementcommande->Name = L"label2_paiementcommande";
-			this->label2_paiementcommande->Size = System::Drawing::Size(276, 32);
+			this->label2_paiementcommande->Size = System::Drawing::Size(186, 21);
 			this->label2_paiementcommande->TabIndex = 110;
 			this->label2_paiementcommande->Text = L"Informations Paiement";
 			// 
@@ -2006,10 +1976,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_mypaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_mypaiement->ForeColor = System::Drawing::Color::White;
-			this->label_mypaiement->Location = System::Drawing::Point(846, 417);
-			this->label_mypaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_mypaiement->Location = System::Drawing::Point(564, 271);
+			this->label_mypaiement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_mypaiement->Name = L"label_mypaiement";
-			this->label_mypaiement->Size = System::Drawing::Size(187, 28);
+			this->label_mypaiement->Size = System::Drawing::Size(132, 19);
 			this->label_mypaiement->TabIndex = 106;
 			this->label_mypaiement->Text = L"Moyen de paiement";
 			// 
@@ -2020,27 +1990,27 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_nbpaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_nbpaiement->ForeColor = System::Drawing::Color::White;
-			this->label_nbpaiement->Location = System::Drawing::Point(846, 307);
-			this->label_nbpaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_nbpaiement->Location = System::Drawing::Point(564, 200);
+			this->label_nbpaiement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_nbpaiement->Name = L"label_nbpaiement";
-			this->label_nbpaiement->Size = System::Drawing::Size(207, 28);
+			this->label_nbpaiement->Size = System::Drawing::Size(145, 19);
 			this->label_nbpaiement->TabIndex = 105;
 			this->label_nbpaiement->Text = L"Nombre de paiements";
 			// 
 			// text_mypaiement
 			// 
-			this->text_mypaiement->Location = System::Drawing::Point(851, 447);
-			this->text_mypaiement->Margin = System::Windows::Forms::Padding(2);
+			this->text_mypaiement->Location = System::Drawing::Point(567, 291);
+			this->text_mypaiement->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_mypaiement->Name = L"text_mypaiement";
-			this->text_mypaiement->Size = System::Drawing::Size(287, 26);
+			this->text_mypaiement->Size = System::Drawing::Size(193, 20);
 			this->text_mypaiement->TabIndex = 104;
 			// 
 			// text_nbpaiement
 			// 
-			this->text_nbpaiement->Location = System::Drawing::Point(851, 337);
-			this->text_nbpaiement->Margin = System::Windows::Forms::Padding(2);
+			this->text_nbpaiement->Location = System::Drawing::Point(567, 219);
+			this->text_nbpaiement->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_nbpaiement->Name = L"text_nbpaiement";
-			this->text_nbpaiement->Size = System::Drawing::Size(287, 26);
+			this->text_nbpaiement->Size = System::Drawing::Size(193, 20);
 			this->text_nbpaiement->TabIndex = 100;
 			// 
 			// label_dateemission
@@ -2050,19 +2020,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_dateemission->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_dateemission->ForeColor = System::Drawing::Color::White;
-			this->label_dateemission->Location = System::Drawing::Point(409, 642);
-			this->label_dateemission->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_dateemission->Location = System::Drawing::Point(273, 417);
+			this->label_dateemission->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_dateemission->Name = L"label_dateemission";
-			this->label_dateemission->Size = System::Drawing::Size(285, 28);
+			this->label_dateemission->Size = System::Drawing::Size(199, 19);
 			this->label_dateemission->TabIndex = 99;
 			this->label_dateemission->Text = L"Date d\'émission (JJ/MM/AAAA)\r\n";
 			// 
 			// text_dateemission
 			// 
-			this->text_dateemission->Location = System::Drawing::Point(414, 673);
-			this->text_dateemission->Margin = System::Windows::Forms::Padding(2);
+			this->text_dateemission->Location = System::Drawing::Point(276, 437);
+			this->text_dateemission->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_dateemission->Name = L"text_dateemission";
-			this->text_dateemission->Size = System::Drawing::Size(287, 26);
+			this->text_dateemission->Size = System::Drawing::Size(193, 20);
 			this->text_dateemission->TabIndex = 98;
 			// 
 			// label_montanttotTTC
@@ -2072,19 +2042,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_montanttotTTC->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_montanttotTTC->ForeColor = System::Drawing::Color::White;
-			this->label_montanttotTTC->Location = System::Drawing::Point(530, 528);
-			this->label_montanttotTTC->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_montanttotTTC->Location = System::Drawing::Point(353, 343);
+			this->label_montanttotTTC->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_montanttotTTC->Name = L"label_montanttotTTC";
-			this->label_montanttotTTC->Size = System::Drawing::Size(170, 28);
+			this->label_montanttotTTC->Size = System::Drawing::Size(121, 19);
 			this->label_montanttotTTC->TabIndex = 97;
 			this->label_montanttotTTC->Text = L"Montant total TTC";
 			// 
 			// text_montanttotTTC
 			// 
-			this->text_montanttotTTC->Location = System::Drawing::Point(535, 558);
-			this->text_montanttotTTC->Margin = System::Windows::Forms::Padding(2);
+			this->text_montanttotTTC->Location = System::Drawing::Point(357, 363);
+			this->text_montanttotTTC->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_montanttotTTC->Name = L"text_montanttotTTC";
-			this->text_montanttotTTC->Size = System::Drawing::Size(165, 26);
+			this->text_montanttotTTC->Size = System::Drawing::Size(111, 20);
 			this->text_montanttotTTC->TabIndex = 96;
 			// 
 			// label_montanttotTVA
@@ -2094,19 +2064,19 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_montanttotTVA->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_montanttotTVA->ForeColor = System::Drawing::Color::White;
-			this->label_montanttotTVA->Location = System::Drawing::Point(319, 528);
-			this->label_montanttotTVA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_montanttotTVA->Location = System::Drawing::Point(213, 343);
+			this->label_montanttotTVA->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_montanttotTVA->Name = L"label_montanttotTVA";
-			this->label_montanttotTVA->Size = System::Drawing::Size(173, 28);
+			this->label_montanttotTVA->Size = System::Drawing::Size(123, 19);
 			this->label_montanttotTVA->TabIndex = 95;
 			this->label_montanttotTVA->Text = L"Montant total TVA";
 			// 
 			// text_montanttotTVA
 			// 
-			this->text_montanttotTVA->Location = System::Drawing::Point(324, 558);
-			this->text_montanttotTVA->Margin = System::Windows::Forms::Padding(2);
+			this->text_montanttotTVA->Location = System::Drawing::Point(216, 363);
+			this->text_montanttotTVA->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_montanttotTVA->Name = L"text_montanttotTVA";
-			this->text_montanttotTVA->Size = System::Drawing::Size(165, 26);
+			this->text_montanttotTVA->Size = System::Drawing::Size(111, 20);
 			this->text_montanttotTVA->TabIndex = 94;
 			// 
 			// label2_informationsgen
@@ -2115,10 +2085,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label2_informationsgen->BackColor = System::Drawing::Color::Transparent;
 			this->label2_informationsgen->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label2_informationsgen->ForeColor = System::Drawing::Color::White;
-			this->label2_informationsgen->Location = System::Drawing::Point(72, 223);
-			this->label2_informationsgen->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2_informationsgen->Location = System::Drawing::Point(48, 145);
+			this->label2_informationsgen->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label2_informationsgen->Name = L"label2_informationsgen";
-			this->label2_informationsgen->Size = System::Drawing::Size(280, 32);
+			this->label2_informationsgen->Size = System::Drawing::Size(187, 21);
 			this->label2_informationsgen->TabIndex = 93;
 			this->label2_informationsgen->Text = L"Informations générales";
 			// 
@@ -2142,10 +2112,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_supprimer->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button2_supprimer->IdleForecolor = System::Drawing::Color::White;
 			this->button2_supprimer->IdleLineColor = System::Drawing::Color::White;
-			this->button2_supprimer->Location = System::Drawing::Point(1095, 764);
-			this->button2_supprimer->Margin = System::Windows::Forms::Padding(5);
+			this->button2_supprimer->Location = System::Drawing::Point(730, 497);
 			this->button2_supprimer->Name = L"button2_supprimer";
-			this->button2_supprimer->Size = System::Drawing::Size(273, 72);
+			this->button2_supprimer->Size = System::Drawing::Size(182, 47);
 			this->button2_supprimer->TabIndex = 92;
 			this->button2_supprimer->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2169,10 +2138,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_modifier->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button2_modifier->IdleForecolor = System::Drawing::Color::White;
 			this->button2_modifier->IdleLineColor = System::Drawing::Color::White;
-			this->button2_modifier->Location = System::Drawing::Point(753, 764);
-			this->button2_modifier->Margin = System::Windows::Forms::Padding(5);
+			this->button2_modifier->Location = System::Drawing::Point(502, 497);
 			this->button2_modifier->Name = L"button2_modifier";
-			this->button2_modifier->Size = System::Drawing::Size(275, 72);
+			this->button2_modifier->Size = System::Drawing::Size(183, 47);
 			this->button2_modifier->TabIndex = 91;
 			this->button2_modifier->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2196,10 +2164,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_ajouter->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button2_ajouter->IdleForecolor = System::Drawing::Color::White;
 			this->button2_ajouter->IdleLineColor = System::Drawing::Color::White;
-			this->button2_ajouter->Location = System::Drawing::Point(414, 764);
-			this->button2_ajouter->Margin = System::Windows::Forms::Padding(5);
+			this->button2_ajouter->Location = System::Drawing::Point(276, 497);
 			this->button2_ajouter->Name = L"button2_ajouter";
-			this->button2_ajouter->Size = System::Drawing::Size(274, 72);
+			this->button2_ajouter->Size = System::Drawing::Size(183, 47);
 			this->button2_ajouter->TabIndex = 90;
 			this->button2_ajouter->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2223,10 +2190,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_afficher->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button2_afficher->IdleForecolor = System::Drawing::Color::White;
 			this->button2_afficher->IdleLineColor = System::Drawing::Color::White;
-			this->button2_afficher->Location = System::Drawing::Point(73, 764);
-			this->button2_afficher->Margin = System::Windows::Forms::Padding(5);
+			this->button2_afficher->Location = System::Drawing::Point(49, 497);
 			this->button2_afficher->Name = L"button2_afficher";
-			this->button2_afficher->Size = System::Drawing::Size(271, 72);
+			this->button2_afficher->Size = System::Drawing::Size(181, 47);
 			this->button2_afficher->TabIndex = 89;
 			this->button2_afficher->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2236,22 +2202,22 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_infofact->BackColor = System::Drawing::Color::Transparent;
 			this->label_infofact->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label_infofact->ForeColor = System::Drawing::Color::White;
-			this->label_infofact->Location = System::Drawing::Point(1309, 223);
-			this->label_infofact->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_infofact->Location = System::Drawing::Point(873, 145);
+			this->label_infofact->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_infofact->Name = L"label_infofact";
-			this->label_infofact->Size = System::Drawing::Size(299, 32);
+			this->label_infofact->Size = System::Drawing::Size(200, 21);
 			this->label_infofact->TabIndex = 76;
 			this->label_infofact->Text = L"Informations Facturation";
 			// 
 			// text_messagecommande
 			// 
-			this->text_messagecommande->Location = System::Drawing::Point(15, 854);
-			this->text_messagecommande->Margin = System::Windows::Forms::Padding(2);
+			this->text_messagecommande->Location = System::Drawing::Point(10, 555);
+			this->text_messagecommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_messagecommande->Multiline = true;
 			this->text_messagecommande->Name = L"text_messagecommande";
 			this->text_messagecommande->ReadOnly = true;
 			this->text_messagecommande->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->text_messagecommande->Size = System::Drawing::Size(1719, 58);
+			this->text_messagecommande->Size = System::Drawing::Size(1147, 39);
 			this->text_messagecommande->TabIndex = 75;
 			// 
 			// label_soldereglement
@@ -2261,10 +2227,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_soldereglement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_soldereglement->ForeColor = System::Drawing::Color::White;
-			this->label_soldereglement->Location = System::Drawing::Point(846, 642);
-			this->label_soldereglement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_soldereglement->Location = System::Drawing::Point(564, 417);
+			this->label_soldereglement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_soldereglement->Name = L"label_soldereglement";
-			this->label_soldereglement->Size = System::Drawing::Size(183, 28);
+			this->label_soldereglement->Size = System::Drawing::Size(127, 19);
 			this->label_soldereglement->TabIndex = 74;
 			this->label_soldereglement->Text = L"Solde de règlement";
 			// 
@@ -2275,10 +2241,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_idadressesociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_idadressesociete->ForeColor = System::Drawing::Color::White;
-			this->label_idadressesociete->Location = System::Drawing::Point(1515, 471);
-			this->label_idadressesociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idadressesociete->Location = System::Drawing::Point(1010, 306);
+			this->label_idadressesociete->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_idadressesociete->Name = L"label_idadressesociete";
-			this->label_idadressesociete->Size = System::Drawing::Size(104, 28);
+			this->label_idadressesociete->Size = System::Drawing::Size(75, 19);
 			this->label_idadressesociete->TabIndex = 73;
 			this->label_idadressesociete->Text = L"ID Adresse";
 			// 
@@ -2289,10 +2255,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_societe->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_societe->ForeColor = System::Drawing::Color::White;
-			this->label_societe->Location = System::Drawing::Point(1318, 473);
-			this->label_societe->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_societe->Location = System::Drawing::Point(879, 307);
+			this->label_societe->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_societe->Name = L"label_societe";
-			this->label_societe->Size = System::Drawing::Size(76, 28);
+			this->label_societe->Size = System::Drawing::Size(52, 19);
 			this->label_societe->TabIndex = 72;
 			this->label_societe->Text = L"Société";
 			// 
@@ -2303,10 +2269,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_nmservice->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_nmservice->ForeColor = System::Drawing::Color::White;
-			this->label_nmservice->Location = System::Drawing::Point(1318, 391);
-			this->label_nmservice->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_nmservice->Location = System::Drawing::Point(879, 254);
+			this->label_nmservice->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_nmservice->Name = L"label_nmservice";
-			this->label_nmservice->Size = System::Drawing::Size(227, 28);
+			this->label_nmservice->Size = System::Drawing::Size(159, 19);
 			this->label_nmservice->TabIndex = 71;
 			this->label_nmservice->Text = L"Numéro de service client";
 			// 
@@ -2317,51 +2283,51 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_idfacture->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_idfacture->ForeColor = System::Drawing::Color::White;
-			this->label_idfacture->Location = System::Drawing::Point(1318, 303);
-			this->label_idfacture->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idfacture->Location = System::Drawing::Point(879, 197);
+			this->label_idfacture->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_idfacture->Name = L"label_idfacture";
-			this->label_idfacture->Size = System::Drawing::Size(99, 28);
+			this->label_idfacture->Size = System::Drawing::Size(72, 19);
 			this->label_idfacture->TabIndex = 70;
 			this->label_idfacture->Text = L"ID Facture";
 			// 
 			// text_nmservice
 			// 
-			this->text_nmservice->Location = System::Drawing::Point(1323, 421);
-			this->text_nmservice->Margin = System::Windows::Forms::Padding(2);
+			this->text_nmservice->Location = System::Drawing::Point(882, 274);
+			this->text_nmservice->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_nmservice->Name = L"text_nmservice";
-			this->text_nmservice->Size = System::Drawing::Size(307, 26);
+			this->text_nmservice->Size = System::Drawing::Size(206, 20);
 			this->text_nmservice->TabIndex = 69;
 			// 
 			// text_soldereglement
 			// 
-			this->text_soldereglement->Location = System::Drawing::Point(851, 672);
-			this->text_soldereglement->Margin = System::Windows::Forms::Padding(2);
+			this->text_soldereglement->Location = System::Drawing::Point(567, 437);
+			this->text_soldereglement->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_soldereglement->Name = L"text_soldereglement";
-			this->text_soldereglement->Size = System::Drawing::Size(285, 26);
+			this->text_soldereglement->Size = System::Drawing::Size(191, 20);
 			this->text_soldereglement->TabIndex = 68;
 			// 
 			// text_idadressesociete
 			// 
-			this->text_idadressesociete->Location = System::Drawing::Point(1520, 501);
-			this->text_idadressesociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_idadressesociete->Location = System::Drawing::Point(1013, 326);
+			this->text_idadressesociete->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idadressesociete->Name = L"text_idadressesociete";
-			this->text_idadressesociete->Size = System::Drawing::Size(110, 26);
+			this->text_idadressesociete->Size = System::Drawing::Size(75, 20);
 			this->text_idadressesociete->TabIndex = 67;
 			// 
 			// text_societe
 			// 
-			this->text_societe->Location = System::Drawing::Point(1323, 503);
-			this->text_societe->Margin = System::Windows::Forms::Padding(2);
+			this->text_societe->Location = System::Drawing::Point(882, 327);
+			this->text_societe->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_societe->Name = L"text_societe";
-			this->text_societe->Size = System::Drawing::Size(171, 26);
+			this->text_societe->Size = System::Drawing::Size(115, 20);
 			this->text_societe->TabIndex = 66;
 			// 
 			// text_idfacture
 			// 
-			this->text_idfacture->Location = System::Drawing::Point(1323, 335);
-			this->text_idfacture->Margin = System::Windows::Forms::Padding(2);
+			this->text_idfacture->Location = System::Drawing::Point(882, 218);
+			this->text_idfacture->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idfacture->Name = L"text_idfacture";
-			this->text_idfacture->Size = System::Drawing::Size(307, 26);
+			this->text_idfacture->Size = System::Drawing::Size(206, 20);
 			this->text_idfacture->TabIndex = 65;
 			// 
 			// label_datelivraison
@@ -2371,10 +2337,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_datelivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_datelivraison->ForeColor = System::Drawing::Color::White;
-			this->label_datelivraison->Location = System::Drawing::Point(102, 642);
-			this->label_datelivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_datelivraison->Location = System::Drawing::Point(68, 417);
+			this->label_datelivraison->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_datelivraison->Name = L"label_datelivraison";
-			this->label_datelivraison->Size = System::Drawing::Size(292, 28);
+			this->label_datelivraison->Size = System::Drawing::Size(204, 19);
 			this->label_datelivraison->TabIndex = 63;
 			this->label_datelivraison->Text = L"Date de livraison (JJ/MM/AAAA)\r\n";
 			// 
@@ -2385,10 +2351,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_monanttotHT->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_monanttotHT->ForeColor = System::Drawing::Color::White;
-			this->label_monanttotHT->Location = System::Drawing::Point(102, 528);
-			this->label_monanttotHT->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_monanttotHT->Location = System::Drawing::Point(68, 343);
+			this->label_monanttotHT->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_monanttotHT->Name = L"label_monanttotHT";
-			this->label_monanttotHT->Size = System::Drawing::Size(163, 28);
+			this->label_monanttotHT->Size = System::Drawing::Size(116, 19);
 			this->label_monanttotHT->TabIndex = 62;
 			this->label_monanttotHT->Text = L"Montant total HT";
 			// 
@@ -2399,10 +2365,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label2_idclientcommande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2_idclientcommande->ForeColor = System::Drawing::Color::White;
-			this->label2_idclientcommande->Location = System::Drawing::Point(102, 415);
-			this->label2_idclientcommande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2_idclientcommande->Location = System::Drawing::Point(68, 270);
+			this->label2_idclientcommande->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label2_idclientcommande->Name = L"label2_idclientcommande";
-			this->label2_idclientcommande->Size = System::Drawing::Size(86, 28);
+			this->label2_idclientcommande->Size = System::Drawing::Size(62, 19);
 			this->label2_idclientcommande->TabIndex = 61;
 			this->label2_idclientcommande->Text = L"ID Client";
 			// 
@@ -2413,54 +2379,54 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->labelref_commande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelref_commande->ForeColor = System::Drawing::Color::White;
-			this->labelref_commande->Location = System::Drawing::Point(102, 303);
-			this->labelref_commande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelref_commande->Location = System::Drawing::Point(68, 197);
+			this->labelref_commande->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->labelref_commande->Name = L"labelref_commande";
-			this->labelref_commande->Size = System::Drawing::Size(246, 28);
+			this->labelref_commande->Size = System::Drawing::Size(173, 19);
 			this->labelref_commande->TabIndex = 60;
 			this->labelref_commande->Text = L"Référence de la commande";
 			// 
 			// text_idclientcommande
 			// 
-			this->text_idclientcommande->Location = System::Drawing::Point(107, 445);
-			this->text_idclientcommande->Margin = System::Windows::Forms::Padding(2);
+			this->text_idclientcommande->Location = System::Drawing::Point(71, 289);
+			this->text_idclientcommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_idclientcommande->Name = L"text_idclientcommande";
-			this->text_idclientcommande->Size = System::Drawing::Size(165, 26);
+			this->text_idclientcommande->Size = System::Drawing::Size(111, 20);
 			this->text_idclientcommande->TabIndex = 59;
 			// 
 			// text_datelivraison
 			// 
-			this->text_datelivraison->Location = System::Drawing::Point(107, 673);
-			this->text_datelivraison->Margin = System::Windows::Forms::Padding(2);
+			this->text_datelivraison->Location = System::Drawing::Point(71, 437);
+			this->text_datelivraison->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_datelivraison->Name = L"text_datelivraison";
-			this->text_datelivraison->Size = System::Drawing::Size(287, 26);
+			this->text_datelivraison->Size = System::Drawing::Size(193, 20);
 			this->text_datelivraison->TabIndex = 57;
 			// 
 			// text_montanttotHT
 			// 
-			this->text_montanttotHT->Location = System::Drawing::Point(107, 558);
-			this->text_montanttotHT->Margin = System::Windows::Forms::Padding(2);
+			this->text_montanttotHT->Location = System::Drawing::Point(71, 363);
+			this->text_montanttotHT->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_montanttotHT->Name = L"text_montanttotHT";
-			this->text_montanttotHT->Size = System::Drawing::Size(165, 26);
+			this->text_montanttotHT->Size = System::Drawing::Size(111, 20);
 			this->text_montanttotHT->TabIndex = 56;
 			// 
 			// text_refcommande
 			// 
-			this->text_refcommande->Location = System::Drawing::Point(107, 334);
-			this->text_refcommande->Margin = System::Windows::Forms::Padding(2);
+			this->text_refcommande->Location = System::Drawing::Point(71, 217);
+			this->text_refcommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_refcommande->Name = L"text_refcommande";
-			this->text_refcommande->Size = System::Drawing::Size(593, 26);
+			this->text_refcommande->Size = System::Drawing::Size(397, 20);
 			this->text_refcommande->TabIndex = 55;
 			// 
 			// dataGridView_gestcommande
 			// 
 			this->dataGridView_gestcommande->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView_gestcommande->Location = System::Drawing::Point(15, 944);
-			this->dataGridView_gestcommande->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView_gestcommande->Location = System::Drawing::Point(10, 614);
+			this->dataGridView_gestcommande->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->dataGridView_gestcommande->Name = L"dataGridView_gestcommande";
 			this->dataGridView_gestcommande->RowHeadersWidth = 62;
 			this->dataGridView_gestcommande->RowTemplate->Height = 28;
-			this->dataGridView_gestcommande->Size = System::Drawing::Size(1730, 300);
+			this->dataGridView_gestcommande->Size = System::Drawing::Size(1153, 195);
 			this->dataGridView_gestcommande->TabIndex = 54;
 			// 
 			// Title_Gestion_Commandes
@@ -2468,10 +2434,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Title_Gestion_Commandes->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_Gestion_Commandes->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_Gestion_Commandes->Location = System::Drawing::Point(655, 69);
-			this->Title_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Title_Gestion_Commandes->Location = System::Drawing::Point(437, 45);
 			this->Title_Gestion_Commandes->Name = L"Title_Gestion_Commandes";
-			this->Title_Gestion_Commandes->Size = System::Drawing::Size(624, 132);
+			this->Title_Gestion_Commandes->Size = System::Drawing::Size(416, 86);
 			this->Title_Gestion_Commandes->TabIndex = 0;
 			this->Title_Gestion_Commandes->Text = L"Gestion Commandes";
 			this->Title_Gestion_Commandes->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -2503,33 +2468,32 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->panel_Gestion_Stock->Controls->Add(this->text_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->label_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(2188, 46);
-			this->panel_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(1459, 30);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(85, 1316);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(57, 855);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
 			// dataGridView3
 			// 
 			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView3->Location = System::Drawing::Point(35, 977);
-			this->dataGridView3->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView3->Location = System::Drawing::Point(23, 635);
+			this->dataGridView3->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->dataGridView3->Name = L"dataGridView3";
 			this->dataGridView3->RowHeadersWidth = 62;
 			this->dataGridView3->RowTemplate->Height = 28;
-			this->dataGridView3->Size = System::Drawing::Size(1730, 300);
+			this->dataGridView3->Size = System::Drawing::Size(1153, 195);
 			this->dataGridView3->TabIndex = 145;
 			// 
 			// Textbox_Message_Stock
 			// 
-			this->Textbox_Message_Stock->Location = System::Drawing::Point(35, 879);
-			this->Textbox_Message_Stock->Margin = System::Windows::Forms::Padding(2);
+			this->Textbox_Message_Stock->Location = System::Drawing::Point(23, 571);
+			this->Textbox_Message_Stock->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->Textbox_Message_Stock->Multiline = true;
 			this->Textbox_Message_Stock->Name = L"Textbox_Message_Stock";
 			this->Textbox_Message_Stock->ReadOnly = true;
 			this->Textbox_Message_Stock->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->Textbox_Message_Stock->Size = System::Drawing::Size(1728, 58);
+			this->Textbox_Message_Stock->Size = System::Drawing::Size(1153, 39);
 			this->Textbox_Message_Stock->TabIndex = 144;
 			// 
 			// btn_Supprimer_Stock
@@ -2551,10 +2515,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_Supprimer_Stock->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_Supprimer_Stock->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_Supprimer_Stock->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_Supprimer_Stock->Location = System::Drawing::Point(1137, 665);
-			this->btn_Supprimer_Stock->Margin = System::Windows::Forms::Padding(4);
+			this->btn_Supprimer_Stock->Location = System::Drawing::Point(758, 432);
 			this->btn_Supprimer_Stock->Name = L"btn_Supprimer_Stock";
-			this->btn_Supprimer_Stock->Size = System::Drawing::Size(200, 125);
+			this->btn_Supprimer_Stock->Size = System::Drawing::Size(133, 81);
 			this->btn_Supprimer_Stock->TabIndex = 22;
 			this->btn_Supprimer_Stock->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2577,10 +2540,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_Modifier_Stock->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_Modifier_Stock->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_Modifier_Stock->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_Modifier_Stock->Location = System::Drawing::Point(893, 665);
-			this->btn_Modifier_Stock->Margin = System::Windows::Forms::Padding(4);
+			this->btn_Modifier_Stock->Location = System::Drawing::Point(595, 432);
 			this->btn_Modifier_Stock->Name = L"btn_Modifier_Stock";
-			this->btn_Modifier_Stock->Size = System::Drawing::Size(200, 125);
+			this->btn_Modifier_Stock->Size = System::Drawing::Size(133, 81);
 			this->btn_Modifier_Stock->TabIndex = 21;
 			this->btn_Modifier_Stock->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2603,10 +2565,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_nouveau_Stock->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_nouveau_Stock->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_nouveau_Stock->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_nouveau_Stock->Location = System::Drawing::Point(650, 665);
-			this->btn_nouveau_Stock->Margin = System::Windows::Forms::Padding(4);
+			this->btn_nouveau_Stock->Location = System::Drawing::Point(433, 432);
 			this->btn_nouveau_Stock->Name = L"btn_nouveau_Stock";
-			this->btn_nouveau_Stock->Size = System::Drawing::Size(200, 125);
+			this->btn_nouveau_Stock->Size = System::Drawing::Size(133, 81);
 			this->btn_nouveau_Stock->TabIndex = 20;
 			this->btn_nouveau_Stock->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2629,181 +2590,180 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->btn_enregistrer_Stock->IdleFillColor = System::Drawing::Color::Transparent;
 			this->btn_enregistrer_Stock->IdleForecolor = System::Drawing::Color::WhiteSmoke;
 			this->btn_enregistrer_Stock->IdleLineColor = System::Drawing::Color::WhiteSmoke;
-			this->btn_enregistrer_Stock->Location = System::Drawing::Point(388, 665);
-			this->btn_enregistrer_Stock->Margin = System::Windows::Forms::Padding(4);
+			this->btn_enregistrer_Stock->Location = System::Drawing::Point(259, 432);
 			this->btn_enregistrer_Stock->Name = L"btn_enregistrer_Stock";
-			this->btn_enregistrer_Stock->Size = System::Drawing::Size(200, 125);
+			this->btn_enregistrer_Stock->Size = System::Drawing::Size(133, 81);
 			this->btn_enregistrer_Stock->TabIndex = 19;
 			this->btn_enregistrer_Stock->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(1073, 591);
-			this->textBox6->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6->Location = System::Drawing::Point(715, 384);
+			this->textBox6->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(199, 26);
+			this->textBox6->Size = System::Drawing::Size(134, 20);
 			this->textBox6->TabIndex = 18;
 			// 
 			// label_Couleur_Article
 			// 
 			this->label_Couleur_Article->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_Couleur_Article->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_Couleur_Article->Location = System::Drawing::Point(1069, 542);
-			this->label_Couleur_Article->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_Couleur_Article->Location = System::Drawing::Point(713, 352);
+			this->label_Couleur_Article->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_Couleur_Article->Name = L"label_Couleur_Article";
-			this->label_Couleur_Article->Size = System::Drawing::Size(150, 42);
+			this->label_Couleur_Article->Size = System::Drawing::Size(100, 27);
 			this->label_Couleur_Article->TabIndex = 17;
 			this->label_Couleur_Article->Text = L"Couleur";
 			// 
 			// text_Taux_TVA_Article
 			// 
-			this->text_Taux_TVA_Article->Location = System::Drawing::Point(1072, 462);
-			this->text_Taux_TVA_Article->Margin = System::Windows::Forms::Padding(2);
+			this->text_Taux_TVA_Article->Location = System::Drawing::Point(715, 300);
+			this->text_Taux_TVA_Article->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_Taux_TVA_Article->Name = L"text_Taux_TVA_Article";
-			this->text_Taux_TVA_Article->Size = System::Drawing::Size(199, 26);
+			this->text_Taux_TVA_Article->Size = System::Drawing::Size(134, 20);
 			this->text_Taux_TVA_Article->TabIndex = 16;
 			// 
 			// label_Taux_TVA
 			// 
 			this->label_Taux_TVA->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_Taux_TVA->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_Taux_TVA->Location = System::Drawing::Point(1068, 413);
-			this->label_Taux_TVA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_Taux_TVA->Location = System::Drawing::Point(712, 268);
+			this->label_Taux_TVA->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_Taux_TVA->Name = L"label_Taux_TVA";
-			this->label_Taux_TVA->Size = System::Drawing::Size(150, 42);
+			this->label_Taux_TVA->Size = System::Drawing::Size(100, 27);
 			this->label_Taux_TVA->TabIndex = 15;
 			this->label_Taux_TVA->Text = L"Taux TVA";
 			// 
 			// text_Approvisionnement_Article
 			// 
-			this->text_Approvisionnement_Article->Location = System::Drawing::Point(1073, 341);
-			this->text_Approvisionnement_Article->Margin = System::Windows::Forms::Padding(2);
+			this->text_Approvisionnement_Article->Location = System::Drawing::Point(715, 222);
+			this->text_Approvisionnement_Article->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_Approvisionnement_Article->Name = L"text_Approvisionnement_Article";
-			this->text_Approvisionnement_Article->Size = System::Drawing::Size(199, 26);
+			this->text_Approvisionnement_Article->Size = System::Drawing::Size(134, 20);
 			this->text_Approvisionnement_Article->TabIndex = 14;
 			// 
 			// label_Approvisionnement
 			// 
 			this->label_Approvisionnement->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_Approvisionnement->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_Approvisionnement->Location = System::Drawing::Point(1069, 292);
-			this->label_Approvisionnement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_Approvisionnement->Location = System::Drawing::Point(713, 190);
+			this->label_Approvisionnement->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_Approvisionnement->Name = L"label_Approvisionnement";
-			this->label_Approvisionnement->Size = System::Drawing::Size(231, 42);
+			this->label_Approvisionnement->Size = System::Drawing::Size(154, 27);
 			this->label_Approvisionnement->TabIndex = 13;
 			this->label_Approvisionnement->Text = L"Approvisionnement";
 			// 
 			// text_Prix_HT
 			// 
-			this->text_Prix_HT->Location = System::Drawing::Point(740, 598);
-			this->text_Prix_HT->Margin = System::Windows::Forms::Padding(2);
+			this->text_Prix_HT->Location = System::Drawing::Point(493, 389);
+			this->text_Prix_HT->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_Prix_HT->Name = L"text_Prix_HT";
-			this->text_Prix_HT->Size = System::Drawing::Size(199, 26);
+			this->text_Prix_HT->Size = System::Drawing::Size(134, 20);
 			this->text_Prix_HT->TabIndex = 12;
 			// 
 			// label_Prix_HT
 			// 
 			this->label_Prix_HT->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_Prix_HT->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_Prix_HT->Location = System::Drawing::Point(737, 549);
-			this->label_Prix_HT->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_Prix_HT->Location = System::Drawing::Point(491, 357);
+			this->label_Prix_HT->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_Prix_HT->Name = L"label_Prix_HT";
-			this->label_Prix_HT->Size = System::Drawing::Size(150, 42);
+			this->label_Prix_HT->Size = System::Drawing::Size(100, 27);
 			this->label_Prix_HT->TabIndex = 11;
 			this->label_Prix_HT->Text = L"Prix HT";
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(739, 469);
-			this->textBox4->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4->Location = System::Drawing::Point(493, 305);
+			this->textBox4->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(199, 26);
+			this->textBox4->Size = System::Drawing::Size(134, 20);
 			this->textBox4->TabIndex = 10;
 			// 
 			// label_remise_article
 			// 
 			this->label_remise_article->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_remise_article->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_remise_article->Location = System::Drawing::Point(735, 421);
-			this->label_remise_article->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_remise_article->Location = System::Drawing::Point(490, 274);
+			this->label_remise_article->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_remise_article->Name = L"label_remise_article";
-			this->label_remise_article->Size = System::Drawing::Size(150, 42);
+			this->label_remise_article->Size = System::Drawing::Size(100, 27);
 			this->label_remise_article->TabIndex = 9;
 			this->label_remise_article->Text = L"Remise";
 			// 
 			// text_Stock_Article
 			// 
-			this->text_Stock_Article->Location = System::Drawing::Point(740, 348);
-			this->text_Stock_Article->Margin = System::Windows::Forms::Padding(2);
+			this->text_Stock_Article->Location = System::Drawing::Point(493, 226);
+			this->text_Stock_Article->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_Stock_Article->Name = L"text_Stock_Article";
-			this->text_Stock_Article->Size = System::Drawing::Size(199, 26);
+			this->text_Stock_Article->Size = System::Drawing::Size(134, 20);
 			this->text_Stock_Article->TabIndex = 8;
 			// 
 			// label_stock
 			// 
 			this->label_stock->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_stock->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_stock->Location = System::Drawing::Point(737, 299);
-			this->label_stock->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_stock->Location = System::Drawing::Point(491, 194);
+			this->label_stock->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_stock->Name = L"label_stock";
-			this->label_stock->Size = System::Drawing::Size(150, 42);
+			this->label_stock->Size = System::Drawing::Size(100, 27);
 			this->label_stock->TabIndex = 7;
 			this->label_stock->Text = L"Stock";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(391, 584);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2->Location = System::Drawing::Point(261, 380);
+			this->textBox2->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(199, 26);
+			this->textBox2->Size = System::Drawing::Size(134, 20);
 			this->textBox2->TabIndex = 6;
 			// 
 			// label_nom_article
 			// 
 			this->label_nom_article->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_nom_article->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_nom_article->Location = System::Drawing::Point(388, 535);
-			this->label_nom_article->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_nom_article->Location = System::Drawing::Point(259, 348);
+			this->label_nom_article->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_nom_article->Name = L"label_nom_article";
-			this->label_nom_article->Size = System::Drawing::Size(150, 42);
+			this->label_nom_article->Size = System::Drawing::Size(100, 27);
 			this->label_nom_article->TabIndex = 5;
 			this->label_nom_article->Text = L"nom";
 			// 
 			// text_Nature_article
 			// 
-			this->text_Nature_article->Location = System::Drawing::Point(390, 455);
-			this->text_Nature_article->Margin = System::Windows::Forms::Padding(2);
+			this->text_Nature_article->Location = System::Drawing::Point(260, 296);
+			this->text_Nature_article->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_Nature_article->Name = L"text_Nature_article";
-			this->text_Nature_article->Size = System::Drawing::Size(199, 26);
+			this->text_Nature_article->Size = System::Drawing::Size(134, 20);
 			this->text_Nature_article->TabIndex = 4;
 			// 
 			// label_Nature
 			// 
 			this->label_Nature->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_Nature->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_Nature->Location = System::Drawing::Point(386, 406);
-			this->label_Nature->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_Nature->Location = System::Drawing::Point(257, 264);
+			this->label_Nature->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_Nature->Name = L"label_Nature";
-			this->label_Nature->Size = System::Drawing::Size(150, 42);
+			this->label_Nature->Size = System::Drawing::Size(100, 27);
 			this->label_Nature->TabIndex = 3;
 			this->label_Nature->Text = L"Nature";
 			// 
 			// text_ref_article
 			// 
-			this->text_ref_article->Location = System::Drawing::Point(391, 333);
-			this->text_ref_article->Margin = System::Windows::Forms::Padding(2);
+			this->text_ref_article->Location = System::Drawing::Point(261, 216);
+			this->text_ref_article->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->text_ref_article->Name = L"text_ref_article";
-			this->text_ref_article->Size = System::Drawing::Size(199, 26);
+			this->text_ref_article->Size = System::Drawing::Size(134, 20);
 			this->text_ref_article->TabIndex = 2;
 			// 
 			// label_ref_article
 			// 
 			this->label_ref_article->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold));
 			this->label_ref_article->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_ref_article->Location = System::Drawing::Point(388, 285);
-			this->label_ref_article->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_ref_article->Location = System::Drawing::Point(259, 185);
+			this->label_ref_article->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label_ref_article->Name = L"label_ref_article";
-			this->label_ref_article->Size = System::Drawing::Size(150, 42);
+			this->label_ref_article->Size = System::Drawing::Size(100, 27);
 			this->label_ref_article->TabIndex = 1;
 			this->label_ref_article->Text = L"référence";
 			// 
@@ -2812,10 +2772,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->title_Gestion_Stock->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->title_Gestion_Stock->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->title_Gestion_Stock->Location = System::Drawing::Point(656, 79);
-			this->title_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->title_Gestion_Stock->Location = System::Drawing::Point(437, 51);
 			this->title_Gestion_Stock->Name = L"title_Gestion_Stock";
-			this->title_Gestion_Stock->Size = System::Drawing::Size(476, 120);
+			this->title_Gestion_Stock->Size = System::Drawing::Size(317, 78);
 			this->title_Gestion_Stock->TabIndex = 0;
 			this->title_Gestion_Stock->Text = L"Gestion Stock";
 			// 
@@ -2844,10 +2803,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Panel_Gestion_Stat->Controls->Add(this->dataGridView2);
 			this->Panel_Gestion_Stat->Controls->Add(this->Title_Gestion_Stat);
 			this->Panel_Gestion_Stat->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Panel_Gestion_Stat->Location = System::Drawing::Point(2222, 32);
-			this->Panel_Gestion_Stat->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->Panel_Gestion_Stat->Location = System::Drawing::Point(1481, 21);
 			this->Panel_Gestion_Stat->Name = L"Panel_Gestion_Stat";
-			this->Panel_Gestion_Stat->Size = System::Drawing::Size(75, 1346);
+			this->Panel_Gestion_Stat->Size = System::Drawing::Size(50, 875);
 			this->Panel_Gestion_Stat->TabIndex = 5;
 			this->Panel_Gestion_Stat->Visible = false;
 			this->Panel_Gestion_Stat->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Stat_Paint);
@@ -2856,9 +2814,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// 
 			this->comboBox_TVAStat->FormattingEnabled = true;
 			this->comboBox_TVAStat->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"1", L"2", L"3" });
-			this->comboBox_TVAStat->Location = System::Drawing::Point(149, 329);
+			this->comboBox_TVAStat->Location = System::Drawing::Point(99, 214);
+			this->comboBox_TVAStat->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->comboBox_TVAStat->Name = L"comboBox_TVAStat";
-			this->comboBox_TVAStat->Size = System::Drawing::Size(593, 28);
+			this->comboBox_TVAStat->Size = System::Drawing::Size(397, 21);
 			this->comboBox_TVAStat->TabIndex = 176;
 			// 
 			// bunifuThinButton29
@@ -2881,10 +2840,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton29->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton29->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton29->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton29->Location = System::Drawing::Point(149, 759);
-			this->bunifuThinButton29->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton29->Location = System::Drawing::Point(99, 493);
 			this->bunifuThinButton29->Name = L"bunifuThinButton29";
-			this->bunifuThinButton29->Size = System::Drawing::Size(592, 72);
+			this->bunifuThinButton29->Size = System::Drawing::Size(395, 47);
 			this->bunifuThinButton29->TabIndex = 175;
 			this->bunifuThinButton29->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2908,10 +2866,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton28->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton28->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton28->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton28->Location = System::Drawing::Point(1154, 716);
-			this->bunifuThinButton28->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton28->Location = System::Drawing::Point(769, 465);
 			this->bunifuThinButton28->Name = L"bunifuThinButton28";
-			this->bunifuThinButton28->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton28->Size = System::Drawing::Size(183, 47);
 			this->bunifuThinButton28->TabIndex = 174;
 			this->bunifuThinButton28->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2935,10 +2892,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton27->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton27->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton27->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton27->Location = System::Drawing::Point(1472, 716);
-			this->bunifuThinButton27->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton27->Location = System::Drawing::Point(981, 465);
 			this->bunifuThinButton27->Name = L"bunifuThinButton27";
-			this->bunifuThinButton27->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton27->Size = System::Drawing::Size(183, 47);
 			this->bunifuThinButton27->TabIndex = 173;
 			this->bunifuThinButton27->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2962,10 +2918,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton26->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton26->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton26->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton26->Location = System::Drawing::Point(1154, 496);
-			this->bunifuThinButton26->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton26->Location = System::Drawing::Point(769, 322);
 			this->bunifuThinButton26->Name = L"bunifuThinButton26";
-			this->bunifuThinButton26->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton26->Size = System::Drawing::Size(183, 47);
 			this->bunifuThinButton26->TabIndex = 172;
 			this->bunifuThinButton26->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -2989,10 +2944,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton21->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton21->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton21->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton21->Location = System::Drawing::Point(1154, 604);
-			this->bunifuThinButton21->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton21->Location = System::Drawing::Point(769, 393);
 			this->bunifuThinButton21->Name = L"bunifuThinButton21";
-			this->bunifuThinButton21->Size = System::Drawing::Size(592, 72);
+			this->bunifuThinButton21->Size = System::Drawing::Size(395, 47);
 			this->bunifuThinButton21->TabIndex = 167;
 			this->bunifuThinButton21->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -3002,10 +2956,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label12->BackColor = System::Drawing::Color::Transparent;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label12->ForeColor = System::Drawing::Color::White;
-			this->label12->Location = System::Drawing::Point(113, 232);
-			this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label12->Location = System::Drawing::Point(75, 151);
+			this->label12->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(645, 32);
+			this->label12->Size = System::Drawing::Size(431, 21);
 			this->label12->TabIndex = 149;
 			this->label12->Text = L"Calcul de la valeur commercial du stock avec variations";
 			// 
@@ -3029,10 +2983,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton22->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton22->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton22->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton22->Location = System::Drawing::Point(1472, 243);
-			this->bunifuThinButton22->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton22->Location = System::Drawing::Point(981, 158);
 			this->bunifuThinButton22->Name = L"bunifuThinButton22";
-			this->bunifuThinButton22->Size = System::Drawing::Size(273, 72);
+			this->bunifuThinButton22->Size = System::Drawing::Size(182, 47);
 			this->bunifuThinButton22->TabIndex = 148;
 			this->bunifuThinButton22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -3056,10 +3009,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton23->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton23->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton23->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton23->Location = System::Drawing::Point(1153, 370);
-			this->bunifuThinButton23->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton23->Location = System::Drawing::Point(769, 240);
 			this->bunifuThinButton23->Name = L"bunifuThinButton23";
-			this->bunifuThinButton23->Size = System::Drawing::Size(592, 72);
+			this->bunifuThinButton23->Size = System::Drawing::Size(395, 47);
 			this->bunifuThinButton23->TabIndex = 147;
 			this->bunifuThinButton23->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -3083,10 +3035,9 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton24->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton24->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton24->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton24->Location = System::Drawing::Point(1472, 496);
-			this->bunifuThinButton24->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton24->Location = System::Drawing::Point(981, 322);
 			this->bunifuThinButton24->Name = L"bunifuThinButton24";
-			this->bunifuThinButton24->Size = System::Drawing::Size(274, 72);
+			this->bunifuThinButton24->Size = System::Drawing::Size(183, 47);
 			this->bunifuThinButton24->TabIndex = 146;
 			this->bunifuThinButton24->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -3110,22 +3061,21 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->bunifuThinButton25->IdleFillColor = System::Drawing::Color::Transparent;
 			this->bunifuThinButton25->IdleForecolor = System::Drawing::Color::White;
 			this->bunifuThinButton25->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton25->Location = System::Drawing::Point(1153, 243);
-			this->bunifuThinButton25->Margin = System::Windows::Forms::Padding(5);
+			this->bunifuThinButton25->Location = System::Drawing::Point(769, 158);
 			this->bunifuThinButton25->Name = L"bunifuThinButton25";
-			this->bunifuThinButton25->Size = System::Drawing::Size(271, 72);
+			this->bunifuThinButton25->Size = System::Drawing::Size(181, 47);
 			this->bunifuThinButton25->TabIndex = 145;
 			this->bunifuThinButton25->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// textBox11
 			// 
-			this->textBox11->Location = System::Drawing::Point(61, 954);
-			this->textBox11->Margin = System::Windows::Forms::Padding(2);
+			this->textBox11->Location = System::Drawing::Point(41, 620);
+			this->textBox11->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox11->Multiline = true;
 			this->textBox11->Name = L"textBox11";
 			this->textBox11->ReadOnly = true;
 			this->textBox11->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->textBox11->Size = System::Drawing::Size(1728, 58);
+			this->textBox11->Size = System::Drawing::Size(1153, 39);
 			this->textBox11->TabIndex = 143;
 			// 
 			// label18
@@ -3135,10 +3085,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label18->ForeColor = System::Drawing::Color::White;
-			this->label18->Location = System::Drawing::Point(144, 637);
-			this->label18->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label18->Location = System::Drawing::Point(96, 414);
+			this->label18->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(178, 28);
+			this->label18->Size = System::Drawing::Size(126, 19);
 			this->label18->TabIndex = 134;
 			this->label18->Text = L"Démarque inconnu";
 			// 
@@ -3149,10 +3099,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label19->ForeColor = System::Drawing::Color::White;
-			this->label19->Location = System::Drawing::Point(144, 523);
-			this->label19->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label19->Location = System::Drawing::Point(96, 340);
+			this->label19->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(179, 28);
+			this->label19->Size = System::Drawing::Size(125, 19);
 			this->label19->TabIndex = 133;
 			this->label19->Text = L"Remise commercial";
 			// 
@@ -3163,10 +3113,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label20->ForeColor = System::Drawing::Color::White;
-			this->label20->Location = System::Drawing::Point(144, 410);
-			this->label20->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label20->Location = System::Drawing::Point(96, 266);
+			this->label20->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(175, 28);
+			this->label20->Size = System::Drawing::Size(122, 19);
 			this->label20->TabIndex = 132;
 			this->label20->Text = L"Marge commercial";
 			// 
@@ -3177,46 +3127,46 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label21->ForeColor = System::Drawing::Color::White;
-			this->label21->Location = System::Drawing::Point(144, 298);
-			this->label21->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label21->Location = System::Drawing::Point(96, 194);
+			this->label21->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
 			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(46, 28);
+			this->label21->Size = System::Drawing::Size(33, 19);
 			this->label21->TabIndex = 131;
 			this->label21->Text = L"TVA";
 			// 
 			// textBox16
 			// 
-			this->textBox16->Location = System::Drawing::Point(149, 440);
-			this->textBox16->Margin = System::Windows::Forms::Padding(2);
+			this->textBox16->Location = System::Drawing::Point(99, 286);
+			this->textBox16->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox16->Name = L"textBox16";
-			this->textBox16->Size = System::Drawing::Size(593, 26);
+			this->textBox16->Size = System::Drawing::Size(397, 20);
 			this->textBox16->TabIndex = 130;
 			// 
 			// textBox17
 			// 
-			this->textBox17->Location = System::Drawing::Point(149, 668);
-			this->textBox17->Margin = System::Windows::Forms::Padding(2);
+			this->textBox17->Location = System::Drawing::Point(99, 434);
+			this->textBox17->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox17->Name = L"textBox17";
-			this->textBox17->Size = System::Drawing::Size(593, 26);
+			this->textBox17->Size = System::Drawing::Size(397, 20);
 			this->textBox17->TabIndex = 129;
 			// 
 			// textBox18
 			// 
-			this->textBox18->Location = System::Drawing::Point(149, 553);
-			this->textBox18->Margin = System::Windows::Forms::Padding(2);
+			this->textBox18->Location = System::Drawing::Point(99, 359);
+			this->textBox18->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->textBox18->Name = L"textBox18";
-			this->textBox18->Size = System::Drawing::Size(593, 26);
+			this->textBox18->Size = System::Drawing::Size(397, 20);
 			this->textBox18->TabIndex = 128;
 			// 
 			// dataGridView2
 			// 
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Location = System::Drawing::Point(59, 1038);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView2->Location = System::Drawing::Point(39, 675);
+			this->dataGridView2->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersWidth = 62;
 			this->dataGridView2->RowTemplate->Height = 28;
-			this->dataGridView2->Size = System::Drawing::Size(1730, 272);
+			this->dataGridView2->Size = System::Drawing::Size(1153, 177);
 			this->dataGridView2->TabIndex = 126;
 			// 
 			// Title_Gestion_Stat
@@ -3224,21 +3174,20 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Title_Gestion_Stat->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 26.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Title_Gestion_Stat->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Title_Gestion_Stat->Location = System::Drawing::Point(665, 57);
-			this->Title_Gestion_Stat->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Title_Gestion_Stat->Location = System::Drawing::Point(443, 37);
 			this->Title_Gestion_Stat->Name = L"Title_Gestion_Stat";
-			this->Title_Gestion_Stat->Size = System::Drawing::Size(561, 120);
+			this->Title_Gestion_Stat->Size = System::Drawing::Size(374, 78);
 			this->Title_Gestion_Stat->TabIndex = 0;
 			this->Title_Gestion_Stat->Text = L"Gestion Statistiques";
 			this->Title_Gestion_Stat->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// Dashboard
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
 				static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->ClientSize = System::Drawing::Size(2340, 1396);
+			this->ClientSize = System::Drawing::Size(1560, 690);
 			this->Controls->Add(this->Panel_Gestion_Stat);
 			this->Controls->Add(this->panel_Gestion_Stock);
 			this->Controls->Add(this->Panel_Gestion_Commandes);
@@ -3246,7 +3195,6 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Controls->Add(this->panel_Gestion_Personnel);
 			this->Controls->Add(this->panel_gestion);
 			this->Controls->Add(this->Panel_Dashboard);
-			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Dashboard";
 			this->Text = L"Dashboard";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
