@@ -52,15 +52,6 @@ String^ NS_Composants::Map_Client::getTypeAdresse(void)
 	return this->TypeAdresse;
 }
 
-//Map_Adresse^ NS_Composants::Map_Client::getAdresseLivraison(void)
-//{
-//	return this->adresse_livraison;
-//}
-//
-//Map_Adresse^ NS_Composants::Map_Client::getAdresseFacturation(void)
-//{
-//	return this->adresse_facturation;
-//}
 
 String^ NS_Composants::Map_Client::getDateNaissance(void)
 {
@@ -91,22 +82,6 @@ void NS_Composants::Map_Client::setPrenom(String^ prenom)
 	}
 }
 
-
-//void NS_Composants::Map_Client::setAdresseLivraison(int adresse_livraison)
-//{
-//	if (adresse_livraison > 0)
-//	{
-//		this->adresse_livraison->setID_Adresse(adresse_livraison);
-//	}
-//}
-//
-//void NS_Composants::Map_Client::setAdresseFacturation(int adresse_facturation)
-//{
-//	if (adresse_facturation > 0)
-//	{
-//		this->adresse_facturation->setID_Adresse(adresse_facturation);
-//	}
-//}
 
 void NS_Composants::Map_Client::setDateNaissance(String^ date_naissance)
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include "Svc_gestionClient.h"
+#include "Svc_gestionCommande.h"
 
 namespace POO {
 
@@ -304,11 +304,11 @@ private: System::Windows::Forms::Label^ label2_paiementcommande;
 private: System::Windows::Forms::Label^ label_mypaiement;
 
 
-private: System::Windows::Forms::Label^ label_nbpaiement;
-private: System::Windows::Forms::TextBox^ text_mypaiement;
 
 
-private: System::Windows::Forms::TextBox^ text_nbpaiement;
+
+
+
 private: System::Windows::Forms::Label^ label_infofact;
 
 
@@ -467,11 +467,17 @@ private: System::Windows::Forms::DataGridView^ dataGridView3;
 
 
 	private: NS_Svc::Svc_gestionClient^ processusClient;
+	private: NS_Svc::Svc_gestionCommande^ processusCommande;
 	private: Data::DataSet^ ds;
-	private: int index;
-	private: String^ mode;
+	private: Data::DataSet^ ds2;
+	
 private: System::Windows::Forms::ComboBox^ choice_typeadresse;
 private: System::Windows::Forms::Label^ label_typeadresse;
+private: System::Windows::Forms::Label^ label_quantitearticlescom;
+private: System::Windows::Forms::TextBox^ text_quantitearticlescom;
+private: System::Windows::Forms::ComboBox^ choice_remise;
+private: System::Windows::Forms::Label^ label_idremise;
+private: System::Windows::Forms::ComboBox^ choice_moyenpaiement;
 
 
 
@@ -566,6 +572,11 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->dataGridView_gestclient = (gcnew System::Windows::Forms::DataGridView());
 			this->Title_gestion_clients = (gcnew System::Windows::Forms::Label());
 			this->Panel_Gestion_Commandes = (gcnew System::Windows::Forms::Panel());
+			this->choice_moyenpaiement = (gcnew System::Windows::Forms::ComboBox());
+			this->choice_remise = (gcnew System::Windows::Forms::ComboBox());
+			this->label_idremise = (gcnew System::Windows::Forms::Label());
+			this->label_quantitearticlescom = (gcnew System::Windows::Forms::Label());
+			this->text_quantitearticlescom = (gcnew System::Windows::Forms::TextBox());
 			this->label_idadfactcommande = (gcnew System::Windows::Forms::Label());
 			this->text_idadfactcommande = (gcnew System::Windows::Forms::TextBox());
 			this->label_idadlivcommande = (gcnew System::Windows::Forms::Label());
@@ -583,9 +594,6 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->text_datepaiement = (gcnew System::Windows::Forms::TextBox());
 			this->label2_paiementcommande = (gcnew System::Windows::Forms::Label());
 			this->label_mypaiement = (gcnew System::Windows::Forms::Label());
-			this->label_nbpaiement = (gcnew System::Windows::Forms::Label());
-			this->text_mypaiement = (gcnew System::Windows::Forms::TextBox());
-			this->text_nbpaiement = (gcnew System::Windows::Forms::TextBox());
 			this->label_dateemission = (gcnew System::Windows::Forms::Label());
 			this->text_dateemission = (gcnew System::Windows::Forms::TextBox());
 			this->label_montanttotTTC = (gcnew System::Windows::Forms::Label());
@@ -1745,6 +1753,11 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// 
 			// Panel_Gestion_Commandes
 			// 
+			this->Panel_Gestion_Commandes->Controls->Add(this->choice_moyenpaiement);
+			this->Panel_Gestion_Commandes->Controls->Add(this->choice_remise);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_idremise);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_quantitearticlescom);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_quantitearticlescom);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_idadfactcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_idadfactcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_idadlivcommande);
@@ -1762,9 +1775,6 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_datepaiement);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label2_paiementcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_mypaiement);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label_nbpaiement);
-			this->Panel_Gestion_Commandes->Controls->Add(this->text_mypaiement);
-			this->Panel_Gestion_Commandes->Controls->Add(this->text_nbpaiement);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_dateemission);
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_dateemission);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_montanttotTTC);
@@ -1798,12 +1808,67 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_refcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView_gestcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->Title_Gestion_Commandes);
-			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(2087, 54);
+			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(433, 54);
 			this->Panel_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Commandes->Name = L"Panel_Gestion_Commandes";
-			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(163, 1295);
+			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(1817, 1295);
 			this->Panel_Gestion_Commandes->TabIndex = 4;
 			this->Panel_Gestion_Commandes->Visible = false;
+			this->Panel_Gestion_Commandes->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::Panel_Gestion_Commandes_Paint);
+			// 
+			// choice_moyenpaiement
+			// 
+			this->choice_moyenpaiement->FormattingEnabled = true;
+			this->choice_moyenpaiement->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"", L"CB", L"Paypal", L"Chèques" });
+			this->choice_moyenpaiement->Location = System::Drawing::Point(851, 335);
+			this->choice_moyenpaiement->Name = L"choice_moyenpaiement";
+			this->choice_moyenpaiement->Size = System::Drawing::Size(287, 28);
+			this->choice_moyenpaiement->TabIndex = 131;
+			// 
+			// choice_remise
+			// 
+			this->choice_remise->FormattingEnabled = true;
+			this->choice_remise->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"", L"1", L"2" });
+			this->choice_remise->Location = System::Drawing::Point(851, 671);
+			this->choice_remise->Name = L"choice_remise";
+			this->choice_remise->Size = System::Drawing::Size(285, 28);
+			this->choice_remise->TabIndex = 130;
+			// 
+			// label_idremise
+			// 
+			this->label_idremise->AutoSize = true;
+			this->label_idremise->BackColor = System::Drawing::Color::Transparent;
+			this->label_idremise->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label_idremise->ForeColor = System::Drawing::Color::White;
+			this->label_idremise->Location = System::Drawing::Point(846, 640);
+			this->label_idremise->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idremise->Name = L"label_idremise";
+			this->label_idremise->Size = System::Drawing::Size(97, 28);
+			this->label_idremise->TabIndex = 129;
+			this->label_idremise->Text = L"ID Remise";
+			// 
+			// label_quantitearticlescom
+			// 
+			this->label_quantitearticlescom->AutoSize = true;
+			this->label_quantitearticlescom->BackColor = System::Drawing::Color::Transparent;
+			this->label_quantitearticlescom->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label_quantitearticlescom->ForeColor = System::Drawing::Color::White;
+			this->label_quantitearticlescom->Location = System::Drawing::Point(503, 303);
+			this->label_quantitearticlescom->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_quantitearticlescom->Name = L"label_quantitearticlescom";
+			this->label_quantitearticlescom->Size = System::Drawing::Size(154, 28);
+			this->label_quantitearticlescom->TabIndex = 127;
+			this->label_quantitearticlescom->Text = L"Quantité articles";
+			// 
+			// text_quantitearticlescom
+			// 
+			this->text_quantitearticlescom->Location = System::Drawing::Point(508, 335);
+			this->text_quantitearticlescom->Margin = System::Windows::Forms::Padding(2);
+			this->text_quantitearticlescom->Name = L"text_quantitearticlescom";
+			this->text_quantitearticlescom->Size = System::Drawing::Size(193, 26);
+			this->text_quantitearticlescom->TabIndex = 126;
 			// 
 			// label_idadfactcommande
 			// 
@@ -1875,6 +1940,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_nouveau->Size = System::Drawing::Size(273, 72);
 			this->button2_nouveau->TabIndex = 121;
 			this->button2_nouveau->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_nouveau->Click += gcnew System::EventHandler(this, &Dashboard::button2_nouveau_Click);
 			// 
 			// label_payssociete
 			// 
@@ -1971,7 +2037,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_datepaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_datepaiement->ForeColor = System::Drawing::Color::White;
-			this->label_datepaiement->Location = System::Drawing::Point(846, 531);
+			this->label_datepaiement->Location = System::Drawing::Point(846, 419);
 			this->label_datepaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_datepaiement->Name = L"label_datepaiement";
 			this->label_datepaiement->Size = System::Drawing::Size(301, 28);
@@ -1980,7 +2046,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// 
 			// text_datepaiement
 			// 
-			this->text_datepaiement->Location = System::Drawing::Point(851, 562);
+			this->text_datepaiement->Location = System::Drawing::Point(851, 450);
 			this->text_datepaiement->Margin = System::Windows::Forms::Padding(2);
 			this->text_datepaiement->Name = L"text_datepaiement";
 			this->text_datepaiement->Size = System::Drawing::Size(287, 26);
@@ -2006,42 +2072,12 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_mypaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_mypaiement->ForeColor = System::Drawing::Color::White;
-			this->label_mypaiement->Location = System::Drawing::Point(846, 417);
+			this->label_mypaiement->Location = System::Drawing::Point(846, 305);
 			this->label_mypaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_mypaiement->Name = L"label_mypaiement";
 			this->label_mypaiement->Size = System::Drawing::Size(187, 28);
 			this->label_mypaiement->TabIndex = 106;
 			this->label_mypaiement->Text = L"Moyen de paiement";
-			// 
-			// label_nbpaiement
-			// 
-			this->label_nbpaiement->AutoSize = true;
-			this->label_nbpaiement->BackColor = System::Drawing::Color::Transparent;
-			this->label_nbpaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label_nbpaiement->ForeColor = System::Drawing::Color::White;
-			this->label_nbpaiement->Location = System::Drawing::Point(846, 307);
-			this->label_nbpaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label_nbpaiement->Name = L"label_nbpaiement";
-			this->label_nbpaiement->Size = System::Drawing::Size(207, 28);
-			this->label_nbpaiement->TabIndex = 105;
-			this->label_nbpaiement->Text = L"Nombre de paiements";
-			// 
-			// text_mypaiement
-			// 
-			this->text_mypaiement->Location = System::Drawing::Point(851, 447);
-			this->text_mypaiement->Margin = System::Windows::Forms::Padding(2);
-			this->text_mypaiement->Name = L"text_mypaiement";
-			this->text_mypaiement->Size = System::Drawing::Size(287, 26);
-			this->text_mypaiement->TabIndex = 104;
-			// 
-			// text_nbpaiement
-			// 
-			this->text_nbpaiement->Location = System::Drawing::Point(851, 337);
-			this->text_nbpaiement->Margin = System::Windows::Forms::Padding(2);
-			this->text_nbpaiement->Name = L"text_nbpaiement";
-			this->text_nbpaiement->Size = System::Drawing::Size(287, 26);
-			this->text_nbpaiement->TabIndex = 100;
 			// 
 			// label_dateemission
 			// 
@@ -2148,6 +2184,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_supprimer->Size = System::Drawing::Size(273, 72);
 			this->button2_supprimer->TabIndex = 92;
 			this->button2_supprimer->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_supprimer->Click += gcnew System::EventHandler(this, &Dashboard::button2_supprimer_Click);
 			// 
 			// button2_modifier
 			// 
@@ -2175,6 +2212,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_modifier->Size = System::Drawing::Size(275, 72);
 			this->button2_modifier->TabIndex = 91;
 			this->button2_modifier->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_modifier->Click += gcnew System::EventHandler(this, &Dashboard::button2_modifier_Click);
 			// 
 			// button2_ajouter
 			// 
@@ -2202,6 +2240,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_ajouter->Size = System::Drawing::Size(274, 72);
 			this->button2_ajouter->TabIndex = 90;
 			this->button2_ajouter->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_ajouter->Click += gcnew System::EventHandler(this, &Dashboard::button2_ajouter_Click);
 			// 
 			// button2_afficher
 			// 
@@ -2229,6 +2268,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->button2_afficher->Size = System::Drawing::Size(271, 72);
 			this->button2_afficher->TabIndex = 89;
 			this->button2_afficher->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_afficher->Click += gcnew System::EventHandler(this, &Dashboard::button2_afficher_Click);
 			// 
 			// label_infofact
 			// 
@@ -2261,7 +2301,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->label_soldereglement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_soldereglement->ForeColor = System::Drawing::Color::White;
-			this->label_soldereglement->Location = System::Drawing::Point(846, 642);
+			this->label_soldereglement->Location = System::Drawing::Point(846, 530);
 			this->label_soldereglement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_soldereglement->Name = L"label_soldereglement";
 			this->label_soldereglement->Size = System::Drawing::Size(183, 28);
@@ -2334,7 +2374,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			// 
 			// text_soldereglement
 			// 
-			this->text_soldereglement->Location = System::Drawing::Point(851, 672);
+			this->text_soldereglement->Location = System::Drawing::Point(851, 560);
 			this->text_soldereglement->Margin = System::Windows::Forms::Padding(2);
 			this->text_soldereglement->Name = L"text_soldereglement";
 			this->text_soldereglement->Size = System::Drawing::Size(285, 26);
@@ -2449,7 +2489,7 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->text_refcommande->Location = System::Drawing::Point(107, 334);
 			this->text_refcommande->Margin = System::Windows::Forms::Padding(2);
 			this->text_refcommande->Name = L"text_refcommande";
-			this->text_refcommande->Size = System::Drawing::Size(593, 26);
+			this->text_refcommande->Size = System::Drawing::Size(368, 26);
 			this->text_refcommande->TabIndex = 55;
 			// 
 			// dataGridView_gestcommande
@@ -2503,10 +2543,10 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 			this->panel_Gestion_Stock->Controls->Add(this->text_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->label_ref_article);
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(2188, 46);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(2173, 46);
 			this->panel_Gestion_Stock->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(85, 1316);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(100, 1316);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
@@ -3369,6 +3409,51 @@ private: System::Windows::Forms::Label^ label_typeadresse;
 				this->processusClient->supprimer(Convert::ToInt32(this->text_idclient->Text), Convert::ToInt32(this->text_idadresse->Text));
 				this->text1_message->Text = "Supprimé avec succès";
 			}
-
+			private: System::Void Panel_Gestion_Commandes_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+				this->ds2 = gcnew Data::DataSet();
+				this->processusCommande = gcnew NS_Svc::Svc_gestionCommande;
+				this->text_messagecommande->Text = "Data chargées";
+			}
+			private: System::Void button2_nouveau_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->text_refcommande->Clear();
+				this->text_idclientcommande->Clear();
+				this->text_quantitearticlescom->Clear();
+				this->text_montanttotHT->Clear();
+				this->text_montanttotTTC->Clear();
+				this->text_montanttotTVA->Clear();
+				this->text_datelivraison->Clear();
+				this->text_dateemission->Clear();
+				this->text_datepaiement->Clear();
+				this->choice_moyenpaiement->SelectedIndex = -1;
+				this->choice_remise->SelectedIndex = -1;
+				this->text_idfacture->Clear();
+				this->text_nmservice->Clear();
+				this->text_societe->Clear();
+				this->text_idadressesociete->Clear();
+				this->text_adressepostsociete->Clear();
+				this->text_codepostsociete->Clear();
+				this->text_villesociete->Clear();
+				this->text_payssociete->Clear();
+				this->text_messagecommande->Text = "Veuillez saisir les information de la commande et appuyer sur le mode que vous voulez";
+			}
+			private: System::Void button2_afficher_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->dataGridView_gestcommande->Refresh();
+				this->ds2 = this->processusCommande->listeCommande("Commande");
+				this->dataGridView_gestcommande->DataSource = this->ds2;
+				this->dataGridView_gestcommande->DataMember = "Commande";
+			}
+			private: System::Void button2_ajouter_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->processusCommande->ajouter(this->text_refcommande->Text, Convert::ToInt32(this->text_idclientcommande->Text), Convert::ToDouble(this->text_montanttotHT->Text), Convert::ToDouble(this->text_montanttotTVA->Text), Convert::ToDouble(this->text_montanttotTTC->Text), this->text_dateemission->Text, this->text_datelivraison->Text, this->text_datepaiement->Text, Convert::ToInt32(this->text_quantitearticlescom->Text), Convert::ToInt32(this->choice_remise->Text), Convert::ToInt32(this->text_idfacture->Text), Convert::ToInt32(this->text_nmservice->Text), this->text_societe->Text,this->choice_moyenpaiement->Text, Convert::ToInt32(this->text_idclientcommande->Text), Convert::ToInt32(this->text_idadressesociete->Text), this->text_adressepostsociete->Text, this->text_villesociete->Text, this->text_payssociete->Text, Convert::ToInt32(this->text_codepostsociete->Text));
+				this->text_messagecommande->Text = "Ajouté avec succès";
+			}
+			private: System::Void button2_modifier_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->processusCommande->modifier(this->text_refcommande->Text, Convert::ToDouble(this->text_montanttotHT->Text), Convert::ToDouble(this->text_montanttotTVA->Text), Convert::ToDouble(this->text_montanttotTTC->Text), this->text_dateemission->Text, this->text_datelivraison->Text, this->text_datepaiement->Text, Convert::ToInt32(this->text_quantitearticlescom->Text), Convert::ToInt32(this->choice_remise->Text), Convert::ToInt32(this->text_idfacture->Text), Convert::ToInt32(this->text_nmservice->Text), this->text_societe->Text, this->choice_moyenpaiement->Text, Convert::ToInt32(this->text_idadressesociete->Text), this->text_adressepostsociete->Text, this->text_villesociete->Text, this->text_payssociete->Text, Convert::ToInt32(this->text_codepostsociete->Text));
+				this->text_messagecommande->Text = "Modifié avec succès";
+			}
+			private: System::Void button2_supprimer_Click(System::Object^ sender, System::EventArgs^ e) {
+				this->processusCommande->supprimer(this->text_refcommande->Text, Convert::ToInt32(this->text_idfacture->Text), Convert::ToInt32(this->text_idadressesociete->Text));
+				this->text_messagecommande->Text = "Supprimé avec succès";
+			}
+			
 };
 }

@@ -135,8 +135,11 @@
     <ClCompile Include="login.cpp" />
     <ClCompile Include="Map_Adresse.cpp" />
     <ClCompile Include="Map_Client.cpp" />
+    <ClCompile Include="Map_Commande.cpp" />
+    <ClCompile Include="Map_Facturation.cpp" />
     <ClCompile Include="Map_Personne.cpp" />
     <ClCompile Include="Svc_gestionClient.cpp" />
+    <ClCompile Include="Svc_gestionCommande.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CL_CAD.h" />
@@ -148,8 +151,11 @@
     </ClInclude>
     <ClInclude Include="Map_Adresse.h" />
     <ClInclude Include="Map_Client.h" />
+    <ClInclude Include="Map_Commande.h" />
+    <ClInclude Include="Map_Facturation.h" />
     <ClInclude Include="Map_Personne.h" />
     <ClInclude Include="Svc_gestionClient.h" />
+    <ClInclude Include="Svc_gestionCommande.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">
