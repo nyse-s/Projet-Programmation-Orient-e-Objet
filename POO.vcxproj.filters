@@ -80,6 +80,9 @@
     <ClInclude Include="Svc_gestionCommande.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="Map_article.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="licenses.licx" />
