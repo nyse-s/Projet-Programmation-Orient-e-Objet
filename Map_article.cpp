@@ -15,7 +15,7 @@
 //
 //String^ Svc_Article::Map_Articles::SELECT(void)
 //{
-//	return;
+//	return "SELECT * FROM article";
 //}
 //
 //String^ Svc_Article::Map_Articles::INSERT(void)
@@ -25,12 +25,13 @@
 //
 //String^ Svc_Article::Map_Articles::UPDATE(void)
 //{
-//	return;
+//	return"UPDATE ששש ";
+// 	return "DECLARE @ref_article int; SET @ref_article = " + this->avalue + "; DECLARE @nature char(40); SET @nature = '" + this->nature + "'; DECLARE @nom_article char(40); SET @nom_article = '" + this->nom_article + "'; DECLARE @stock_article int; SET @stock_article = " + this->stock_article + "; DECLARE @remise_article float; SET @remise_article = " + this->remise_article.ToString()->Replace(",",".") + "; DECLARE @prix_article_ht float; SET @prix_article_ht = " + this->prix_article_ht.ToString()->Replace(",", ".") + "; DECLARE @seuil_reapprovisionnement float; SET @seuil_reapprovisionnement = " + this->quantite_reapprovisionnement + "; DECLARE @taux_tva float; SET @taux_tva = " + this->taux_tva.ToString()->Replace(",", ".") + "; DECLARE @couleur_article char(40); SET @couleur_article = '" + this->couleur_article + "'; UPDATE article SET nature = @nature, nom_article = @nom_article, stock_article = @stock_article, remise_article = @remise_article, prix_article_ht = @prix_article_ht, seuil_reapprovisionnement = @seuil_reapprovisionnement, taux_tva = @taux_tva, couleur_article = @couleur_article WHERE ref_article = @ref_article; ";
 //}
 //
 //String^ Svc_Article::Map_Articles::DELETE(void)
 //{
-//	return;
+//	return "DELETE article FROM WHERE ref_article="+this->ref_article;
 //}
 //
 //int Svc_Article::Map_Articles::getRef_Article(void)

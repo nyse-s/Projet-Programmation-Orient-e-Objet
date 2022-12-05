@@ -96,11 +96,12 @@ public ref class login : public System::Windows::Forms::Form
 			this->panel1->Controls->Add(this->btn_login);
 			this->panel1->Controls->Add(this->panel2);
 			this->panel1->Controls->Add(this->btn_cancel);
-			this->panel1->Location = System::Drawing::Point(37, 26);
-			this->panel1->Margin = System::Windows::Forms::Padding(5, 6, 5, 6);
+			this->panel1->Location = System::Drawing::Point(18, 14);
+			this->panel1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(521, 830);
+			this->panel1->Size = System::Drawing::Size(260, 432);
 			this->panel1->TabIndex = 0;
+			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &login::panel1_Paint);
 			// 
 			// Textbox_mdp
 			// 
@@ -117,17 +118,14 @@ public ref class login : public System::Windows::Forms::Form
 				static_cast<System::Int32>(static_cast<System::Byte>(204)), static_cast<System::Int32>(static_cast<System::Byte>(204)));
 			this->Textbox_mdp->BorderColorHover = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)),
 				static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(120)));
-			this->Textbox_mdp->BorderColorIdle = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)),
-				static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(54)));
+			this->Textbox_mdp->BorderColorIdle = System::Drawing::Color::Empty;
 			this->Textbox_mdp->BorderRadius = 1;
 			this->Textbox_mdp->BorderThickness = 1;
 			this->Textbox_mdp->CharacterCasing = System::Windows::Forms::CharacterCasing::Normal;
 			this->Textbox_mdp->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->Textbox_mdp->DefaultFont = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 14, System::Drawing::FontStyle::Bold));
 			this->Textbox_mdp->DefaultText = L"";
-			this->Textbox_mdp->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(20)),
-				static_cast<System::Int32>(static_cast<System::Byte>(54)));
-			this->Textbox_mdp->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->Textbox_mdp->FillColor = System::Drawing::Color::Empty;
 			this->Textbox_mdp->HideSelection = true;
 			this->Textbox_mdp->IconLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Textbox_mdp.IconLeft")));
 			this->Textbox_mdp->IconLeftCursor = System::Windows::Forms::Cursors::IBeam;
@@ -135,9 +133,10 @@ public ref class login : public System::Windows::Forms::Form
 			this->Textbox_mdp->IconRight = nullptr;
 			this->Textbox_mdp->IconRightCursor = System::Windows::Forms::Cursors::IBeam;
 			this->Textbox_mdp->Lines = gcnew cli::array< System::String^  >(0);
-			this->Textbox_mdp->Location = System::Drawing::Point(44, 524);
+			this->Textbox_mdp->Location = System::Drawing::Point(22, 272);
+			this->Textbox_mdp->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Textbox_mdp->MaxLength = 32767;
-			this->Textbox_mdp->MinimumSize = System::Drawing::Size(1, 1);
+			this->Textbox_mdp->MinimumSize = System::Drawing::Size(0, 1);
 			this->Textbox_mdp->Modified = false;
 			this->Textbox_mdp->Multiline = false;
 			this->Textbox_mdp->Name = L"Textbox_mdp";
@@ -161,14 +160,12 @@ public ref class login : public System::Windows::Forms::Form
 			stateProperties3->ForeColor = System::Drawing::Color::Empty;
 			stateProperties3->PlaceholderForeColor = System::Drawing::Color::Empty;
 			this->Textbox_mdp->OnHoverState = stateProperties3;
-			stateProperties4->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(20)),
-				static_cast<System::Int32>(static_cast<System::Byte>(54)));
-			stateProperties4->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(20)),
-				static_cast<System::Int32>(static_cast<System::Byte>(54)));
-			stateProperties4->ForeColor = System::Drawing::Color::WhiteSmoke;
+			stateProperties4->BorderColor = System::Drawing::Color::Empty;
+			stateProperties4->FillColor = System::Drawing::Color::Empty;
+			stateProperties4->ForeColor = System::Drawing::Color::Empty;
 			stateProperties4->PlaceholderForeColor = System::Drawing::Color::Empty;*/
 			this->Textbox_mdp->OnIdleState = stateProperties4;
-			this->Textbox_mdp->Padding = System::Windows::Forms::Padding(3);
+			this->Textbox_mdp->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Textbox_mdp->PasswordChar = '●';
 			this->Textbox_mdp->PlaceholderForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(97)),
 				static_cast<System::Int32>(static_cast<System::Byte>(100)), static_cast<System::Int32>(static_cast<System::Byte>(126)));
@@ -179,7 +176,7 @@ public ref class login : public System::Windows::Forms::Form
 			this->Textbox_mdp->SelectionLength = 0;
 			this->Textbox_mdp->SelectionStart = 0;
 			this->Textbox_mdp->ShortcutsEnabled = true;
-			this->Textbox_mdp->Size = System::Drawing::Size(413, 58);
+			this->Textbox_mdp->Size = System::Drawing::Size(206, 30);
 			this->Textbox_mdp->Style = Bunifu::UI::WinForms::BunifuTextBox::_Style::Bunifu;
 			this->Textbox_mdp->TabIndex = 8;
 			this->Textbox_mdp->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
@@ -197,9 +194,10 @@ public ref class login : public System::Windows::Forms::Form
 				static_cast<System::Byte>(0)));
 			this->label_login->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(97)), static_cast<System::Int32>(static_cast<System::Byte>(100)),
 				static_cast<System::Int32>(static_cast<System::Byte>(126)));
-			this->label_login->Location = System::Drawing::Point(163, 311);
+			this->label_login->Location = System::Drawing::Point(82, 162);
+			this->label_login->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_login->Name = L"label_login";
-			this->label_login->Size = System::Drawing::Size(184, 54);
+			this->label_login->Size = System::Drawing::Size(92, 28);
 			this->label_login->TabIndex = 7;
 			this->label_login->Text = L"LOGIN";
 			this->label_login->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -219,17 +217,14 @@ public ref class login : public System::Windows::Forms::Form
 				static_cast<System::Int32>(static_cast<System::Byte>(204)), static_cast<System::Int32>(static_cast<System::Byte>(204)));
 			this->textBox_Username->BorderColorHover = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)),
 				static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(120)));
-			this->textBox_Username->BorderColorIdle = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)),
-				static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(54)));
+			this->textBox_Username->BorderColorIdle = System::Drawing::Color::Empty;
 			this->textBox_Username->BorderRadius = 1;
 			this->textBox_Username->BorderThickness = 1;
 			this->textBox_Username->CharacterCasing = System::Windows::Forms::CharacterCasing::Normal;
 			this->textBox_Username->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->textBox_Username->DefaultFont = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 14, System::Drawing::FontStyle::Bold));
 			this->textBox_Username->DefaultText = L"";
-			this->textBox_Username->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(20)),
-				static_cast<System::Int32>(static_cast<System::Byte>(54)));
-			this->textBox_Username->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->textBox_Username->FillColor = System::Drawing::Color::Empty;
 			this->textBox_Username->HideSelection = true;
 			this->textBox_Username->IconLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"textBox_Username.IconLeft")));
 			this->textBox_Username->IconLeftCursor = System::Windows::Forms::Cursors::IBeam;
@@ -237,40 +232,39 @@ public ref class login : public System::Windows::Forms::Form
 			this->textBox_Username->IconRight = nullptr;
 			this->textBox_Username->IconRightCursor = System::Windows::Forms::Cursors::IBeam;
 			this->textBox_Username->Lines = gcnew cli::array< System::String^  >(0);
-			this->textBox_Username->Location = System::Drawing::Point(44, 421);
+			this->textBox_Username->Location = System::Drawing::Point(22, 219);
+			this->textBox_Username->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox_Username->MaxLength = 32767;
-			this->textBox_Username->MinimumSize = System::Drawing::Size(1, 1);
+			this->textBox_Username->MinimumSize = System::Drawing::Size(0, 1);
 			this->textBox_Username->Modified = false;
 			this->textBox_Username->Multiline = false;
 			this->textBox_Username->Name = L"textBox_Username";
-		/*	stateProperties5->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(62)),
-				static_cast<System::Int32>(static_cast<System::Byte>(120)));
-			stateProperties5->FillColor = System::Drawing::Color::Empty;
-			stateProperties5->ForeColor = System::Drawing::Color::Empty;
-			stateProperties5->PlaceholderForeColor = System::Drawing::Color::Empty;
-			this->textBox_Username->OnActiveState = stateProperties5;
-			stateProperties6->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(204)), static_cast<System::Int32>(static_cast<System::Byte>(204)),
-				static_cast<System::Int32>(static_cast<System::Byte>(204)));
-			stateProperties6->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(240)), static_cast<System::Int32>(static_cast<System::Byte>(240)),
-				static_cast<System::Int32>(static_cast<System::Byte>(240)));
-			stateProperties6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(109)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
-				static_cast<System::Int32>(static_cast<System::Byte>(109)));
-			stateProperties6->PlaceholderForeColor = System::Drawing::Color::DarkGray;
-			this->textBox_Username->OnDisabledState = stateProperties6;
-			stateProperties7->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(62)),
-				static_cast<System::Int32>(static_cast<System::Byte>(120)));
-			stateProperties7->FillColor = System::Drawing::Color::Empty;
-			stateProperties7->ForeColor = System::Drawing::Color::Empty;
-			stateProperties7->PlaceholderForeColor = System::Drawing::Color::Empty;
-			this->textBox_Username->OnHoverState = stateProperties7;
-			stateProperties8->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(20)),
-				static_cast<System::Int32>(static_cast<System::Byte>(54)));
-			stateProperties8->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(20)),
-				static_cast<System::Int32>(static_cast<System::Byte>(54)));
-			stateProperties8->ForeColor = System::Drawing::Color::WhiteSmoke;
-			stateProperties8->PlaceholderForeColor = System::Drawing::Color::Empty;*/
+			//stateProperties5->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(62)),
+			//	static_cast<System::Int32>(static_cast<System::Byte>(120)));
+			//stateProperties5->FillColor = System::Drawing::Color::Empty;
+			//stateProperties5->ForeColor = System::Drawing::Color::Empty;
+			//stateProperties5->PlaceholderForeColor = System::Drawing::Color::Empty;
+			//this->textBox_Username->OnActiveState = stateProperties5;
+			//stateProperties6->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(204)), static_cast<System::Int32>(static_cast<System::Byte>(204)),
+			//	static_cast<System::Int32>(static_cast<System::Byte>(204)));
+			//stateProperties6->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(240)), static_cast<System::Int32>(static_cast<System::Byte>(240)),
+			//	static_cast<System::Int32>(static_cast<System::Byte>(240)));
+			//stateProperties6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(109)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
+			//	static_cast<System::Int32>(static_cast<System::Byte>(109)));
+			//stateProperties6->PlaceholderForeColor = System::Drawing::Color::DarkGray;
+			//this->textBox_Username->OnDisabledState = stateProperties6;
+			//stateProperties7->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(62)),
+			//	static_cast<System::Int32>(static_cast<System::Byte>(120)));
+			//stateProperties7->FillColor = System::Drawing::Color::Empty;
+			//stateProperties7->ForeColor = System::Drawing::Color::Empty;
+			//stateProperties7->PlaceholderForeColor = System::Drawing::Color::Empty;
+			//this->textBox_Username->OnHoverState = stateProperties7;
+			//stateProperties8->BorderColor = System::Drawing::Color::Empty;
+			//stateProperties8->FillColor = System::Drawing::Color::Empty;
+			//stateProperties8->ForeColor = System::Drawing::Color::Empty;
+			//stateProperties8->PlaceholderForeColor = System::Drawing::Color::Empty;
 			this->textBox_Username->OnIdleState = stateProperties8;
-			this->textBox_Username->Padding = System::Windows::Forms::Padding(3);
+			this->textBox_Username->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox_Username->PasswordChar = '\0';
 			this->textBox_Username->PlaceholderForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(97)),
 				static_cast<System::Int32>(static_cast<System::Byte>(100)), static_cast<System::Int32>(static_cast<System::Byte>(126)));
@@ -281,7 +275,7 @@ public ref class login : public System::Windows::Forms::Form
 			this->textBox_Username->SelectionLength = 0;
 			this->textBox_Username->SelectionStart = 0;
 			this->textBox_Username->ShortcutsEnabled = true;
-			this->textBox_Username->Size = System::Drawing::Size(413, 58);
+			this->textBox_Username->Size = System::Drawing::Size(206, 30);
 			this->textBox_Username->Style = Bunifu::UI::WinForms::BunifuTextBox::_Style::Bunifu;
 			this->textBox_Username->TabIndex = 6;
 			this->textBox_Username->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
@@ -314,10 +308,10 @@ public ref class login : public System::Windows::Forms::Form
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_login->IdleForecolor = System::Drawing::Color::White;
 			this->btn_login->IdleLineColor = System::Drawing::Color::White;
-			this->btn_login->Location = System::Drawing::Point(44, 661);
-			this->btn_login->Margin = System::Windows::Forms::Padding(11, 10, 11, 10);
+			this->btn_login->Location = System::Drawing::Point(22, 344);
+			this->btn_login->Margin = System::Windows::Forms::Padding(6, 5, 6, 5);
 			this->btn_login->Name = L"btn_login";
-			this->btn_login->Size = System::Drawing::Size(186, 79);
+			this->btn_login->Size = System::Drawing::Size(93, 41);
 			this->btn_login->TabIndex = 3;
 			this->btn_login->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->btn_login->Click += gcnew System::EventHandler(this, &login::Click_Btn_Login);
@@ -326,10 +320,10 @@ public ref class login : public System::Windows::Forms::Form
 			// 
 			this->panel2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel2.BackgroundImage")));
 			this->panel2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
-			this->panel2->Location = System::Drawing::Point(44, 31);
-			this->panel2->Margin = System::Windows::Forms::Padding(4);
+			this->panel2->Location = System::Drawing::Point(22, 16);
+			this->panel2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(413, 263);
+			this->panel2->Size = System::Drawing::Size(206, 137);
 			this->panel2->TabIndex = 5;
 			// 
 			// btn_cancel
@@ -353,25 +347,25 @@ public ref class login : public System::Windows::Forms::Form
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_cancel->IdleForecolor = System::Drawing::Color::White;
 			this->btn_cancel->IdleLineColor = System::Drawing::Color::White;
-			this->btn_cancel->Location = System::Drawing::Point(252, 661);
-			this->btn_cancel->Margin = System::Windows::Forms::Padding(11, 10, 11, 10);
+			this->btn_cancel->Location = System::Drawing::Point(126, 344);
+			this->btn_cancel->Margin = System::Windows::Forms::Padding(6, 5, 6, 5);
 			this->btn_cancel->Name = L"btn_cancel";
-			this->btn_cancel->Size = System::Drawing::Size(205, 79);
+			this->btn_cancel->Size = System::Drawing::Size(102, 41);
 			this->btn_cancel->TabIndex = 4;
 			this->btn_cancel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->btn_cancel->Click += gcnew System::EventHandler(this, &login::Click_Btn_Cancel);
 			// 
 			// login
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(18)), static_cast<System::Int32>(static_cast<System::Byte>(23)),
 				static_cast<System::Int32>(static_cast<System::Byte>(62)));
-			this->ClientSize = System::Drawing::Size(580, 880);
+			this->ClientSize = System::Drawing::Size(290, 458);
 			this->Controls->Add(this->panel1);
 			this->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(5, 6, 5, 6);
+			this->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->Name = L"login";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"login";
@@ -408,5 +402,7 @@ public ref class login : public System::Windows::Forms::Form
 		}
 		
 	}
-	};
+	private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	}
+};
 }
