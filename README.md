@@ -49,7 +49,30 @@ A présent, nous allons réaliser la solution digital de l'entreprise qui nous a
 
 ### A. Interface de login
 
+![alt tag](https://zupimages.net/up/23/03/t7ab.png)
+
+Ici, nous avons l'interface login où l'utlisateur pourra entrer son identifiant et son mot de passe pour accéder aux gestions.
+
 ### B. Interface dashboard
+
+Après s'être identifier nous arrivons sur l'interface d'accueille Dashboard suivant :
+
+![alt tag](https://zupimages.net/up/23/03/jnq2.png)
+
+Ici, à votre gauche vous avez les différentes gestions de vos processus métier qui sont de boutons :
+
+•	Gestion Personnel
+
+•	Gestion Clients
+
+•	Gestion Commandes
+
+•	Gestion Stocks
+
+•	Gestion des Statistiques
+
+Grâce à ces boutons vous pouvez naviguer entre les gestions.
+
 ### C. Interface gestion clients
 ### C. Interface gestion commandes
 ### C. Interface gestion statistiques
