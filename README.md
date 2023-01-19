@@ -133,9 +133,11 @@ a) Information générale :
 
 •	Id de remise : 
 
-    o	1 pour 10 % de réduction
-    o	2 pour 5 % de réduction 
-    o	3 pour ne pas appliquer de réduction 
+  -	1 pour 10 % de réduction
+
+  -	2 pour 5 % de réduction 
+
+  -	3 pour ne pas appliquer de réduction 
     
 •	Date de livraison/d’émission :  
 
@@ -145,8 +147,9 @@ b) Information paiement :
 
 •	Moyen paiement :  
 
-  o	Choisir les différents moyens de paiement : carte bleue, PayPal … 
-  o	Date de paiement :   
+  -	Choisir les différents moyens de paiement : carte bleue, PayPal …
+  
+  -	Date de paiement   
   
 *(**La date paiement ne peut pas être ultérieur que celui de la date de commande sinon celui-ci affiche une erreur et il y aura aussi un message d’erreur si une référence commande entrée n’existe pas.**)*
 
