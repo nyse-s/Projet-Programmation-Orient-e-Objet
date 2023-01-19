@@ -74,5 +74,148 @@ Ici, à votre gauche vous avez les différentes gestions de vos processus métie
 Grâce à ces boutons vous pouvez naviguer entre les gestions.
 
 ### C. Interface gestion clients
+
+Lorsque nous appuyons sur le boutons gestion clients, nous arrivons sur l'interface gestion clients qui est la suivante :
+
+![alt tag](https://zupimages.net/up/23/03/oqmb.png)
+
+Ici, nous avons :
+
+a)	Information client : 
+
+•	Attribution id client 
+
+•	Nom, prénom
+
+•	Date de naissance :
+
+*(**La date de naissance sélectionnée ne peut pas être postérieure à la date actuelle**)*
+
+b)	Ajoute type adresse :
+
+Possibilité choisir le type d’adresse à remplir :
+
+•	Facturation 
+
+•	Livraison
+
+c)	5 boutons : 
+
+Afficher : permet afficher le client 
+
+Ajouter : permet ajouter le client  
+
+Modifier : permet modifier une ou plusieurs informations du client 
+
+Supprimer : permet de supprimer un client 
+
+Nouveau : permet de crée un nouveau formulaire vierge 
+
 ### C. Interface gestion commandes
+
+Lorsque nous appuyons sur le boutons gestion commande, nous arrivons sur l'interface gestion commande qui est la suivante :
+
+![alt tag](https://zupimages.net/up/23/03/sjon.png)
+
+Ici, nous avons :
+
+a) Information générale : 
+
+•	Référence commande 
+
+•	Quantité de l’article 
+
+•	Id du client :
+
+*(**Si le Id client n’existe pas alors l’application propose d’ajouter un nouveau client et si oui, vous serez redigérer vers gestion client**)* 
+
+•	Id de l’Article 
+
+•	Id de remise : 
+
+    o	1 pour 10 % de réduction
+    o	2 pour 5 % de réduction 
+    o	3 pour ne pas appliquer de réduction 
+    
+•	Date de livraison/d’émission :  
+
+*(**La date d’émission ne peut pas être postérieur que celui de la date de livraison sinon celui-ci affiche une erreur**)*
+
+b) Information paiement : 
+
+•	Moyen paiement :  
+
+  o	Choisir les différents moyens de paiement : carte bleue, PayPal … 
+  o	Date de paiement :   
+  
+*(**La date paiement ne peut pas être ultérieur que celui de la date de commande sinon celui-ci affiche une erreur et il y aura aussi un message d’erreur si une référence commande entrée n’existe pas.**)*
+
+c) Choix mode : 
+
+Choisir les informations qu’on veut remplir 
+
+  •	Commande 
+  
+  •	Date de paiement 
+  
+  •	Facturation 
+  
+  •	Article 
+  
+Information facturation : 
+
+Lorsque qu’on remplit la facturation on rentre les différents moyens de paiement et il y aura un message d’erreur si une référence commande entrée n’existe pas.
+
+  •	ID facturation 
+  
+  •	Numéro de service client
+  
+  •	Société
+  
+  •	Id adresse
+  
+  •	Adresse postale 
+  
+  •	Ville
+  
+  •	Pays 
+  
+  •	Code postale 
+
+d) 5 boutons : 
+
+Afficher : permet afficher le Choix mode 
+
+Ajouter : permet ajouter le Choix mode 
+
+Modifier : permet modifier une ou plusieurs informations du Choix mode 
+
+Supprimer : permet de supprimer un Choix mode 
+
+Nouveau : permet de crée un nouveau formulaire du Choix mode 
+
 ### C. Interface gestion statistiques
+
+Lorsque nous appuyons sur le boutons gestion statistiques, nous arrivons sur l'interface gestion statistiques qui est la suivante :
+
+![alt tag](https://zupimages.net/up/23/03/sjon.png)
+
+Ici, nous avons des boutons nous permettant de calculer : 
+
+•	Le panier moyen
+
+•	Produits sous seuil de réapprovisionnement
+
+•	Les 10 articles les moins vendus
+
+•	Les 10 articles les plus vendus
+
+•	Valeur d’Achat du Stock
+
+•	Valeur Commercial du Stock
+
+•	Montant total d’achat d’un client
+
+•	Chiffre d’affaires
+
+•	Valeur commercial (Avec Variations)
